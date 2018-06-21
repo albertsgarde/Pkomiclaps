@@ -1,0 +1,147 @@
+namespace = pkomiclaps_crusade
+
+#Start crusade - target
+country_event = {
+    id = pkomiclaps_crusade.1
+    title = pkomiclaps_crusade.1.t
+    desc = pkomiclaps_crusade.1.d
+    picture = RELIGIOUS_WARS_eventPicture # Better picture pls
+    
+    trigger = {
+      has_opinion_modifier = {
+        who = KOM
+        modifier = insulted
+      }
+      NOT = {
+        is_pkomiclaps = yes
+      }
+      NOT = { alliance_with = KOM }
+      NOT = {
+        any_country = { # This doesn't work properly
+          has_country_modifier = pkomiclaps_crusade_target
+        }
+      }
+      NOT = { # This wouldn't be necessary if the above worked.
+        has_country_modifier = pkomiclaps_crusade_target
+      }
+    }
+	
+    mean_time_to_happen = {
+      days = 1
+    }
+	
+    option = {
+      name = pkomiclaps_crusade.1.a
+			add_country_modifier = {
+				name = "pkomiclaps_crusade_target"
+				duration = -1
+			}
+      KOM = {
+        country_event = { id = pkomiclaps_crusade.2 }
+      }
+      every_country = {
+        limit = {
+          is_pkomiclaps = yes
+          NOT = {
+            tag = KOM
+          }
+        }
+        country_event = { id = pkomiclaps_crusade.3 }
+      }
+    }
+}
+
+#Start crusade - KOM
+country_event = {
+    id = pkomiclaps_crusade.2
+    title = pkomiclaps_crusade.2.t
+    desc = pkomiclaps_crusade.2.d
+    picture = RELIGIOUS_WARS_eventPicture # Better picture pls
+    
+    is_triggered_only = yes
+	
+    option = {
+      name = pkomiclaps_crusade.2.a
+    }
+}
+
+#Start crusade - Non-KOM pkomiclaps
+country_event = {
+    id = pkomiclaps_crusade.3
+    title = pkomiclaps_crusade.3.t
+    desc = pkomiclaps_crusade.3.d
+    picture = RELIGIOUS_WARS_eventPicture # Better picture pls
+    
+    is_triggered_only = yes
+	
+    option = {
+      name = pkomiclaps_crusade.3.a
+    }
+}
+
+#Stop crusade - target
+country_event = {
+    id = pkomiclaps_crusade.4
+    title = pkomiclaps_crusade.4.t
+    desc = pkomiclaps_crusade.4.d
+    picture = RELIGIOUS_WARS_eventPicture # Better picture pls
+    
+    trigger = {
+      NOT = {
+        has_opinion_modifier = {
+          who = KOM
+          modifier = insulted
+        }
+      }
+      has_country_modifier = pkomiclaps_crusade_target
+    }
+	
+    mean_time_to_happen = {
+      days = 1
+    }
+	
+    option = {
+      name = pkomiclaps_crusade.4.a
+			remove_country_modifier = pkomiclaps_crusade_target
+      KOM = {
+        country_event = { id = pkomiclaps_crusade.5 }
+      }
+      every_country = {
+        limit = {
+          is_pkomiclaps = yes
+          NOT = {
+            tag = KOM
+          }
+        }
+        country_event = { id = pkomiclaps_crusade.6 }
+      }
+    }
+}
+
+#Stop crusade - KOM
+country_event = {
+    id = pkomiclaps_crusade.5
+    title = pkomiclaps_crusade.5.t
+    desc = pkomiclaps_crusade.5.d
+    picture = RELIGIOUS_WARS_eventPicture # Better picture pls
+    
+    is_triggered_only = yes
+	
+    option = {
+      name = pkomiclaps_crusade.5.a
+    }
+}
+
+#Stop crusade - Non-KOM pkomiclaps
+country_event = {
+    id = pkomiclaps_crusade.6
+    title = pkomiclaps_crusade.6.t
+    desc = pkomiclaps_crusade.6.d
+    picture = RELIGIOUS_WARS_eventPicture # Better picture pls
+    
+    is_triggered_only = yes
+	
+    option = {
+      name = pkomiclaps_crusade.6.a
+    }
+}

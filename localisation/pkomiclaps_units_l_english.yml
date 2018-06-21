@@ -1,0 +1,117 @@
+﻿l_english:
+
+ pkomiclaps_halberd_infantry:0 "Halberd Infantry"
+ pkomiclaps_halberd_infantryDESCR:0 "Infantry units equipped with axe-headed poles with pikes. Halberds came into regular use during the 14th and 15th century and were mainly developed to combat heavily armored troops more effectively."
+ pkomiclaps_medieval_infantry:0 "Latin Medieval Infantry"
+ pkomiclaps_medieval_infantryDESCR:0 "Raised from serf and other peasant communities these poorly armed and poorly trained infantry will not be of too much use in combat. However, why waste the nobility in dangerous assaults on fortresses?"
+ 
+ pkomiclaps_men_with_arms:0 "Men with Arms"
+ pkomiclaps_men_with_armsDESCR:0 "Since everybody else is basing their armies on 'men at arms', we've decided to go one step further as always. Instead of just letting our men be at arms, we make sure that they actually have arms of their own. This should make them much more effecient in combat."
+ pkomiclaps_longerbow:0 "Longerbow"
+ pkomiclaps_longerbowDESCR:0 "The europeans are so proud of their so called 'longbow', because they are soo powerful and can shoot soo far. Our bows are even longer, so those dumbasses can just run home to their mammas."
+ pkomiclaps_unpronounceable_name:0 "M.a^n’ym Infantry"
+ pkomiclaps_unpronounceable_nameDESCR:0 "With all these scottish 'galloglaigh' infantrymen in the western armies, we've made up a name of our own. Introducing M.a^n’ym infantry! With an even more unpronounceable name than the 'galloglaigh', they are sure to wreak confusion upon the enemy lines"
+ 
+ pkomiclaps_condotta:0 "Condotta Infantry"
+ pkomclaps_condottaDESCR:0 "Condotta is the Italian word for 'contract' and it was used to describe the mercenary units that fought mostly in Italy for the various city-states. The leaders of a Condotta regiment were called Condottiere. The most famous amongst them were Sir John Hawkwood, Francesco Sforza and Bartolomeo Colleoni. Condotta were not very loyal to their employers often switching sides because of higher pay. When Condotta fought each other they also made deals to not harm each other too much and war in Italy often became a sort of theater. Condotta regiments consisted of armored knights and heavy and light infantry and crossbowmen. The Condotta had a monopoly on warfare in Italy which meant that they still used old weapons and tactics when the other European armies already had switched to infantry consisting of musketeers and pikemen."
+ pkomiclaps_landsknechten:0 "Landsknechten Infantry"
+ pkomiclaps_landsknechtenDESCR:0 "Landsknechten were a type of infantry first created in the early 16th century in the Holy Roman Empire. They were mostly armed with a long spear or pike. George von Frundsberg is considered to be the creator of the Landsknechten. The Landsknechten fought mostly in a square type formation called the Pike Square. They were also famous for the elaborate clothing they wore on the battlefield."
+ pkomiclaps_gaelic_mercenary:0 "Reformed Galloglaigh Infantry"
+ pkomiclaps_gaelic_mercenaryDESCR:0 "As gunpowder weaponry and drill techniques spread through Europe the traditional Scottish and Irish methods of warfare began to become obsolete - the time of the war bands and the galloglaigh was coming to an end. However Scottish and Irish mercenaries were still feared as fighters, especially by the invading English armies. Those who adapted to the new techniques were highly valued for their bravery and courage, notably the Redshanks of Scotland and the Buanadha (quartered men) of Ireland. After the 16th century many Scottish and Irish mercenaries could also be found in armies throughout Europe, notably during the Thirty Years War."
+ 
+ pkomiclaps_tercio:0 "Tercio Infantry"
+ pkomiclaps_tercioDESCR:0 "Tercio infantry was developed principally by the brilliant general Gonzalo Fernández de Córdoba (El Gran Capitán), during the Italian Wars. It was a mixed infantry formation of pikemen and musketeers. Because of this combined-arms approach, the formation simultaneously enjoyed both the rigidity of its heavy infantry and the long-range firepower of its musketeers, making it an ideal defensive and offensive formation. Tercio formations, with their disciplined and spirited professional soldiers, were famed on the European battlefield for their nearly invincible manner in combat during the 16th and 17th centuries. Their domination of the European battlefields came to a definite end with the Spanish defeat by the French at the battle of Rocroi in 1643. A new fighting system, promoted by Gustavus Adolphus, would take over from then on."
+ pkomiclaps_horde_of_chickens:0 "Horde of Chickens"
+ pkomiclaps_horde_of_chickensDESCR:0 "Have you ever wanted to watch a horde of chickens overwhelm your gobsmacked enemies? Well now you can!"
+ 
+ pkomiclaps_maurician:0 "Maurician Infantry"
+ pkomiclaps_mauricianDESCR:0 "In the 16th century, the musket (a handheld firearm) became commonplace, but they were very slow to reload. Army tacticians typically deployed musket-men in formations to maximize firepower. The muskets would thus be arranged in lines (twelve, eight or six deep). When the front rank fired, they would move away to the rear to reload, after which the next rank would fire. This maximized the firepower of the 16th century muskets and overcame their disadvantage of slow reloading. It was Maurice of Nassau who pioneered the use of these musket formations and taught it to Dutch troops in the Eighty Years' War. His development of military strategy and tactics made the Dutch army the most modern in Europe."
+ pkomiclaps_charge:0 "Charge Infantry"
+ pkomiclaps_chargeDESCR:0 "The linear descendants of the Gaelic mercenaries of early eras. These units placed maximum emphasis on infantry charges to kill and unnerve their enemies. Their charge could be more devastating than the cavalry of the era making them fearsome in attack."
+ 
+ pkomiclaps_reformed_tercio:0 "Reformed Tercio"
+ pkomiclaps_reformed_tercioDESCR:0 "The Tercio, or Spanish Square, was a mixed formation of pikemen and musketeers developed by the Spanish General Gonzalo Fernandez de Cordoba. The victory of the Spanish armies at Pavia (1525) would lead to its domination of the European battlefield for 100 years. The early Tercios contained anywhere from 50-70% pikemen. However, the Tercio were still evolving and through experimentation it was found that the number of pikemen required could be reduced. These late tercios could have as little as 25% pikemen leading to a massive increase in the formations' firepower."
+ pkomiclaps_gustavian:0 "Gustavian Infantry"
+ pkomiclaps_gustavianDESCR:0 "In the early 17th century the musket had a loading time that was still very slow and musket fire needed to be concentrated in volleys to be destructive, as the weapons were very inaccurate and misfires were common. Such a slow reloading time meant that the unit would be very vulnerable if all the guns were fired simultaneously. Since the days of Maurice of Nassau this problem was overcome by arranging the unit in lines (twelve, eight or six deep). When the front rank fired, they would move away to the rear to reload, after which the next rank would fire. Gustavus Adolphus, the great Swedish king, significantly improved this Maurician infantry tactic. He trained his troops so well that he was able to reduce the number of ranks to only three (one kneeling, the second crouching and, the third standing) and yet still maintain continuous fire."
+ pkomiclaps_highlander:0 "Highlanders Infantry"
+ pkomiclaps_highlanderDESCR:0 "The Highland Infantry divisions which make up such a recognizable force in many of today's Commonwealth armies have their roots in the semi-feudal clan system of north and west Scotland. Scottish Highlanders were lightly armored clansmen, often equipped with the traditional Scottish basket-hilted sword, the claymore, as well as small knives, known as dirks. Later Highland soldiers also carried pistols. They were feared for the ferocity of their attack, particularly the famous Highland Charge, used to smash through enemy lines. Following the Jacobite rebellions, the Scottish Highlanders were gradually assimilated into the British Army. The first such Highland troops were the Black Watch, or 42nd Highland Regiment of Foot, who fought valiantly at Fontenoy during the War of Austrian Succession. The Highland Regiments subsequently became a feared fighting force, noted in particular for bravery and a refusal to surrender."
+ 
+ pkomiclaps_grenzer:0 "Grenzer Infantry"
+ pkomiclaps_grenzerDESCR:0 "After the conquest of Hungary and Croatia in the 18th century, Austria formed a new type of unit called Grenzer (which translated means Borderers) to defend the borders of their newly conquered territories against the Ottomans. The men were recruited from the local population and were given land in return for their military service. Grenzer regiments were considered light infantry. They mostly fought in a skirmishing role but could also function as infantry of the line."
+ pkomiclaps_caroline:0 "Caroline Infantry"
+ pkomiclaps_carolineDESCR:0 "The military reforms of the Swedish king Charles XI created a new force of infantry, specializing in the attack. Devastating volleys of musket rounds would be the prelude to a mass charge."
+ pkomiclaps_line:0 "Line Infantry"
+ pkomiclaps_lineDESCR:0 "Line infantry tactics tried to find a balance between attack and defense and did not specialize in either. However, these infantry were stronger in fire and shock. Their aim would be to use the musket volleys to disorganize the enemy before they could charge, in particular if they were primarily a shock action force."
+ 
+ pkomiclaps_whitegoat:0 "White Goat"
+ pkomiclaps_whitegoatDESCR:0 "A lot like the other goats except white."
+ pkomiclaps_bluegoat:0 "Blue Goat"
+ pkomiclaps_bluegoatDESCR:0 "A lot like the other goats except blue."
+ pkomiclaps_redgoat:0 "Red Goat"
+ pkomiclaps_redgoatDESCR:0 "A lot like the other goats except red."
+ pkomiclaps_frederickian:0 "Frederickian Infantry"
+ pkomiclaps_frederickianDESCR:0 "The Elite Infantry of Frederick the Great. These troops are ruthlessly drilled to give high moral and favor the offense over the defense"
+ 
+ pkomiclaps_impulse:0 "Impulse Infantry"
+ pkomiclaps_impulseDESCR:0 "During the war of the Austrian Succession, Austria was facing a serious defeat. Silesia had already been lost to Prussia and total defeat was not far away. In order to help turn the tide of battle, irregular units for the military frontier were brought up to the main battlefields to help the hard pressed imperial armies. The use of loose order infantry was revolutionary on the European battlefield. The most extreme solution was the impulse warfare unit. These units put forward a cloud of skirmishers whose constant sniping would disorder and demoralize the enemy before the mass charge of columned infantry would deliver the coup de grace."
+ pkomiclaps_square:0 "Square Infantry"
+ pkomiclaps_squareDESCR:0 "During the war of the Austrian Succession, Austria was facing a serious defeat. Silesia had already been lost to Prussia and total defeat was not far away. In order to help turn the tide of battle, irregular units from the military frontier were brought up to the main battlefields to help the hard pressed imperial armies. The loose order of infantry was revolutionary on the European battlefield. However there were those that totally rejected the skirmisher concept and went for rigid linear tactics. Christened Square Infantry due to the formation they assumed when defending against cavalry. These were tightly disciplined units trained to fire their muskets at a high rate and fire by platoon which meant that rather than use the single volley and reload style during combat, these units would always have a platoon discharging their muskets. The deadly ripple fire could break any assault. However, rigid linear tactics made these units less mobile and more defensive."
+ 
+ pkomiclaps_misc_order_infantry:0 "Misc. Order Infantry"
+ pkomiclaps_misc_order_infantryDESCR:0 "Misc. Order Infantry is one of the most top-notch infantry groups within the Pkomiclapsian movement, never skipping a beat when they carry out orders. They can take out a foe in seconds, through top-notch fighting pizzazz."
+ pkomiclaps_drilling:0 "Drilling Infantry"
+ pkomiclaps_drillingDESCR:0 "Drilled Soldiers were soldiers that had been vigorously trained, so that they would know exactly what to do in a battle situation. They were also less likely to break ranks whilst fighting against the enemy. An example would be the Prussian Drilled Soldiers. They were among the world's best trained and equipped soldiers at the time. They were very disciplined and well trained for nearly any situation. They are also helped by the fact that they fight with heavy-duty drills, and most of their enemies just run when they see them."
+ pkomiclaps_jaeger:0 "Jaeger Infantry"
+ pkomiclaps_jaegerDESCR:0 "In Germany in the 18th century a new type of light infantry came into being, Called Jaeger, (Hunters). Jaeger were used for reconnaissance and skirmishing. At first they were recruited from huntsmen, gamekeepers and foresters. Most of them were excellent riflemen and were therefore often used as snipers, who could inflict great losses amongst enemy officers. Later Jaeger became a generic name for all kinds of light infantry. Jaeger troops were often hired as mercenaries by other nations, such as Great Britain who used them in the American Revolution."
+ pkomiclaps_samurai:0 "Samurai"
+ pkomiclaps_samuraiDESCR:0 "A lot like the ripoff samurai in Hentai land, except these are bloody AWESOME. This means that they are just about the best infantry soldiers that have ever existed."
+ 
+ 
+ 
+ pkomiclaps_chevauchee:0 "Chevauchée"
+ pkomiclaps_chevaucheeDESCR:0 "The Chevauchée was made up of smaller groups of light cavalry units and was mainly used for raiding and pillaging. The Chevauchée tactic was successfully employed during both the 'Reconquista' and the Hundred Years' war."
+ pkomiclaps_medieval_knights:0 "Latin Knights"
+ pkomiclaps_medieval_knightsDESCR:0 "The medieval Knight originated in the Frankish kingdoms, where mounted warriors were rewarded with grants of land for their military service. This concept of a powerful warrior elite spread through Western Europe and became an integral part of the feudal system, in which Knights ranked amongst the minor nobility. With the development of the wraparound saddle and stirrups, Knights became more heavily armored and better able to charge down opposing infantry with deadly force. They were also known to fight dismounted using heavy melee weapons when circumstances dictated it."
+ 
+ pkomiclaps_schwarze_reiter:0 "Schwarze Reiter"
+ pkomiclaps_schwarze_reiterDESCR:0 "Black Riders (for the color of their armor) are cavalrymen each equipped with two pistols and a sword, often wearing a cuirass for protection. They were used by many German states in the 16th and 17th centuries. Using firearms as their primary weapons they broke with the medieval knight tradition of cavalrymen always being equipped with lances. In battle they would fire their pistols at the enemy line, then attempt a charge and melee combat to rout enemy soldiers."
+ 
+ pkomiclaps_chickens_riding_chickens:0 "Chickens Riding Chickens"
+ pkomiclaps_chickens_riding_chickensDESCR:0 "They're a group of chickens riding other chickens. What more information could anyone possibly want?"
+ 
+ pkomiclaps_caracolle:0 "Latin Caracole Cavalry"
+ pkomiclaps_caracolleDESCR:0 "In the late 16th and early 17th century the most common combat formation for western European cavalry was the Caracole, which could be employed in two ways. With the first method, the first rank of the cavalry formation charged frontally against the enemy, the cavalrymen firing their weapons at a range of 30 to 50 paces. Then they turned round again and returned to the rear of the formation and became the last rank. The following rank would charge in the same way, fire at the enemy and return to the rear. With this formation the first rank was always charging while the other ranks were loading and waiting their turn to charge. Another method was to charge in a single file, firing when the enemies were on their right and then continuing round in a circular motion, all the while reloading and returning to reform the lines in a continuous attack."
+ 
+ pkomiclaps_gallop:0 "Gallop Cavalry"
+ pkomiclaps_gallopDESCR:0 "The pistol armed Caracole Cavalry came to dominate European cavalry tactics in Eastern Europe, although the traditional shock action cavalry style of the Hussars was still in use. Armies trained in the Western European warfare quite often came out second best in combat against these units. Borne out of the bloodshed of the polish wars, the Swedish army developed a different kind of unit, the Swedish Gallop Cavalry. Although still armed with pistols like the caracole they did not discharge the pistols as preliminary to shock action but as part of during the charge itself. The results were devastating during the 30 years, forcing the Imperial Caracole cavalry to adapt very quickly."
+ 
+ pkomiclaps_arme_blanche:0 "Arme Blanche Cavalry"
+ pkomiclaps_arme_blancheDESCR:0 "While the hussar Cavalry represented the balance between fire and shock, and the Dragoon cavalry relied primarily on their muskets, the arme blanche cavalry relied primarily on cold steel. The bold charges of these units could shatter enemy formations."
+ pkomiclaps_dragoon:0 "Latin Dragoons"
+ pkomiclaps_dragoonDESCR:0 "In the 17th century, a new type of cavalry called Dragoons was created. Dragoons were basically infantry who transported themselves by horse. The name Dragoon comes from the weapon they carried, a short type of musket or carabine, called dragon. Dragoons were widely used by all European nations, mostly because they were cheaper than normal cavalry."
+ pkomiclaps_hussar:0 "Latin Hussars"
+ pkomiclaps_hussarDESCR:0 "For a long time in Western Europe Cavalry was the prince of the battlefield. The heavily armored knights would deliver murderous cavalry charges. However in the east, opponents like the Ottoman Turks, who came from a steppe tradition, had lighter armed cavalry which was more suitable for skirmishing. These units showed their worth at the battle of Adrianople when the last great crusade (with the cream of Latin nobility) were shattered by the Ottoman light cavalry and Janissaries. To counter this the Hungarian army had a number of units termed Hussars which were lighter cavalry more suited to fighting their Ottoman opponents. However the units that first arrived in the west were not the light Hungarian Hussars, but the heavier Polish Winged Hussars which were a mixture of orthodox cavalry and light raiding Cavalry."
+ 
+ pkomiclaps_uhlan:0 "Uhlan cavalry"
+ pkomiclaps_uhlanDESCR:0 "The first Uhlans were created in the early 18th Century. They were used primarily for reconnaissance for the more the Heavily Armored Cavalry, as well as being assigned to skirmishes. Later on in the 18th Century they became an essential part of the military's structure due to their light armor making them fast and agile on the battlefield and for their high shock value against their enemies, which in some cases turned the tide in Battles. The Uhlans were a good alternative to large Infantry Armies as they were not only heavy hitting but also more cost effective. This allowed smaller Nations with less manpower to actually put up an effective fight, as armies on foot were also slower compared to their mounted counterparts."
+ pkomiclaps_reformed_hussar:0 "Reformed Latin Hussars"
+ pkomiclaps_reformed_hussarDESCR:0 "As Cavalry became more specialized, the Hussar started to evolve. The Hussar unit became less like the Polish Hussar that had first entered European warfare and more like the Hungarian Original. The ability of the light and mobile troops to find the enemy, harass them, overrun their artillery positions and when they were beaten, pursue them."
+ pkomiclaps_carabinier:0 "Carabiniers"
+ pkomiclaps_carabinierDESCR:0 "The Carabiniers first came into being in the 16th century and were a type of heavy cavalry that had many things in common with Cuirassiers. They also wore protective armor, though slightly less then a Cuirassier. The main difference between them was their armament. Carabiniers main weapon was the carabine, sometimes also called the arquebus, a short wheellock handgun. In addition to the carabine, they were also armed with pistols and a sword."
+ 
+ pkomiclaps_open_order_cavalry:0 "Latin Chasseur"
+ pkomiclaps_open_order_cavalryDESCR:0 "Mounted cavalry units specialized in skirmishes and renowned for their shooting skills."
+ pkomiclaps_lancers:0 "Latin Lancers"
+ pkomiclaps_lancersDESCR:0 "The crème de la crème of the Napoleonic army. Although their lances made them less agile these cavalry troops where formidable adversaries when charging their enemies directly."
+ pkomiclaps_cuirassier:0 "Latin Cuirassiers"
+ pkomiclaps_cuirassierDESCR:0 "The Cuirassiers was a type of heavy cavalry that emerged in the late 15th century. This type of cavalry was armored from his head down to knee-level. His body was protected with a breastplate, the Cuirass from which they took their name. The breastplate was designed to withstand not only the shot from a pistol but also that of ball fired from a musket. They were armed with wheellock pistols, lances and swords. Cuirassiers were mostly used as shock-cavalry and were in use during almost the whole time span focused upon in this game."
+ 
+ 
+ pkomiclaps_insult_cannon:0 "Insult Cannon"
+ pkomiclaps_insult_cannonDESCR:0 "The Insult cannon is a large, wooden, insulting hand gesture. It mocks the besieged city so that they give up earlier. Trouble is that it doesn't help much on the battlefield."
+ 
+ pkomiclaps_bawk_bawk_boom:0 "BAWK BAWK BOOM"
+ pkomiclaps_bawk_bawk_boomDESCR:0 "Suddenly, chickens!"
+ 
+ pkomiclaps_mobile_grenade_trebuchet:0 "Mobile Grenade Trebuchet"
+ pkomiclaps_mobile_grenade_trebuchetDESCR:0 "*wirr wirr* Larry, load the grenades into the trebuchet! FIRE! *boom boom boom*"

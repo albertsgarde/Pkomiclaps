@@ -1,0 +1,139 @@
+namespace = ryu_pkomiclaps
+
+
+
+#Anthropomorph - Recruiting furry bears for the army 1/3
+country_event = {
+    id = ryu_pkomiclaps.1
+    title = ryu_pkomiclaps.1.t
+    desc = ryu_pkomiclaps.1.d
+    picture = FARMING_eventPicture # Better picture pls
+    
+    trigger = {
+        has_country_modifier = talking_to_animals
+        NOT = { manpower_percentage = 0.30 }
+        has_country_flag = was_ryukyu
+        any_owned_province = {
+            NOT = {
+                OR = {
+                        has_province_modifier = recruiting_furry_bears
+                        has_province_modifier = recent_furry_bear_outbreak
+                }
+            }
+        }
+    }
+    
+	mean_time_to_happen = {
+		months = 15
+        
+        modifier = {
+            factor = 0.5
+            
+            NOT = { manpower_percentage = 0.15 }
+        }
+	}
+	
+	option = {
+        name = ryu_pkomiclaps.1.a
+        random_list = {
+    		88 = { country_event = { id = ryu_pkomiclaps.2 } }
+			12 = { country_event = { id = ryu_pkomiclaps.3 } }
+		}
+	}
+    
+    option = {
+        name = ryu_pkomiclaps.1.b
+        add_prestige = -5
+    }
+}
+
+#Anthropomorph - Recruiting furry bears for the army - success! 2/3
+country_event = {
+    id = ryu_pkomiclaps.2
+    title = ryu_pkomiclaps.2.t
+    desc = ryu_pkomiclaps.2.d
+    picture = FARMING_eventPicture
+    
+    is_triggered_only = yes
+	
+	option = {
+        name = ryu_pkomiclaps.2.a
+        random_owned_province = {
+    		limit = {
+				NOT = {
+                    OR = { 
+                        has_province_modifier = recruiting_furry_bears
+                        has_province_modifier = recent_furry_bear_outbreak
+                    }
+                }
+			}
+            add_base_manpower = 1
+            add_province_modifier = {
+                name = recruiting_furry_bears
+                duration = 1850
+            }
+        }
+	}
+}
+
+#Anthropomorph - Recruiting furry bears for the army - failure :( 3/3
+country_event = {
+    id = ryu_pkomiclaps.3
+    title = ryu_pkomiclaps.3.t
+    desc = ryu_pkomiclaps.3.d
+    picture = FARMING_eventPicture # Better picture pls
+    
+    is_triggered_only = yes
+    
+	option = {
+        name = ryu_pkomiclaps.3.a
+        random_owned_province = {
+        	limit = {
+				NOT = { 
+                    OR = { 
+                        has_province_modifier = recruiting_furry_bears
+                        has_province_modifier = recent_furry_bear_outbreak
+                    }
+                }
+			}
+            add_province_modifier = {
+                name = recent_furry_bear_outbreak
+                duration = 925
+            }
+        }
+	}
+}
+
+#First war help
+country_event = {
+    id = ryu_pkomiclaps.4
+    title = ryu_pkomiclaps.4.t
+    desc = ryu_pkomiclaps.4.d
+    picture = FARMING_eventPicture # Better picture pls
+    
+    trigger = {
+    	is_at_war = yes
+        has_country_flag = was_ryukyu
+    }
+    
+	fire_only_once = yes
+    
+    mean_time_to_happen = {
+		months = 1
+	}
+    
+    option = {
+        name = ryu_pkomiclaps.4.a
+        
+        add_country_modifier = {
+            name = ryukyu_first_war
+            duration = 3650
+        }
+		random_owned_province = {
+			limit = { controlled_by = ROOT  }
+			cavalry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+		}
+	}
+}

@@ -1,0 +1,83 @@
+1.0 (31 Jul @ 5:45pm):
+ It is public now, enjoy
+1.0.1 (31 Jul @ 7:43pm): 
+ -Fixed some localisation issues
+ -Added events to return country to pkomiclaps when the country changes tag or government type
+ -Added events to return country to pastafarianism when the country changes religion
+ -Added Dank Republic and Great Republic modifiers, granting republican tradition modifiers immediately upon becoming Pkomiclaps Republic for both secondary and primary pkomiclapsers.
+1.0.2 (31 Jul @ 8:44pm):
+ -Fixed some localisation issues
+ -Fixed an event bug
+1.0.2b (31 Jul @ 8:56pm):
+ -Major single bugfix (Moralist pastafarianism event to keep moralist pastafarianism broke when drunken pastafarianism was started)
+1.0.2bb (31 Jul @ 9:21pm):
+ -Disregard this one :D
+1.0.2c (31 Jul @ 9:23pm):
+ -Still squashing that same bug
+1.0.3 (Never uploaded):
+ -Slightly tweaked conquest target modifiers.
+1.0.4 (2 Aug @ 9:50pm):
+ -Added events to let Drunken Pastafarianism spread by itself.
+1.0.4b (2 Aug @ 10:00pm):
+ -Added a missing event modifier.
+1.0.4bb (2 Aug @ 10:06pm):
+ -Added localisation for the modifier that was added in the previous update.
+1.0.5 (3 Aug @ 10:11am):
+ -New absorption mechanic. Try enveloping another country completely...
+ -Added very powerful conquest event for the siberian province "Komi" as it is the Ancient Homeland of Pkomiclaps.
+1.0.5b (6 Aug @ 4:57pm):
+ -Probably did change something, but I cannot remember what.
+1.0.6 (9 Aug @ 10:06pm):
+ -Coverted some event modifiers to triggered modifiers and added some more triggered modifiers.
+ -Fixed and tweaked most parts of the absorption mechanic.
+ -Added burgers and mountain dew.
+ -Added The Great LAN Party.
+ -Tweaked Pkomiclaps age of conquest missions.
+ -Tweaked conquest events to allow great republics to receive them as well.
+ -Added more idea groups (the events should be on their way).
+2.0.0 (31 May @ 12:13pm):
+ -More conquest events.
+  -Asia
+   -Cats in Miao
+   -Phnom Penh
+  -Africa
+   -Running fast in Congo
+   -Pirates in Somalia area
+   -Coffee in Kaffa
+ -Updated to EUIV 1.21
+  -Fixed localisation.
+ -Changed a few event_modifiers to increase goods produced instead of production efficiency. It's far more interesting
+ -Added a parliment to the Pkomiclaps Republic.
+ -The Pkomiclaps homeland province modifier now has 680% decreased development cost to outweigh the large increase caused by the province's high development.
+ -Religion icons fixed in the Commonwealthball compatibility mod.
+ -Crusade like mechanics
+  -KOM insulting a country gives the country a triggered_modifier that gives 5% morale. Any non-KOM pkomiclaps that are at war with it get a positive triggered_modifier.
+ -Added the parliment issue Perfect Posture that allows the chicken modifier to stay forever.
+ -Add events for the new idea groups.
+ -Replacing deities with the five characters on the flag.
+ -Special Pkomiclaps debates for the parliment.
+ -Policies for the new idea groups.
+2.0.1 (5 Jun @ 5:05pm):
+ -Bug fixes
+  -Fixed Ninja Turtle event triggering every month.
+  -Ninja Turtle event now actually has an effect.
+  -Fixed Crusade start event triggering every month.
+  -Created new bugs in the absorption mechanic which will be fixed.
+ -Gave Pizza Pizza and Curry modifiers effects so they didn't have question mark icons.
+2.0.2 (5 Jun @ 5:57pm):
+ -Bug fixes
+  -Tried to fix the absorption bugs created by the last update. However, any_neighbor_province doesn't seem to be working, so colonizable land counts as wasteland. Not ideal and leads to some seriously easy stuff in the New World and Africa.
+2.0.3 (?):
+ -Changed some localisation, including making some events say which country they come from instead of saying "Another country".
+ -Removed pkomiclaps rebels. They weren't used but still popped up.
+ -Updated the Pkomiclaps ideas to better fit the new updates. They should also be slightly less over-powered.
+ -Updated to patch 1.22
+
+Planned:
+ -More conquest events
+  -Europe
+   -Stealing Italians
+ -Event pictures. They wouldn't fit in with the current ones, but could be fun.
+ -Fix leader name so it doesn't say norulertitle
+ -Fix absorption so colonizable land doesn't count as wasteland. 
+ -Unlockable deities for Drunken Pastafarianism. The five characters are always available.

@@ -1,0 +1,139 @@
+namespace = pkomiclaps_af_conquest
+
+# The Conquest of Running Quickly
+country_event = {
+  id = pkomiclaps_af_conquest.1
+    
+	title = pkomiclaps_af_conquest.1.t
+	desc = pkomiclaps_af_conquest.1.d
+	
+	picture = ATHENS_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		is_pkomiclaps = yes
+    
+		owns_or_vassal_of = 4092 #Run                            Rund
+    owns_or_vassal_of = 4085 #Bungalunga                     Yaka
+    owns_or_vassal_of = 4097 #Lube                           Luba
+	}
+	
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = pkomiclaps_af_conquest.1.a
+		add_prestige = 10
+		add_adm_power = 25
+    add_country_modifier = {
+      name = running_faster
+			duration = -1
+		}
+    4092 = { 
+        change_province_name = "Run"
+        rename_capital = "Insain Bolt"
+    }
+    4085 = { 
+        change_province_name = "Bungalunga"
+        rename_capital = "M'bko'b'''s"
+    }
+    4097 = { 
+        change_province_name = "Lube"
+        rename_capital = "Lube"
+    }
+	}
+}
+
+# The Conquest of Pirates
+country_event = {
+  id = pkomiclaps_af_conquest.2
+    
+	title = pkomiclaps_af_conquest.2.t
+	desc = pkomiclaps_af_conquest.2.d
+	
+	picture = ATHENS_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		is_pkomiclaps = yes
+    
+		owns_or_vassal_of = 2788 #Drink the Rum                      Hafun
+    owns_or_vassal_of = 2790 #Raise your Steins                  Sanaag
+    owns_or_vassal_of = 2024 #Pirate music Piracy                Garoowe
+	}
+	
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = pkomiclaps_af_conquest.2.a
+		add_prestige = 10
+		add_adm_power = 25
+    add_country_modifier = {
+      name = pirates
+			duration = -1
+		}
+    2788 = { 
+        change_province_name = "Drink the Rum"
+        rename_capital = "Yohoho and a Yahaha"
+    }
+    2790 = { 
+        change_province_name = "Raise your Steins"
+        rename_capital = "Grab the beer"
+    }
+    2024 = { 
+        change_province_name = "Pirate music Piracy"
+        rename_capital = "We don't have time for MP3's"
+    }
+	}
+}
+
+# The Conquest of Coffee
+country_event = {
+  id = pkomiclaps_af_conquest.3
+    
+	title = pkomiclaps_af_conquest.3.t
+	desc = pkomiclaps_af_conquest.3.d
+	
+	picture = ATHENS_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		is_pkomiclaps = yes
+    
+		owns_or_vassal_of = 2757 #Coffee                            Kaffa
+    owns_or_vassal_of = 2756 #Caffè Latte                       Welayta
+    owns_or_vassal_of = 387  #Iced Mocca with Vanilla Syrup     Mukha
+	}
+	
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = pkomiclaps_af_conquest.3.a
+		add_prestige = 10
+		add_adm_power = 25
+    add_country_modifier = {
+      name = iced_coffee
+			duration = -1
+		}
+    2757 = { 
+        change_province_name = "Coffee"
+        rename_capital = "Kaffe"
+    }
+    2756 = { 
+        change_province_name = "Caffè Latte"
+        rename_capital = "Milk coffee"
+    }
+    387 = { 
+        change_province_name = "Iced Mocca with Vanilla Syrup"
+        rename_capital = "And chocolate sprinkles"
+    }
+	}
+}

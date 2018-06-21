@@ -1,0 +1,11 @@
+#GENERAL TRIGGERS
+is_pkomiclaps = {
+    OR = {
+      has_country_modifier = dank_republic
+      has_country_modifier = great_republic
+    }
+    OR = {
+      tag = KOM
+      alliance_with = KOM
+    }
+}

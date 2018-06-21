@@ -1,0 +1,420 @@
+namespace = sb_pkomiclaps
+
+# Secondary Suppressing the Majorities
+country_event = {
+    id = sb_pkomiclaps.1
+    title = sb_pkomiclaps.1.t
+	desc = sb_pkomiclaps.1.d
+	picture = ANGRY_MOB_eventPicture
+	
+	
+	
+	trigger = {
+        OR = {
+            ai = yes
+            has_country_flag = accepted_pkomiclaps
+        }
+        OR = {
+            NOT = { has_country_flag = declined_suppressing_the_majorities }
+    		had_country_flag = { flag = declined_suppressing_the_majorities days = 1825 }
+        }
+        
+        NOT = { has_country_modifier = suppressing_the_majorities }
+        KOM = {
+            exists = yes
+        }
+        NOT = { tag = KOM }
+        
+        OR = {
+        	any_country = {
+                alliance_with = ROOT
+                tag = KOM
+    		}
+    		vassal_of = KOM
+        }
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+        
+    	modifier = {
+			factor = 0.5
+            any_owned_province = {
+    	        NOT = { culture_group = ROOT } 
+	    	}
+		}
+	}
+	
+	option = {
+		name = sb_pkomiclaps.1.a
+        add_country_modifier = {
+			name = suppressing_the_majorities
+			duration = -1
+		}
+	}
+    option = {
+        name = sb_pkomiclaps.1.b
+        KOM = { country_event = { id = sb_pkomiclaps.7 } }
+        set_country_flag = declined_suppressing_the_majorities
+    }
+}
+
+# Secondary Moralist Pastafarianism
+country_event = {
+    id = sb_pkomiclaps.2
+    title = sb_pkomiclaps.2.t
+    desc = sb_pkomiclaps.2.d
+	picture = RELIGIOUS_TURMOIL_eventPicture
+	
+	
+	
+	trigger = {
+        OR = {
+            ai = yes
+            has_country_flag = accepted_pkomiclaps
+        }
+        OR = {
+            NOT = { has_country_flag = declined_moralist_pastafarianism }
+        	had_country_flag = { flag = declined_moralist_pastafarianism days = 1825 }
+        }
+        
+        NOT = { has_country_flag = accepted_moralist_pastafarianism }
+        
+        KOM = {
+            exists = yes
+        }
+        
+        NOT = { tag = KOM }
+        
+        OR = {
+          any_country = {
+              alliance_with = ROOT
+              tag = KOM
+          }
+          vassal_of = KOM
+        }
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+        modifier = {
+            factor = 0.7
+            NOT = { religious_unity = 0.95}
+        }
+        modifier = {
+            factor = 0.7
+            NOT = { religious_unity = 0.85}
+        }
+        modifier = {
+            factor = 0.7
+            NOT = { religious_unity = 0.75}
+        }
+	}
+	
+	option = {
+		name = sb_pkomiclaps.2.a
+        change_religion = moralist_pastafarianism
+        add_country_modifier = {
+    		name = pastafarian_zeal
+			duration = 7300
+		}	
+        set_country_flag = accepted_moralist_pastafarianism
+        set_country_flag = converted_to_moralist_pastafarianism
+		add_opinion = {
+			who = KOM
+			modifier = religious_overlord
+		}
+        reverse_add_opinion = {
+            who = KOM
+            modifier = religious_underling
+        }
+	}
+    option = {
+        name = sb_pkomiclaps.2.b
+        KOM = { country_event = { id = sb_pkomiclaps.7 } }
+        set_country_flag = declined_moralist_pastafarianism
+    }
+}
+
+# The Secondary Pkomiclaps Reform
+country_event = {
+    id = sb_pkomiclaps.3
+    title = sb_pkomiclaps.3.t
+    desc = sb_pkomiclaps.3.d
+    picture = REFORM_eventPicture # This or RELIGIOUS_WAR
+	
+	trigger = {
+        OR = {
+            ai = yes
+            has_country_flag = accepted_pkomiclaps
+        }
+        KOM = {
+            exists = yes
+        }
+        
+        NOT = { tag = KOM }
+        NOT = { has_country_flag = secondary_pkomiclaps }
+        OR = {
+            NOT = { has_country_flag = declined_pkomiclaps }
+            had_country_flag = { flag = declined_pkomiclaps days = 1825 }
+        }
+        ROOT = {
+            has_country_modifier = suppressing_the_majorities
+            religion = moralist_pastafarianism
+            has_country_modifier = talking_to_animals
+            has_country_modifier = managing_opposition
+        }
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = {
+        name = sb_pkomiclaps.3.a
+        if = {
+            limit = {
+                ai = no
+            }
+            change_technology_group = pkomiclaps
+            change_unit_type = pkomiclaps
+        }
+        change_government = pkomiclaps_republic
+        add_country_modifier = {
+        	name = "great_republic"
+    		duration = -1
+    	}
+        hidden_effect = {
+            set_country_flag = secondary_pkomiclaps
+        }
+	}
+    option = {
+        name = sb_pkomiclaps.3.b
+        KOM = { country_event = { id = sb_pkomiclaps.7 } }
+        set_country_flag = declined_pkomiclaps
+    }
+
+}
+
+# Secondary Experiments on Anthropomorphism
+country_event = {
+    id = sb_pkomiclaps.4
+    title = sb_pkomiclaps.4.t
+    desc = sb_pkomiclaps.4.d
+    picture = FARMING_eventPicture # Better picture pls
+    
+    
+    
+	trigger = {
+        OR = {
+            ai = yes
+            has_country_flag = accepted_pkomiclaps
+        }
+        OR = {
+            NOT = { has_country_flag = declined_talking_to_animals }
+        	had_country_flag = { flag = declined_talking_to_animals days = 1825 }
+        }
+        
+        NOT = { has_country_flag = talking_to_animals }
+        
+        KOM = {
+            exists = yes
+        }
+        
+        NOT = { tag = KOM }
+        
+        OR = {
+            any_country = {
+                alliance_with = ROOT
+                tag = KOM
+    		}
+    		vassal_of = KOM
+        }
+        
+        NOT = { has_country_modifier = talking_to_animals }
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+        
+        modifier = {
+            factor = 0.75
+            capital_scope = {
+                culture = japanese
+            }
+        }
+        
+        modifier = {
+            factor = 0.8
+            has_idea_group = innovativeness_ideas
+        }
+	}
+	
+	option = {
+        name = sb_pkomiclaps.4.a
+        add_country_modifier = {
+        	name = talking_to_animals
+			duration = -1
+		}			
+	}
+    option = {
+        name = sb_pkomiclaps.4.b
+        KOM = { country_event = { id = sb_pkomiclaps.7 } }
+        set_country_flag = declined_talking_to_animals
+    }
+
+}
+
+#Secondary Managing opposition
+country_event = {
+    id = sb_pkomiclaps.5
+    title = sb_pkomiclaps.5.t
+    desc = sb_pkomiclaps.5.d
+    picture = REFORM_eventPicture # This or RELIGIOUS_WAR
+	
+	
+	
+	trigger = {
+        OR = {
+            ai = yes
+            has_country_flag = accepted_pkomiclaps
+        }
+        OR = {
+            NOT = { has_country_flag = declined_managing_opposition }
+            had_country_flag = { flag = declined_managing_opposition days = 1825 }
+        }
+        
+        NOT = { has_country_modifier = managing_opposition }
+        
+        KOM = {
+            exists = yes
+        }
+        
+        NOT = { tag = KOM }
+        
+        OR = {
+            any_country = {
+                alliance_with = ROOT
+                tag = KOM
+    		}
+    		vassal_of = KOM
+        }
+        
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = {
+        name = sb_pkomiclaps.5.a
+        add_country_modifier = {
+            name = managing_opposition
+            duration = -1
+        }
+	}
+    option = {
+        name = sb_pkomiclaps.5.b
+        KOM = { country_event = { id = sb_pkomiclaps.7 } }
+        set_country_flag = declined_managing_opposition
+    }
+}
+
+#Player accept pkomiclaps
+country_event = {
+    id = sb_pkomiclaps.6
+    title = sb_pkomiclaps.6.t
+    desc = sb_pkomiclaps.6.d
+    picture = REFORM_eventPicture # This or RELIGIOUS_WAR
+    
+	
+	
+	trigger = {
+        ai = no
+        NOT = { has_country_flag = accepted_pkomiclaps }
+        NOT = { has_country_flag = declined_pkomiclaps }
+        
+        KOM = {
+            exists = yes
+        }
+        
+        NOT = { tag = KOM }
+        
+        OR = {
+            any_country = {
+                alliance_with = ROOT
+                tag = KOM
+    		}
+    		vassal_of = KOM
+        }
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+        name = sb_pkomiclaps.6.a
+        set_country_flag = accepted_pkomiclaps
+	}
+    option = {
+        name = sb_pkomiclaps.6.b
+        set_country_flag = declined_pkomiclaps
+    }
+}
+
+# Other Country Declined
+country_event = {
+    id = sb_pkomiclaps.7
+    title = sb_pkomiclaps.7.t
+    desc = sb_pkomiclaps.7.d
+    picture = CIVIL_WAR_eventPicture
+    
+	
+    
+    is_triggered_only = yes
+    
+    option = {
+        name = sb_pkomiclaps.7.a
+        FROM = {
+            
+    	    every_owned_province = {
+                limit = {
+                   NOT = { claim = KOM }
+                }
+                random_list = {
+                    80 = {  }
+		            20 = { add_claim = KOM }
+		        }   
+            }
+            every_owned_province = {
+                limit = {
+                   NOT = { is_core = KOM }
+                }
+                random_list = {
+                    92 = {  }
+		            8 = { add_core = KOM }
+		        }   
+            }
+        	add_opinion = {
+				who = ROOT
+				modifier = not_forgave_non_pkomiclaps
+			}
+        }
+        add_opinion = {
+			who = FROM
+			modifier = declined_pkomiclaps
+		}
+    }
+    
+    option = {
+        name = sb_pkomiclaps.7.b
+        add_prestige = -5
+        FROM = {
+    		add_opinion = {
+				who = ROOT
+				modifier = forgave_non_pkomiclaps
+			}
+        }
+    }
+}

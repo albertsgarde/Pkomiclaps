@@ -1,0 +1,64 @@
+# Do not change tags in here without changing every other reference to them.
+# Do not change tags in here without changing every other reference to them.
+# If adding new groups or ideas, make sure they are unique.
+
+
+
+### Nation specific idea groups
+
+# Two modifiers per minister (three if it really has to be)
+# One minister per idea
+# Two ministers for traditions and one minister for ambition
+
+KOM_ideas = {
+	start = {
+		# Laterality
+		idea_cost = -0.15
+		technology_cost = -0.15
+		# Plutocracy
+		global_trade_power = 0.25
+		merchants = 2
+	}
+	
+	bonus = {
+	
+		global_tax_modifier = 0.25 # Monocle
+		trade_efficiency = 0.15
+		global_production_modifier = 0.2
+	}
+	
+	trigger = {
+		tag = KOM
+	}
+	free = yes		#will be added at load.
+
+	pkomiclaps_pannationalism = {
+		core_creation = -0.35
+		years_of_nationalism = -10
+	}
+	pkomiclaps_opposition_management = {
+		hostile_attrition = 2
+		fabricate_claims_time = -0.3
+	}
+	pkomiclaps_sociolinguistics = {
+		# Sociolinguistics
+		ae_impact = -0.3
+		diplomatic_upkeep = 3
+	}
+	pkomiclaps_communication = {
+		diplomatic_reputation = 3
+		relations_decay_of_me = 0.55
+	}
+	pkomiclaps_claps = {
+		discipline = 0.125
+		no_cost_for_reinforcing = yes
+	}	
+	pkomiclaps_imperialism = {
+		diplomatic_annexation_cost = -0.3
+		colonists = 2
+	}
+	pkomiclaps_anthromorph = {
+		land_morale = 0.25
+		global_manpower_modifier = 0.55
+	}
+}

@@ -1,0 +1,422 @@
+namespace = pkomiclaps_init
+
+#Modifier init
+country_event = {
+    id = pkomiclaps_init.1
+    title = pkomiclaps_init.1.t
+    desc = pkomiclaps_init.1.d
+    picture = FARMING_eventPicture # Better picture pls
+    
+    fire_only_once = yes
+    
+    trigger = {
+        ai = no
+		NOT = {has_global_flag = pkomiclaps_initialized}
+    }
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+        hidden_effect = {
+			set_global_flag = pkomiclaps_initialized
+		#Tags
+			RYU = {
+				set_country_flag = was_ryukyu
+			}
+			WBG = {
+				add_country_modifier = {
+					name = perfect_wurst
+					duration = -1
+				}
+			}
+			WUR = {
+				add_country_modifier = {
+					name = perfect_wurst
+					duration = -1
+				}
+			}
+			POL = {
+				add_country_modifier = {
+					name = cannot_into_space
+					duration = -1
+				}
+			}
+			AYU = {
+				set_country_flag = white_elephant
+			}
+		#Børk
+			1 = {
+				add_permanent_province_modifier = {
+					name = high_borkish
+					duration = -1
+				}
+			}
+			20 = {
+				add_permanent_province_modifier = {
+					name = high_borkish
+					duration = -1
+				}
+			}
+			17 = {
+				add_permanent_province_modifier = {
+					name = high_borkish
+					duration = -1
+				}
+			}
+		#Italy
+			116 = {
+				add_permanent_province_modifier = {
+					name = pizza_pizza
+					duration = -1
+				}
+			}
+			115 = {
+				add_permanent_province_modifier = {
+					name = pizza_pizza
+					duration = -1
+				}
+			}
+			105 = {
+				add_permanent_province_modifier = {
+					name = pizza_pizza
+					duration = -1
+				}
+			}
+			104 = {
+				add_permanent_province_modifier = {
+					name = leonardo
+					duration = -1
+				}
+			}
+			116 = {
+				add_permanent_province_modifier = {
+					name = donatello
+					duration = -1
+				}
+			}
+			118 = {
+				add_permanent_province_modifier = {
+					name = michelangelo
+					duration = -1
+				}
+			}
+			2977 = {
+				add_permanent_province_modifier = {
+					name = rafael
+					duration = -1
+				}
+			}
+		#England
+			246 = {
+				add_permanent_province_modifier = {
+					name = call_center
+					duration = -1
+				}
+			}
+        #Wales
+            241 = {
+                add_permanent_province_modifier = {
+                    name = pleasure_centre
+                    duration = -1
+                }
+            }
+            242 = {
+                add_permanent_province_modifier = {
+                    name = pleasure_centre
+                    duration = -1
+                }
+            }
+		#Portugal
+			227 = {
+				add_permanent_province_modifier = {
+					name = bacalhau
+					duration = -1
+				}
+			}
+			231 = {
+				add_permanent_province_modifier = {
+					name = bacalhau
+					duration = -1
+				}
+			}
+		#France
+			183 = {
+				add_permanent_province_modifier = {
+					name = croissant
+					duration = -1
+				}
+			}
+			174 = {
+				add_permanent_province_modifier = {
+					name = croissant
+					duration = -1
+				}
+			}
+			179 = {
+				add_permanent_province_modifier = {
+					name = croissant
+					duration = -1
+				}
+			}
+        #Germoney
+        	every_province = {
+    			limit = {
+    				culture_group = germanic
+    			}
+    			add_permanent_province_modifier = {
+    				name = germans
+    				duration = -1
+    			}
+    		}
+        #Danksterdank
+            97 = {
+        		add_permanent_province_modifier = {
+    				name = high_as_fuck
+    				duration = -1
+    			}
+            }
+		#Ottomans
+			151 = {
+				add_permanent_province_modifier = {
+					name = kebab
+					duration = -1
+				}
+			}
+			1848 = {
+				add_permanent_province_modifier = {
+					name = kebab
+					duration = -1
+				}
+			}
+			2300 = {
+				add_permanent_province_modifier = {
+					name = kebab
+					duration = -1
+				}
+			}
+			2304 = {
+				add_permanent_province_modifier = {
+					name = kebab
+					duration = -1
+				}
+			}
+			2296 = {
+				add_permanent_province_modifier = {
+					name = kebab
+					duration = -1
+				}
+			}
+        #Russia
+            295 = { #Moskva
+    			add_permanent_province_modifier = {
+					name = cyka_blyat
+					duration = -1
+				}
+            }
+            33 = { #Skt. Petersborg
+        		add_permanent_province_modifier = {
+					name = cyka_blyat
+					duration = -1
+				}
+            }
+            306= { #Nizhny Novgorod
+            	add_permanent_province_modifier = {
+					name = cyka_blyat
+					duration = -1
+				}
+            }
+		#India
+			538 = {
+				add_permanent_province_modifier = {
+					name = snake_charming
+					duration = -1
+				}
+			}
+			2090 = {
+				add_permanent_province_modifier = {
+					name = snake_charming
+					duration = -1
+				}
+			}
+			521 = {
+				add_permanent_province_modifier = {
+					name = snake_charming
+					duration = -1
+				}
+			}
+			2034 = {
+				add_permanent_province_modifier = {
+					name = snake_charming
+					duration = -1
+				}
+			}
+			522 = {
+				add_permanent_province_modifier = {
+					name = snake_charming
+					duration = -1
+				}
+			}
+			541 = {
+				add_permanent_province_modifier = {
+					name = snake_charming
+					duration = -1
+				}
+			}
+			527 = {
+				add_permanent_province_modifier = {
+					name = call_center
+					duration = -1
+				}
+			}
+			529 = {
+				add_permanent_province_modifier = {
+					name = call_center
+					duration = -1
+				}
+			}
+			2042 = {
+				add_permanent_province_modifier = {
+					name = curry
+					duration = -1
+				}
+			}
+			2047 = {
+				add_permanent_province_modifier = {
+					name = curry
+					duration = -1
+				}
+			}
+			2066 = {
+				add_permanent_province_modifier = {
+					name = curry
+					duration = -1
+				}
+			}
+			2096 = {
+				add_permanent_province_modifier = {
+					name = curry
+					duration = -1
+				}
+			}
+		#Kolea/China/Japanesaroo
+			2742 = {
+				add_permanent_province_modifier = {
+					name = lice
+					duration = -1
+				}
+			}
+			735 = {
+				add_permanent_province_modifier = {
+					name = lice
+					duration = -1
+				}
+			}
+			2151 = {
+				add_permanent_province_modifier = {
+					name = lice
+					duration = -1
+				}
+			}
+			2183 = {
+				add_permanent_province_modifier = {
+					name = lice
+					duration = -1
+				}
+			}
+			2144 = {
+				add_permanent_province_modifier = {
+					name = lice
+					duration = -1
+				}
+			}
+			663 = {
+				add_permanent_province_modifier = {
+					name = lice
+					duration = -1
+				}
+			}
+			1824 = {
+				add_permanent_province_modifier = {
+					name = lice
+					duration = -1
+				}
+			}
+        }
+    }
+    option = {
+      name = pkomiclaps_init.1.a
+    }
+    option = {
+      name = pkomiclaps_init.1.b
+    }
+}
+
+#American food - arrives at a later date.
+country_event = {
+    id = pkomiclaps_init.2
+    title = pkomiclaps_init.2.t
+    desc = pkomiclaps_init.2.d
+    picture = FARMING_eventPicture # Better picture pls
+    
+    fire_only_once = yes
+    
+    trigger = {
+        is_year = 1580
+        ai = no
+    }
+    
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+        name = pkomiclaps_init.2.a
+        
+        hidden_effect = {
+        #Canada
+            #Sprinkle some Poutine on the baguettey places
+        #USA
+            #Burgers in Racism
+            888 = {
+                add_permanent_province_modifier = {
+                    name = burgers
+                    duration = -1
+                }
+            }
+            2669 = {
+                add_permanent_province_modifier = {
+                    name = burgers
+                    duration = -1
+                }
+            }
+            #Mountain dew
+            874 = {
+                add_permanent_province_modifier = {
+                    name = mountain_dew
+                    duration = -1
+                }
+            }
+            868 = {
+                add_permanent_province_modifier = {
+                    name = mountain_dew
+                    duration = -1
+                }
+            }
+        #Mexico
+            852 = {
+                add_permanent_province_modifier = {
+                    name = dorritos
+                    duration = -1
+                }
+            }
+            844 = {
+                add_permanent_province_modifier = {
+                    name = dorritos
+                    duration = -1
+                }
+            }
+        }
+	}
+}

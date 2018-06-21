@@ -1,0 +1,594 @@
+namespace = pkomiclaps_as_conquest
+
+# The Conquest of Nolth Kolea
+country_event = {
+    id = pkomiclaps_as_conquest.1
+    
+	title = pkomiclaps_as_conquest.1.t
+	desc = pkomiclaps_as_conquest.1.d
+	
+	picture = UNIVERSITY_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			has_country_modifier = dank_republic
+			has_country_modifier = great_republic
+		}
+		owns_or_vassal_of = 2743 # Chingching                Kyongsong
+        owns_or_vassal_of = 2742 # Licerand                  Yukjin
+        owns_or_vassal_of = 2744 # Chinkachongdong           Nyongbyon
+        owns_or_vassal_of = 1845 # Kind Readel               Pyongan
+        owns_or_vassal_of = 732  # Hamching                  Hamgyeong
+        owns_or_vassal_of = 733  # Longwang                  Hwanghae
+	}
+	
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = pkomiclaps_as_conquest.1.a
+		add_prestige = 15
+		add_adm_power = 25
+    	2743 = { 
+            change_province_name = Chingching
+            rename_capital = Chingching
+        }
+        2742 = { 
+            change_province_name = Licerand
+            rename_capital = Licecity
+        }
+        2745 = { 
+            change_province_name = Chinkachongdong
+            rename_capital = Chinkachongdong
+        }
+        1845 = { 
+            change_province_name = "Kind Readel"
+            rename_capital = "Kind Readel"
+        }
+        732 = { 
+            change_province_name = Hamching
+            rename_capital = Hamching
+        }
+        733 = {
+            change_province_name = Longwang
+            rename_capital = Longwang
+        }
+        add_core = 1845
+        
+	}
+}
+
+# The Conquest of South Kolea
+country_event = {
+    id = pkomiclaps_as_conquest.2
+    
+	title = pkomiclaps_as_conquest.2.t
+	desc = pkomiclaps_as_conquest.2.d
+	
+	picture = UNIVERSITY_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			has_country_modifier = dank_republic
+			has_country_modifier = great_republic
+		}
+		owns_or_vassal_of = 735  # Seour                 Seoul
+        owns_or_vassal_of = 737  # Jeorra                Jeolla
+        owns_or_vassal_of = 2741
+        owns_or_vassal_of = 736
+        owns_or_vassal_of = 2745
+        owns_or_vassal_of = 734
+        owns_or_vassal_of = 2694
+	}
+	
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = pkomiclaps_as_conquest.2.a
+		add_prestige = 10
+		add_adm_power = 40
+    	735 = { 
+            change_province_name = Seour
+            rename_capital = Seour
+        }
+        737 = { 
+            change_province_name = Jeorra
+            rename_capital = Jeorra
+        }
+        add_core = 735
+	}
+}
+
+# The Conquest of the lands of rabies
+country_event = {
+    id = pkomiclaps_as_conquest.3
+    
+    title = pkomiclaps_as_conquest.3.t
+	desc = pkomiclaps_as_conquest.3.d
+	
+	picture = UNIVERSITY_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			has_country_modifier = dank_republic
+			has_country_modifier = great_republic
+		}
+        owns_or_vassal_of = 578  # Roh Yo Bot            Roh
+        owns_or_vassal_of = 522  # Rabies                Delhi
+        owns_or_vassal_of = 524  # Chicken Tikka         Central Doab
+        owns_or_vassal_of = 510  # Mass Rape             Sirhind
+        owns_or_vassal_of = 2065 # Pakistan              Bhattiana
+        owns_or_vassal_of = 2079 # Derajat
+        owns_or_vassal_of = 513  # Jaisalmer
+        owns_or_vassal_of = 2064 # Shekhawati
+        owns_or_vassal_of = 509  # Kangra
+	}
+	
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = pkomiclaps_as_conquest.3.a
+		add_prestige = 10
+		add_adm_power = 10
+        578 = {
+            change_province_name = "Roh Yo Bot"
+            rename_capital = "Roh Yo Bot"
+        }
+        522 = {
+            change_province_name = Rabies
+            rename_capital = Rabies
+        }
+        524 = {
+            change_province_name = "Chicken Tikka"
+            rename_capital = "Chicken Tikka"
+        }
+        510 = {
+            change_province_name = "Mass Rape"
+            rename_capital = "Mass Rape"
+        }
+        524 = {
+            change_province_name = Pakistan
+            rename_capital = Pakistan
+        }
+        add_core = 522
+	}
+}
+
+# The Conquest of the call centers.
+country_event = {
+    id = pkomiclaps_as_conquest.4
+    
+    title = pkomiclaps_as_conquest.4.t
+    desc = pkomiclaps_as_conquest.4.d
+	
+	picture = UNIVERSITY_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			has_country_modifier = dank_republic
+			has_country_modifier = great_republic
+		}
+        owns_or_vassal_of = 529  # Call Center           North konkan
+        owns_or_vassal_of = 517  # Slummy Slums          Surat
+        owns_or_vassal_of = 2036 # Slumdog City          Baglana
+        owns_or_vassal_of = 2034 # Slum Paradise         Pune
+        owns_or_vassal_of = 2089 # Slum-slum             Chaul
+        owns_or_vassal_of = 530  # Slumskirts            South Konkan
+        owns_or_vassal_of = 527  # Small Center          Khandesh
+        owns_or_vassal_of = 515  # Girnar
+        owns_or_vassal_of = 2056 # Rewakantha
+        owns_or_vassal_of = 521  # Kathiawar
+        owns_or_vassal_of = 2053 # Patan
+	}
+	
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = pkomiclaps_as_conquest.4.a
+		add_prestige = -5
+        add_legitimacy = 2
+		add_adm_power = 40
+        add_dip_power = 20
+        529 = {
+            change_province_name = "Call Center"
+            rename_capital = "Hello, my name is John!"
+        }
+        527 = {
+            change_province_name = "Small Center"
+            rename_capital = "Hello, my name is Jimmy!"
+        }
+        517 = {
+            change_province_name = "Slummy Slums"
+            rename_capital = "Slummy Slums"
+        }
+        2036 = {
+            change_province_name = "Slumdog City"
+            rename_capital = "Slumdog City"
+        }
+        2034 = {
+            change_province_name = "Slum Paradise"
+            rename_capital = "Slum Paradise"
+        }
+        2089 = {
+            change_province_name = "Slum-slum"
+            rename_capital = "Slum-slum"
+        }
+        530 = {
+            change_province_name = "Slumskirts"
+            rename_capital = "Slumskirts"
+        }
+        add_core = 529
+        add_core = 527
+	}
+}
+
+# The Conquest of Snakecharmistan.
+country_event = {
+    id = pkomiclaps_as_conquest.5
+    
+    title = pkomiclaps_as_conquest.5.t
+    desc = pkomiclaps_as_conquest.5.d
+    
+	picture = UNIVERSITY_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			has_country_modifier = dank_republic
+			has_country_modifier = great_republic
+		}
+        owns_or_vassal_of = 541  # Snakecharmistan           Vijayanagar
+        owns_or_vassal_of = 538  # Snakacademy               Kongu
+        owns_or_vassal_of = 1949 # Rape a Zebra              Rayalaseema
+        owns_or_vassal_of = 2090 # No Schools here           Kurnool
+        owns_or_vassal_of = 2032 # Cowistan                  Malenadu
+	}
+	
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = pkomiclaps_as_conquest.5.a
+		add_prestige = 5
+		add_adm_power = 40
+        541 = {
+            change_province_name = Snakecharmistan
+            rename_capital = Snakecharmistan
+        }
+        538 = {
+            change_province_name = Snakacademy
+            rename_capital = Snakacademy
+        }
+        1949 = {
+            change_province_name = "Rape a Zebra"
+            rename_capital = "Today!"
+        }
+        2090 = {
+            change_province_name = "No Schools Here"
+            rename_capital = "No Schools Here"
+        }
+        2032 = {
+            change_province_name = Cowistan
+            rename_capital = Acowinthestreet
+        }
+        add_core = 541
+	}
+}
+
+#The Conquest of Chinkytown
+country_event = {
+    id = pkomiclaps_as_conquest.6
+    
+    title = pkomiclaps_as_conquest.6.t
+    desc = pkomiclaps_as_conquest.6.d
+    
+    picture = UNIVERSITY_eventPicture
+    
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			has_country_modifier = dank_republic
+			has_country_modifier = great_republic
+		}
+        owns_or_vassal_of = 664     # Ringyun           Lingyun
+        owns_or_vassal_of = 1840    # Guirin            Guilin
+        owns_or_vassal_of = 2163    # Riuzhou           Liuzhou
+        owns_or_vassal_of = 1836    # Ruoyang           Luoyang
+        owns_or_vassal_of = 2175    # Luning            Runing
+        owns_or_vassal_of = 672     # Wurin             Wulin
+        owns_or_vassal_of = 2173    # Yuanring          Yuanling
+        owns_or_vassal_of = 699     # Ranzhou           Lanzhou
+        owns_or_vassal_of = 2181    # Pingriang         Pingliang
+        owns_or_vassal_of = 2182    # Riangzhou         Liangzhou
+        owns_or_vassal_of = 2178    # Ru'an             Lu'an
+        owns_or_vassal_of = 2169    # Rangzhoung        Langzhoung
+        owns_or_vassal_of = 661     # Dari              Dali
+        owns_or_vassal_of = 2167    # Rijiang           Lijiang
+        owns_or_vassal_of = 2159    # Reichow           Leichow
+        owns_or_vassal_of = 2161    # Rimchow           Limchow
+        owns_or_vassal_of = 2139    # Raizhou           Laizhou
+        owns_or_vassal_of = 701     # Oldos             Ordos
+	}
+	
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = pkomiclaps_as_conquest.6.a
+		add_adm_power = 200
+        664 = {
+            change_province_name = Ringyun
+            rename_capital = Ringyun
+        }
+        1840 = {
+            change_province_name = Guirin
+            rename_capital = Guirin
+        }
+        2163 = {
+            change_province_name = Riuzhou
+            rename_capital = Riuzhou
+        }
+        1836 = {
+            change_province_name = Ruoyang
+            rename_capital = Ruoyang
+        }
+        2175 = {
+            change_province_name = Luning
+            rename_capital = Luning
+        }
+        672 = {
+            change_province_name = Wurin
+            rename_capital = Wurin
+        }
+        2173 = {
+            change_province_name = Yuanring
+            rename_capital = Yuanring
+        }
+        699 = {
+            change_province_name = Ranzhou
+            rename_capital = Ranzhou
+        }
+        2181 = {
+            change_province_name = Pingriang
+            rename_capital = Pingriang
+        }
+        2182 = {
+            change_province_name = Riangzhou
+            rename_capital = Riangzhou
+        }
+        2178 = {
+            change_province_name = "Ru'an"
+            rename_capital = "Ru'an"
+        }
+        2169 = {
+            change_province_name = Rangzhoung
+            rename_capital = Rangzhoung
+        }
+        661 = {
+            change_province_name = Dari
+            rename_capital = Dari
+        }
+        2167 = {
+            change_province_name = Rijiang
+            rename_capital = Rijiang
+        }
+        2159 = {
+            change_province_name = Reichow
+            rename_capital = Reichow
+        }
+        2161 = {
+            change_province_name = Rimchow
+            rename_capital = Rimchow
+        }
+        2139 = {
+            change_province_name = Raizhou
+            rename_capital = Raizhou
+        }
+        701 = {
+            change_province_name = Oldos
+            rename_capital = Oldos
+        }
+	}
+}
+
+#The Conquest of Ghengisland Mongoria 1/2
+country_event = {
+    id = pkomiclaps_as_conquest.7
+    
+    title = pkomiclaps_as_conquest.7.t
+    desc = pkomiclaps_as_conquest.7.d
+    
+    picture = UNIVERSITY_eventPicture
+    
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			has_country_modifier = dank_republic
+			has_country_modifier = great_republic
+		}
+        owns_or_vassal_of = 2190 # Ghengisland           Qaraqorum
+	}
+	
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = pkomiclaps_as_conquest.7.a
+        add_prestige = 20
+        add_legitimacy = 4
+		add_mil_power = 20
+        add_yearly_manpower = 1
+        add_war_exhaustion = -1
+        2190 = {
+            change_province_name = Ghengisland
+            rename_capital = Ghengisland
+        }
+	}
+}
+
+#The Conquest of Somewhere in Mongoria That Is Not Ghenghisland Mongolia 2/2
+country_event = {
+    id = pkomiclaps_as_conquest.8
+    
+    title = pkomiclaps_as_conquest.8.t
+    desc = pkomiclaps_as_conquest.8.d
+    
+    picture = UNIVERSITY_eventPicture
+    
+    fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			has_country_modifier = dank_republic
+			has_country_modifier = great_republic
+		}
+        owns_or_vassal_of = 723 # Some Desert           Xilin Gol
+        owns_or_vassal_of = 1066 # Hilly Place           Altai Uriankhai
+        owns_or_vassal_of = 721 # Noone wants to live here           Setsen
+        owns_or_vassal_of = 1058 # This place is emptystan   Onan Gol
+        owns_or_vassal_of = 718 # No toilets here       Kobdo
+        owns_or_vassal_of = 2189 # Veryfarawayistan      Tsetserleg
+        owns_or_vassal_of = 2191 # Nothing Happens Hereton          Ejin
+        owns_or_vassal_of = 724 # Desertedstan          Hulunbuir
+	}
+	
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = pkomiclaps_as_conquest.8.a
+		add_mil_power = 15
+        723 = {
+            change_province_name = "Some Desert"
+            rename_capital = "Some Desert"
+        }
+        1066 = {
+            change_province_name = "Hilly Place"
+            rename_capital = "Hilly Place"
+        }
+        721 = {
+            change_province_name = "Noone Wants to Live Here... stan"
+            rename_capital = "Noone Wants to Live Here... stan"
+        }
+        1058 = {
+            change_province_name = "This Place is Emptystan"
+            rename_capital = "This Place is Emptystan"
+        }
+        718 = {
+            change_province_name = "No Toilets Here"
+            rename_capital = "Some Desert"
+        }
+        2189 = {
+            change_province_name = "Veryfarawayistan"
+            rename_capital = "Veryfarawayistan"
+        }
+        2191 = {
+            change_province_name = "Nothing Happens Hereton"
+            rename_capital = "Nothing Happens Hereton"
+        }
+        724 = {
+            change_province_name = Desertedstan
+            rename_capital = Desertedstan
+        }
+	}
+}
+
+# The Conquest of Phnom Penh
+country_event = {
+    id = pkomiclaps_as_conquest.9
+    
+	title = pkomiclaps_as_conquest.9.t
+	desc = pkomiclaps_as_conquest.9.d
+	
+	picture = UNIVERSITY_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			has_country_modifier = dank_republic
+			has_country_modifier = great_republic
+		}
+		owns_or_vassal_of = 2380  # Phnom Penh    Phnom Penh
+	}
+	
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = pkomiclaps_as_conquest.9.a
+		add_prestige = -5
+		add_adm_power = 20
+    add_core = 2380
+    2380 = {
+      add_province_modifier = {
+        name = tourist_attraction
+        duration = -1
+      }
+    }
+	}
+	
+	option = {
+		name = pkomiclaps_as_conquest.9.b
+		add_prestige = 5
+    add_core = 2380
+	}
+}
+
+# The Conquest of Miao
+province_event = {
+  id = pkomiclaps_as_conquest.10
+    
+	title = pkomiclaps_as_conquest.10.t
+	desc = pkomiclaps_as_conquest.10.d
+	
+	picture = UNIVERSITY_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+    culture = miao
+		owner = { 
+      OR = {
+        has_country_modifier = dank_republic
+        has_country_modifier = great_republic
+      }
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = pkomiclaps_as_conquest.10.a
+		add_adm_power = 20
+    add_province_modifier = {
+      name = cats
+      duration = -1
+    }
+	}
+}

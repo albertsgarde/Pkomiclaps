@@ -1,0 +1,26 @@
+remove_core_in_foreign_nation = {
+	trigger = {
+    owner = {
+      any_core_province = {
+        owner = {
+          NOT = { is_pkomiclaps = yes }
+        }
+      }
+    }
+	}
+	
+	effect = {
+    random_core_province = {
+      limit = {
+        owner = {
+          NOT = { is_pkomiclaps = yes }
+        }
+      }
+      remove_core = ROOT
+    }
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}

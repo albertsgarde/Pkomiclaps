@@ -1,0 +1,33 @@
+#########################################################################
+# OPINION MODIFIERS
+##########################################################################
+
+forgave_non_pkomiclaps = {
+	opinion = 25
+	yearly_decay = 0.9
+	max = 25
+}
+
+not_forgave_non_pkomiclaps = {
+	opinion = -50
+	yearly_decay = 2.3
+	min = -50
+}
+
+declined_pkomiclaps = {
+	opinion = -78
+	yearly_decay = 2.876
+	min = -78
+}
+
+religious_overlord = {
+	opinion = 55
+	yearly_decay = 0
+	max = 55
+}
+
+religious_underling = {
+	opinion = 25
+	yearly_decay = 0
+	max = 25
+}

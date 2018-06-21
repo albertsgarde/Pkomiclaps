@@ -1,0 +1,565 @@
+the_light_of_the_lord = {
+	monarch_power = ADM
+	
+	potential = {
+		has_idea_group = pastafarianist_ideas
+		has_idea_group = exploration_ideas
+		OR = {
+			full_idea_group = pastafarianist_ideas
+			full_idea_group = exploration_ideas
+		}
+	}
+	allow = {
+		full_idea_group = pastafarianist_ideas
+		full_idea_group = exploration_ideas
+	}
+	
+	global_colonial_growth=20
+	colonists=1
+	ai_will_do = {
+		factor = 0.6
+	}
+}
+
+spaghetti_cross_breeding = {
+
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = pastafarianist_ideas
+		has_idea_group = superiority_ideas
+		OR = {
+			full_idea_group = pastafarianist_ideas
+			full_idea_group = superiority_ideas
+		}	
+	}
+	allow = {
+		full_idea_group = pastafarianist_ideas
+		full_idea_group = superiority_ideas
+	}
+	
+	production_efficiency = 0.1
+	prestige_decay = -0.01
+	ai_will_do = {
+		factor = 0.6
+	}
+}
+
+pastaristocracy = {
+	monarch_power = ADM
+	
+	potential = {
+		has_idea_group = pastafarianist_ideas
+		has_idea_group = aristocracy_ideas
+		OR = {
+			full_idea_group = pastafarianist_ideas
+			full_idea_group = aristocracy_ideas
+		}
+	}
+	allow = {
+		full_idea_group = pastafarianist_ideas
+		full_idea_group = aristocracy_ideas
+	}
+	
+	global_autonomy = -0.05
+	republican_tradition = 0.2
+	ai_will_do = {
+		factor = 0.6
+	}
+}
+
+the_pasta_influence = {
+	monarch_power = ADM
+	
+	potential = {
+		has_idea_group = pastafarianist_ideas
+		has_idea_group = influence_ideas
+		OR = {
+			full_idea_group = pastafarianist_ideas
+			full_idea_group = influence_ideas
+		}
+	}
+	allow = {
+		full_idea_group = pastafarianist_ideas
+		full_idea_group = influence_ideas
+	}
+	
+	years_of_nationalism = -6
+	global_ship_repair = -0.2
+	ai_will_do = {
+		factor = 0.6
+	}
+}
+
+esoteric_policy = {
+	monarch_power = ADM
+	
+	potential = {
+		has_idea_group = pastafarianist_ideas
+		has_idea_group = spy_ideas
+		OR = {
+			full_idea_group = pastafarianist_ideas
+			full_idea_group = spy_ideas
+		}
+	}
+	allow = {
+		full_idea_group = pastafarianist_ideas
+		full_idea_group = spy_ideas
+	}
+	
+	global_spy_defence = 0.25 
+	ai_will_do = {
+		factor = 0.6
+	}
+}
+
+sausage_of_prosperity = {
+	monarch_power = ADM
+	
+	potential = {
+		has_idea_group = economic_ideas
+		has_idea_group = marketing_ideas
+		OR = {
+			full_idea_group = economic_ideas
+			full_idea_group = marketing_ideas
+		}
+	}
+	allow = {
+		full_idea_group = economic_ideas
+		full_idea_group = marketing_ideas
+	}
+	
+	global_tax_modifier = 0.2
+	global_spy_defence = -0.15
+	ai_will_do = {
+		factor = 0.6
+	}
+}
+
+free_propaganda = {
+	monarch_power = DIP
+	
+	potential = {
+		has_idea_group = pastafarianist_ideas
+		has_idea_group = marketing_ideas
+		OR = {
+			full_idea_group = pastafarianist_ideas
+			full_idea_group = marketing_ideas
+		}
+	}
+	allow = {
+		full_idea_group = pastafarianist_ideas
+		full_idea_group = marketing_ideas
+	}
+	
+	global_unrest = -0.5
+	trade_steering = 0.15
+	ai_will_do = {
+		factor = 0.6
+	}
+}
+
+og_piracy = {
+	monarch_power = DIP
+    
+    potential = {
+        has_idea_group = pastafarianist_ideas
+        has_idea_group = trade_ideas
+        OR= {
+            full_idea_group = pastafarianist_ideas
+            full_idea_group = trade_ideas
+        }
+    }
+    allow = {
+        full_idea_group = pastafarianist_ideas
+        full_idea_group = trade_ideas
+    }
+    
+    privateer_efficiency = 0.35
+	trade_steering = -0.05
+    ai_will_do = {
+        factor = 0.6
+    }
+}
+
+family_friendly_jokes = {
+
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = marketing_ideas
+		has_idea_group = superiority_ideas
+		OR = {
+			full_idea_group = superiority_ideas
+			full_idea_group = marketing_ideas
+		}	
+	}
+	allow = {
+		full_idea_group = superiority_ideas
+		full_idea_group = marketing_ideas
+	}
+	
+	ae_impact = -0.15
+	improve_relation_modifier = 0.25
+	ai_will_do = {
+		factor = 0.6
+	}
+}
+
+smear_campaign = {
+    monarch_power = DIP
+    
+    potential = {
+        has_idea_group = marketing_ideas
+        has_idea_group = offensive_ideas
+        OR= {
+            full_idea_group = marketing_ideas
+            full_idea_group = offensive_ideas
+        }
+    }
+    allow = {
+        full_idea_group = marketing_ideas
+        full_idea_group = offensive_ideas
+    }
+    
+    province_warscore_cost = -0.3
+    ae_impact = 0.1
+    ai_will_do = {
+        factor = 0.6
+    }
+}
+
+german_talk_shows = {
+	monarch_power = DIP
+    
+    potential = {
+        has_idea_group = marketing_ideas
+        has_idea_group = innovativeness_ideas
+        OR= {
+            full_idea_group = marketing_ideas
+            full_idea_group = innovativeness_ideas
+        }
+    }
+    allow = {
+        full_idea_group = marketing_ideas
+        full_idea_group = innovativeness_ideas
+    }
+    
+	num_accepted_cultures = 2
+	pestige_decay = -0.01
+    ai_will_do = {
+        factor = 0.6
+    }
+}
+
+fake_news = {
+	monarch_power = DIP
+    
+    potential = {
+        has_idea_group = marketing_ideas
+        has_idea_group = diplomatic_ideas
+        OR= {
+            full_idea_group = marketing_ideas
+            full_idea_group = diplomatic_ideas
+        }
+    }
+    allow = {
+        full_idea_group = marketing_ideas
+        full_idea_group = diplomatic_ideas
+    }
+    
+	naval_morale = 0.2
+	global_sailors_modifier = 0.20
+    ai_will_do = {
+        factor = 0.6
+    }
+}
+
+flyers = {
+	monarch_power = DIP
+    
+    potential = {
+        has_idea_group = marketing_ideas
+        has_idea_group = quantity_ideas
+        OR= {
+            full_idea_group = marketing_ideas
+            full_idea_group = quantity_ideas
+        }
+    }
+    allow = {
+        full_idea_group = marketing_ideas
+        full_idea_group = quantity_ideas
+    }
+    
+	global_institution_spread = 0.05
+	diplomatic_annexation_cost = -0.15
+    ai_will_do = {
+        factor = 0.6
+    }
+}
+
+the_marketing_administrativeolicy = {
+	monarch_power = DIP
+    
+    potential = {
+        has_idea_group = marketing_ideas
+        has_idea_group = administrative_ideas
+        OR= {
+            full_idea_group = marketing_ideas
+            full_idea_group = administrative_ideas
+        }
+    }
+    allow = {
+        full_idea_group = marketing_ideas
+        full_idea_group = administrative_ideas
+    }
+    
+	advisor_cost = -0.001
+	trade_efficiency = 0.001
+	global_foreign_trade_power = 0.001
+	global_trade_goods_size_modifier = 0.001
+	global_trade_power = 0.001
+    ai_will_do = {
+        factor = 0.6
+    }
+}
+
+competitive_optimism = {
+	monarch_power = DIP
+    
+    potential = {
+        has_idea_group = marketing_ideas
+        has_idea_group = expansion_ideas
+        OR= {
+            full_idea_group = marketing_ideas
+            full_idea_group = expansion_ideas
+        }
+    }
+    allow = {
+        full_idea_group = marketing_ideas
+        full_idea_group = expansion_ideas
+    }
+	
+	diplomatic_reputation = 1
+	ae_impact = -0.15
+    ai_will_do = {
+        factor = 0.6
+    }
+
+}
+
+pasta_storms = {
+    
+    monarch_power = MIL
+    
+    potential = {
+        has_idea_group = superiority_ideas
+        has_idea_group = pastafarianist_ideas
+        OR= {
+            full_idea_group = superiority_ideas
+            full_idea_group = pastafarianist_ideas
+        }
+    }
+    allow = {
+        full_idea_group = superiority_ideas
+        full_idea_group = pastafarianist_ideas
+    }
+    
+    fire_damage = 0.15
+    defensiveness = -0.05
+    ai_will_do = {
+        factor = 0.6
+    }
+}
+
+colander = {
+    
+    monarch_power = MIL
+    
+    potential = {
+        has_idea_group = defensive_ideas
+        has_idea_group = pastafarianist_ideas
+        OR= {
+            full_idea_group = defensive_ideas
+            full_idea_group = pastafarianist_ideas
+        }
+    }
+    allow = {
+        full_idea_group = defensive_ideas
+        full_idea_group = pastafarianist_ideas
+    }
+    
+    defensiveness = 0.15
+	culture_conversion_cost = -0.15
+    ai_will_do = {
+        factor = 0.6
+    }
+}
+
+clowns = {
+
+    monarch_power = MIL
+    
+    potential = {
+        has_idea_group = superiority_ideas
+        has_idea_group = humanist_ideas
+        OR= {
+            full_idea_group = superiority_ideas
+            full_idea_group = humanist_ideas
+        }
+    }
+    allow = {
+        full_idea_group = superiority_ideas
+        full_idea_group = humanist_ideas
+    }
+    
+    cavalry_combat_ability = 0.4
+    ae_impact = 0.2
+    ai_will_do = {
+        factor = 0.6
+    }
+}
+
+
+perfumed_shoes = {
+
+    monarch_power = MIL
+    
+    potential = {
+        has_idea_group = superiority_ideas
+        has_idea_group = quantity_ideas
+        OR= {
+            full_idea_group = superiority_ideas
+            full_idea_group = quantity_ideas
+        }
+    }
+    allow = {
+        full_idea_group = superiority_ideas
+        full_idea_group = quantity_ideas
+    }
+    
+    shock_damage = 0.15
+    national_manpower_modifier = -0.05
+    ai_will_do = {
+        factor = 0.6
+    }
+}
+
+influenced_warfare = {
+
+    monarch_power = MIL
+    
+    potential = {
+        has_idea_group = superiority_ideas
+        has_idea_group = influence_ideas
+        OR= {
+            full_idea_group = superiority_ideas
+            full_idea_group = influence_ideas
+        }
+    }
+    allow = {
+        full_idea_group = superiority_ideas
+        full_idea_group = influence_ideas
+    }
+    
+    war_exhaustion = -0.08
+    infantry_combat_ability = 0.05
+    ai_will_do = {
+        factor = 0.6
+    }
+}
+
+elite_antioxidants = {
+
+    monarch_power = MIL
+    
+    potential = {
+        has_idea_group = superiority_ideas
+        has_idea_group = influence_ideas
+        OR= {
+            full_idea_group = superiority_ideas
+            full_idea_group = influence_ideas
+        }
+    }
+    allow = {
+        full_idea_group = superiority_ideas
+        full_idea_group = influence_ideas
+    }
+    
+    global_unrest = -2.5
+    regiment_cost = 0.1
+    ai_will_do = {
+        factor = 0.6
+    }
+}
+
+finger_guns = {
+	monarch_power = MIL
+    
+    potential = {
+        has_idea_group = superiority_ideas
+        has_idea_group = spy_ideas
+        OR= {
+            full_idea_group = superiority_ideas
+            full_idea_group = spy_ideas
+        }
+    }
+    allow = {
+        full_idea_group = superiority_ideas
+        full_idea_group = spy_ideas
+    }
+    
+	
+	spy_offence = 0.66
+	fire_damage = -0.2
+    ai_will_do = {
+        factor = 0.6
+    }
+}
+
+freedom = {
+	monarch_power = MIL
+	
+	potential = {
+		has_idea_group = superiority_ideas
+		has_idea_group = plutocracy_ideas
+		OR= {
+			full_idea_group = superiority_ideas
+			full_idea_group = plutocracy_ideas
+		}
+	}
+	allow = {
+		full_idea_group = superiority_ideas
+		full_idea_group = plutocracy_ideas
+	}
+	
+	fire_damage = 0.1
+	artillery_power = 0.25
+	ai_will_do = {
+		factor = 0.6
+	}
+}
+
+blue_blood = {
+	monarch_power = MIL
+	
+	potential = {
+		has_idea_group = superiority_ideas
+		has_idea_group = aristocracy_ideas
+		OR= {
+			full_idea_group = superiority_ideas
+			full_idea_group = aristocracy_ideas
+		}
+	}
+	allow = {
+		full_idea_group = superiority_ideas
+		full_idea_group = aristocracy_ideas
+	}
+	
+	global_trade_goods_size_modifier = 0.2
+	trade_efficiency = 0.10
+	
+	ai_will_do = {
+		factor = 0.6
+	}
+}

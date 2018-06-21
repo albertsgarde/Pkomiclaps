@@ -1,0 +1,29 @@
+chicken_perfect_posture = {
+	category = 5 		# same category = 90% less likely
+
+	allow = {
+    has_country_modifier = chicken_boom
+	}
+	
+	effect = {
+		add_country_modifier = {
+      name = "chicken_boom"
+      duration = -1
+    }
+	}
+	
+	modifier = {
+	}
+	
+	chance = {
+		factor = 20 # To make sure you actually get it
+	}
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			average_home_autonomy = 25
+		}
+	}
+}

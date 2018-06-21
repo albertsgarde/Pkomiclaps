@@ -1,0 +1,4 @@
+government = pkomiclaps_republic
+technology_group = pkomiclaps
+primary_culture = no_culture
+religion = moralist_pastafarianism

@@ -1,0 +1,105 @@
+country_decisions = {
+
+    enable_pkomiclaps_decisions = {
+        potential = {
+            OR = {
+				OR = {
+					has_country_modifier = dank_republic
+					has_country_modifier = great_republic
+				}
+                KOM = {
+                    exists = no
+                }
+            }
+            has_country_flag = hide_pkomiclaps_decisions 
+        }
+        allow = {
+        }
+        effect = {
+            set_country_flag = view_pkomiclaps_decisions
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    disable_pkomiclaps_decisions = {
+        potential = {
+            NOT = { has_country_flag = hide_pkomiclaps_decisions }
+        }
+        allow = {
+        }
+        effect = {
+            clr_country_flag = view_pkomiclaps_decisions
+        }
+        ai_will_do = {
+            factor = 0
+        }
+    }
+    
+    #start_conquering = {
+    #	potential = {
+	#		OR = {
+	#			has_country_modifier = dank_republic
+	#			has_country_modifier = great_republic
+	#		}
+    #		NOT = { has_country_flag = started_conquering }
+    #        NOT = { has_country_flag = hide_pkomiclaps_decisions }
+	#	}
+	#	allow = {
+	#		OR = {
+	#			has_country_modifier = dank_republic
+	#			has_country_modifier = great_republic
+	#		}
+    #        stability = 0
+	#		NOT = { num_of_revolts = 1 }
+	#	}
+	#	effect = {
+    #        set_country_flag = started_conquering
+	#	}
+	#	ai_will_do = {
+	#		factor = 1
+	#	}
+	#}
+    #
+    #stop_conquering = {
+    #	potential = {
+    #		has_country_flag = started_conquering
+    #        NOT = { has_country_flag = hide_pkomiclaps_decisions }
+	#	}
+	#	allow = {
+	#	}
+	#	effect = {
+    #        clr_country_flag = started_conquering
+	#	}
+	#	ai_will_do = {
+	#		factor = 0
+	#	}
+	#}
+    
+    stop_throwing_away_food = {
+        potential = {
+			OR = {
+				has_country_modifier = dank_republic
+				has_country_modifier = great_republic
+			}
+            NOT = { has_country_flag = hide_pkomiclaps_decisions }
+            NOT = { has_country_modifier = not_throwing_away_food }
+        }
+        allow = {
+            prestige = 80
+            mil_power = 100
+            adm_tech = 4
+        }
+        effect = {
+            add_mil_power = -100
+            add_country_modifier = {
+                name = "not_throwing_away_food"
+        		duration = -1
+		    }
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+}

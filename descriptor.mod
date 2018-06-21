@@ -1,0 +1,15 @@
+name="Pkomiclaps Dev"
+path="mod/pkomiclaps Dev"
+tags={
+  "Pkomiclaps"
+  "Gameplay"
+  "Alternative History"
+  "Events"
+  "Missions and Decisions"
+  "Military"
+  "National Ideas"
+  "New Nations"
+  "Religion"
+}
+picture="Pkomiclaps Flag.png"
+supported_version="1.25.*.*"

@@ -1,0 +1,64 @@
+﻿l_english:
+ pastafarianism:0 "Pastafarian"
+ moralist_pastafarianism:0 "Moralist Pastafarianism"
+ moralist_pastafarianism_religion_desc:0 "Pastafarians that really don't like other religions. They don't discriminate them or try to push pastafarianism on them, as that would be strongly un-saucy of them, but they are decidedly vigorous when it comes to handing out free propaganda."
+ drunken_pastafarianism:0 "Drunken Pastafarianism"
+ drunken_pastafarianism_religion_desc:0 "'Stop writing localisation for EUIV mods and come party' 'Ok!'"
+ 
+ pkomiclaps_republic:0 "Pkomiclaps Republic"
+ pkomiclaps_republic_desc:0 "The Pkomiclaps ideology is an intelligent combination of some other ideologies, and the name reflects this. The silent, yet pronounced 'p' at the beginning of the word stands for the plutocratic part of pkomiclaps. 'kom' is short for communism, and 'i' stands for imperialism. The next part is a bit more complicated. The 'clap' is a short version of the combination of capatalism and liberalism called clapatalism. The final letter 's' signifies socialism."
+ pkomiclaps_republic_ruler:0 "Great and Honorful Clapseminister"
+ 
+ # Advisors
+ monocle:0 "Monocle Minister"
+ laterality:0 "Laterality Minister"
+ opposition_management:0 "Minister of the Opposition Management"
+ sociolinguistics:0 "Minister of Sociolinguistics"
+ communication:0 "Communism*cough* Communication Minister"
+ plutocracy:0 "Plutocracy Minister"
+ anthropomorphisation:0 "Anthropomorphisation Minister"
+ pannationalism:0 "Pannationalist"
+ imperialism:0 "Imperialist"
+ monocle_desc:0 "I'm to tired..."
+ laterality_desc:0 "I'm to tired..."
+ opposition_management_desc:0 "I'm to tired..."
+ sociolinguistics_desc:0 "I'm to tired..."
+ communication_desc:0 "I'm to tired..."
+ plutocracy_desc:0 "I'm to tired..."
+ anthropomorphisation_desc:0 "I'm to tired..."
+ pannationalism_desc:0 "I'm to tired..."
+ imperialism_desc:0 "I'm to tired..."
+ 
+ # Ideas
+ KOM_ideas:0 "Pkomiclaps Ideas"
+ KOM_ideas_start:0 "Pkomiclaps Traditions"
+ KOM_ideas_bonus:0 "Pkomiclaps Ambitions"
+ pkomiclaps_sociolinguistics:0 "Sociolinguistics"
+ pkomiclaps_sociolinguistics_desc:0 "By understanding all sociolects (and our shizzledazzle awesomebazzle chronolect, of course), others will have a better understanding of just how frickin' awesome our shizzle is, and therefore won't mind us eating them. Territorially."
+ pkomiclaps_communication:0 "Communism*cough* Communication"
+ pkomiclaps_communication_desc:0 "With our superior communism*cough* communication, we will be able to avoid misunderstandings, and everyone will love us. Which makes bringing them to our side easier."
+ pkomiclaps_claps:0 "Clapsing"
+ pkomiclaps_claps_desc:0 "Even though our people naturally follow our lead, a bit of clapsing is still neccessary for optimal discipline."
+ pkomiclaps_opposition_management:0 "Opposition Management"
+ pkomiclaps_opposition_management_desc:0 "By managing both our external opposition, and our little internal opposition, we can both stop foreign spies, and keep our republic running smoothly."
+ pkomiclaps_pannationalism:0 "Pannationalism"
+ pkomiclaps_pannationalism_desc:0 "The Pkomiclaps movement is seen as the pinnacle of human society everywhere, which makes everywhere a bit jealous. We should therefore spread our wings and integrate everywhere into the republic."
+ pkomiclaps_imperialism:0 "Imperialism"
+ pkomiclaps_imperialism_desc:0 "Conquer the earth, colonize space, and suppress the majorities. Yay"
+ pkomiclaps_monocle:0 "Monocle Clapitalism"
+ pkomiclaps_monocle_desc:0 "No true clapitalist has ever not worn a monocle, so all ours are forced by law to do so. This increases our economic output substantially."
+ pkomiclaps_anthromorph:0 "Anthropomorphization"
+ pkomiclaps_anthromorph_desc:0 "After reading that 'Anthropomorphism, or personification, is attribution of human form or other characteristics to anything other than a human being.' on the Wikipedia article, our scientists had a great idea. If anthropomorphization makes things more like man-kind, would it not also be possible to make our soldiers more manly thereby increasing their morale? We've also started calling them Gustav, which helps a lot too."
+ 
+ north_american:0 "Native 'Murican"
+ pkomiclaps:0 "Pkomiclaps" # Tech group
+ 
+ # Parliament issues
+ chicken_perfect_posture:0 "Perfect Posture"
+ chicken_perfect_posture_tooltip:0 "Will Give the Chickens Perfect Posture."
+ 
+ # Parliament bribes
+ remove_core_in_foreign_nation:0 "Remove Core in Foreign Nation"
+ 
+ goat_horns:0 "Goat horns"
+ goat_hornsDESC:0 "The horns of goats. You know, the spiky things the sheep-like animals have on their heads."

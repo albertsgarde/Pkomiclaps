@@ -1,0 +1,208 @@
+namespace = pkomiclaps_stay
+
+#Undid being of KOM
+country_event = {
+    id = pkomiclaps_stay.1
+    title = pkomiclaps_stay.1.t
+    desc = pkomiclaps_stay.1.d
+    picture = FARMING_eventPicture # Better picture pls
+    
+	trigger = {
+        has_country_modifier = dank_republic
+        NOT = { tag = KOM }
+        KOM = {
+            exists = no
+        }
+    }
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+        name = pkomiclaps_stay.1.a
+        change_tag = KOM
+        change_technology_group = pkomiclaps
+        change_unit_type = pkomiclaps
+        swap_free_idea_group = yes #keep progress
+        change_government = pkomiclaps_republic
+	}
+    
+    option = {
+        name = pkomiclaps_stay.1.b
+        remove_country_modifier = dank_republic
+      remove_country_modifier = regained_pkomiclaps_homeland
+      every_country = {
+        limit = {
+          has_country_modifier = great_republic
+        }
+        remove_country_modifier = regained_pkomiclaps_homeland_underling
+      }
+    }
+}
+
+#Undid being of great republic
+country_event = {
+    id = pkomiclaps_stay.2
+    title = pkomiclaps_stay.2.t
+    desc = pkomiclaps_stay.2.d
+    picture = FARMING_eventPicture # Better picture pls
+    
+    trigger = {
+        has_country_modifier = great_republic
+        NOT = { government = pkomiclaps_republic }
+    }
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+        name = pkomiclaps_stay.2.a
+        change_technology_group = pkomiclaps
+        change_unit_type = pkomiclaps
+        swap_free_idea_group = yes #keep progress
+        change_government = pkomiclaps_republic
+	}
+    
+    option = {
+        name = pkomiclaps_stay.2.b
+        remove_country_modifier = great_republic
+    }
+}
+
+#Still Drunken Pastafarian but neither KOM nor dank republic
+country_event = {
+    id = pkomiclaps_stay.3
+    title = pkomiclaps_stay.3.t
+    desc = pkomiclaps_stay.3.d
+    picture = FARMING_eventPicture # Better picture pls
+    
+    trigger = {
+        NOT = { has_country_modifier = dank_republic }
+        religion = drunken_pastafarianism
+    }
+    
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+        name = pkomiclaps_stay.3.a
+        change_religion = moralist_pastafarianism
+		hidden_effect = {
+			set_country_flag = converted_to_moralist_pastafarianism
+			clr_country_flag = drunken_to_moralist_pastafarianism
+		}
+		every_owned_province = {
+			change_religion = moralist_pastafarianism
+		}
+	}
+}
+
+#Return to Moralist Pastafarian
+country_event = {
+    id = pkomiclaps_stay.4
+    title = pkomiclaps_stay.4.t
+    desc = pkomiclaps_stay.4.d
+    picture = RELIGIOUS_TURMOIL_eventPicture
+    
+    trigger = {
+        has_country_flag = converted_to_moralist_pastafarianism
+        NOT = { religion = moralist_pastafarianism }
+    }
+    
+    mean_time_to_happen = {
+		months = 1
+	}
+    
+	option = {
+		name = pkomiclaps_stay.4.a
+        change_religion = moralist_pastafarianism
+	}
+    option = {
+        name = pkomiclaps_stay.4.b
+		hidden_effect = {
+			clr_country_flag = converted_to_moralist_pastafarianism
+		}
+		every_country = {
+			limit = {
+    			religion = drunken_pastafarianism
+			}
+			remove_opinion = {
+				who = ROOT
+				modifier = religious_underling
+			}
+			reverse_remove_opinion = {
+				who = ROOT
+				modifier = religious_overlord
+			}
+		}
+    }
+}
+
+#Return to Drunken Pastafarian
+country_event = {
+    id = pkomiclaps_stay.5
+    title = pkomiclaps_stay.5.t
+    desc = pkomiclaps_stay.5.d
+    picture = RELIGIOUS_TURMOIL_eventPicture
+    
+    trigger = {
+        has_country_flag = converted_to_drunken_pastafarianism
+        NOT = { religion = drunken_pastafarianism }
+    }
+    
+    mean_time_to_happen = {
+		months = 1
+	}
+    
+	option = {
+		name = pkomiclaps_stay.5.a
+        change_religion = drunken_pastafarianism
+	}
+    option = {
+        name = pkomiclaps_stay.5.b
+		hidden_effect = {
+			clr_country_flag = converted_to_drunken_pastafarianism
+		}
+		every_country = {
+			limit = {
+    			religion = moralist_pastafarianism
+			}
+			remove_opinion = {
+				who = ROOT
+				modifier = religious_overlord
+			}
+			reverse_remove_opinion = {
+				who = ROOT
+				modifier = religious_underling
+			}
+		}
+    }
+}
+
+#Undid being of dank republic
+country_event = {
+    id = pkomiclaps_stay.6
+    title = pkomiclaps_stay.6.t
+    desc = pkomiclaps_stay.6.d
+    picture = FARMING_eventPicture # Better picture pls
+    
+    trigger = {
+        has_country_modifier = dank_republic
+        NOT = { government = pkomiclaps_republic }
+    }
+    
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+        name = pkomiclaps_stay.6.a
+        change_technology_group = pkomiclaps
+        change_unit_type = pkomiclaps
+        swap_free_idea_group = yes #keep progress
+        change_government = pkomiclaps_republic
+	}
+}

@@ -1,0 +1,751 @@
+namespace = pkomiclaps
+
+#Anthropomorph - The E-RAT-ticators
+country_event = {
+    id = pkomiclaps.1
+    title = pkomiclaps.1.t
+    desc = pkomiclaps.1.d
+    picture = FARMING_eventPicture # Better picture pls
+    
+    trigger = {
+      has_country_modifier = talking_to_animals
+    	any_country = {
+        government = monarchy
+        is_rival = ROOT
+    	  has_heir = yes
+      }
+    }
+	
+	mean_time_to_happen = {
+		months = 120
+	}
+	
+	option = {
+        name = pkomiclaps.1.a
+    	random_country = {
+			limit = {
+				government = monarchy
+                is_rival = ROOT
+				has_heir = yes
+			}
+            kill_heir = yes
+		}
+	}
+    
+    option = {
+        name = pkomiclaps.1.b
+        add_prestige = 5
+    }
+}
+
+#Anthropomorph - Recruiting furry bears for the army 1/3
+country_event = {
+    id = pkomiclaps.2
+    title = pkomiclaps.2.t
+    desc = pkomiclaps.2.d
+    picture = FARMING_eventPicture # Better picture pls
+    
+    trigger = {
+        has_country_modifier = talking_to_animals
+        NOT = { manpower_percentage = 0.20 }
+        NOT = { has_country_flag = was_ryukyu }
+        any_owned_province = {
+            NOT = {
+                OR = {
+                        has_province_modifier = recruiting_furry_bears
+                        has_province_modifier = recent_furry_bear_outbreak
+                }
+            }
+        }
+    }
+	
+	mean_time_to_happen = {
+		months = 100
+        
+        modifier = {
+            factor = 0.5
+            
+            NOT = { manpower_percentage = 0.10 }
+        }
+        modifier = {
+            factor = 0.7
+            capital_scope = {
+                OR = {
+                    culture = russian
+                    culture = japanese
+                }
+            }
+        }
+	}
+	
+	option = {
+        name = pkomiclaps.2.a
+        random_list = {
+    		65 = { country_event = { id = pkomiclaps.3 } }
+			35 = { country_event = { id = pkomiclaps.4 } }
+		}
+	}
+    
+    option = {
+        name = pkomiclaps.2.b
+        add_prestige = -5
+    }
+}
+
+#Anthropomorph - Recruiting furry bears for the army - success! 2/3
+country_event = {
+    id = pkomiclaps.3
+    title = pkomiclaps.3.t
+    desc = pkomiclaps.3.d
+    picture = FARMING_eventPicture # Better picture pls
+    
+    is_triggered_only = yes
+	
+	option = {
+        name = pkomiclaps.3.a
+        random_owned_province = {
+    		limit = {
+				NOT = {
+                    OR = { 
+                        has_province_modifier = recruiting_furry_bears
+                        has_province_modifier = recent_furry_bear_outbreak
+                    }
+                }
+			}
+            add_base_manpower = 1
+            add_province_modifier = {
+                name = recruiting_furry_bears
+                duration = 18500
+            }
+        }
+	}
+}
+
+#Anthropomorph - Recruiting furry bears for the army - failure :( 3/3
+country_event = {
+    id = pkomiclaps.4
+    title = pkomiclaps.4.t
+    desc = pkomiclaps.4.d
+    picture = FARMING_eventPicture # Better picture pls
+    
+    is_triggered_only = yes
+    
+	option = {
+        name = pkomiclaps.4.a
+        random_owned_province = {
+        	limit = {
+				NOT = { 
+                    OR = { 
+                        has_province_modifier = recruiting_furry_bears
+                        has_province_modifier = recent_furry_bear_outbreak
+                    }
+                }
+			}
+            add_province_modifier = {
+                name = recent_furry_bear_outbreak
+                duration = 18500
+            }
+        }
+	}
+}
+
+# Annoyed by claim
+country_event = {
+    id = pkomiclaps.5
+	title = pkomiclaps.5.t
+	desc = pkomiclaps.5.d
+	picture = ANGRY_MOB_eventPicture
+	
+	trigger = {
+        tag = KOM
+		any_country = {
+			any_core_province = {
+				owned_by = ROOT
+			}
+			NOT = { is_subject_of = ROOT }
+			NOT = { truce_with = ROOT }
+			NOT = { alliance_with = ROOT }
+		}	
+	}
+	
+	mean_time_to_happen = {
+		months = 240
+		modifier = {
+			factor = 0.95
+			NOT = { has_opinion = { who = ROOT value = 100 } }
+		}
+		modifier = {
+			factor = 0.95
+			NOT = { has_opinion = { who = ROOT value = 50 } }
+		}
+		modifier = {
+			factor = 0.95
+			NOT = { has_opinion = { who = ROOT value = 0 } }
+		}
+		modifier = {
+			factor = 1.05
+			has_opinion = { who = ROOT value = 100 }
+		}
+		modifier = {
+			factor = 1.05
+			has_opinion = { who = ROOT value = 150 }
+		}
+		modifier = {
+			factor = 1.05
+			has_opinion = { who = ROOT value = 200 }
+		}
+	}
+	
+	option = {
+		name = pkomiclaps.5.a
+        ROOT = {
+            add_country_modifier = {
+        	    name = pkomiclaps_never_backs_down
+			    duration = 60
+		    }
+        }
+	}
+	option = {
+		name = pkomiclaps.5.b
+		ai_chance = { factor = 0 }
+		add_prestige = -5
+	}
+	
+}
+
+# Anthropomorph - You made the White Elephant speak human!
+country_event = {
+    id = pkomiclaps.6
+    title = pkomiclaps.6.t
+    desc = pkomiclaps.6.d
+    picture = FARMING_eventPicture # better picture pls
+    
+    trigger = {
+        #TODO: kig igennem og vær sikker på at den virker
+        has_country_flag = white_elephant
+        has_country_modifier = talking_to_animals
+        
+        is_at_war = no
+        
+        NOT = { stability = 3 }
+        NOT = { prestige = 95 }
+    }
+    
+    mean_time_to_happen = {
+        months = 250
+    }
+    
+    option = { # Sweet!
+        name = pkomiclaps.6.a
+        
+        add_stability = 2
+        add_prestige = 25
+        
+        hidden_effect = {
+            set_country_flag = white_elephant_speaks_human
+        }
+    }
+    
+}
+
+
+#Anthropomorph - Chicken time!
+country_event = {
+    id = pkomiclaps.7
+    title = pkomiclaps.7.t
+    desc = pkomiclaps.7.d
+    picture = FARMING_eventPicture # Better picture pls
+    
+    fire_only_once = yes
+    
+    trigger = {
+        has_idea = pkomiclaps_anthromorph
+        mil_tech = 12
+    }
+	
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+        name = pkomiclaps.7.a
+        add_country_modifier = {
+            name = chicken_boom
+            duration = 10950
+        }
+	}
+}
+
+#Anthropomorph - So... Many... Goats!
+country_event = {
+    id = pkomiclaps.8
+    title = pkomiclaps.8.t
+    desc = pkomiclaps.8.d
+    picture = FARMING_eventPicture # Better picture pls
+    
+    fire_only_once = yes
+    
+    trigger = {
+        has_idea = pkomiclaps_anthromorph
+        mil_tech = 26
+    }
+    
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+        name = pkomiclaps.8.a
+        add_country_modifier = {
+            name = goats_everywhere
+            duration = 10950
+        }
+	}
+}
+
+#Becoming Drunken Pastafarian
+country_event = {
+    id = pkomiclaps.9
+    title = pkomiclaps.9.t
+    desc = pkomiclaps.9.d
+    picture = RELIGIOUS_TURMOIL_eventPicture
+    
+    trigger = {
+      tag = KOM
+      had_country_flag = { flag = accepted_moralist_pastafarianism days = 7300 }
+      NOT = { has_country_flag = turned_down_drunken_pastafarianism }
+      NOT = { religion = drunken_pastafarianism }
+    }
+    
+    mean_time_to_happen = {
+      days = 1095
+    }
+    
+    option = {
+      name = pkomiclaps.9.a
+        change_religion = drunken_pastafarianism
+        add_country_modifier = {
+        name = drunken_superiority
+      duration = -1
+      }	
+      hidden_effect = {
+        clr_country_flag = converted_to_moralist_pastafarianism
+        set_country_flag = converted_to_drunken_pastafarianism
+      }
+      every_country = {
+        limit = {
+            religion = moralist_pastafarianism
+        }
+        add_opinion = {
+          who = ROOT
+          modifier = religious_overlord
+        }
+        reverse_add_opinion = {
+          who = ROOT
+          modifier = religious_underling
+        }
+      }
+      if = {
+        limit = {
+          has_country_flag = was_ryukyu
+        }
+        every_owned_province = {
+          limit = {
+          }
+          change_religion = drunken_pastafarianism
+        }
+      }
+      every_owned_province = {
+        limit = {
+          religion = moralist_pastafarianism
+          has_province_modifier = religious_zeal_at_conv
+        }
+        remove_province_modifier = religious_zeal_at_conv
+      }
+    }
+    option = {
+      name = pkomiclaps.9.b
+      hidden_effect = {
+        set_country_flag = turned_down_drunken_pastafarianism
+      }
+    }
+}
+
+#The Gustaf Gun 1/2
+country_event = {
+    id = pkomiclaps.10
+    title = pkomiclaps.10.t
+    desc = pkomiclaps.10.d
+    picture = RELIGIOUS_TURMOIL_eventPicture
+    
+    fire_only_once = yes
+    
+    trigger = {
+        tag = KOM
+        has_country_flag = conquered_central_reichtangle
+        mil_tech = 7
+    }
+    
+    mean_time_to_happen = {
+      days = 7300
+      modifier = {
+        factor = 0.9
+        mil_tech = 5
+      }
+      modifier = {
+        factor = 0.8
+        mil_tech = 10
+      }
+      modifier = {
+        factor = 0.8
+        mil_tech = 15
+      }
+      modifier = {
+        factor = 0.8
+        mil_tech = 20
+      }
+      modifier = {
+        factor = 0.8
+        mil_tech = 25
+      }
+      modifier = {
+        factor = 0.8
+        mil_tech = 30
+      }
+    }
+  }
+    
+  option = {
+    name = pkomiclaps.10.a
+    add_treasury = -500
+    add_mil_power = -100
+    hidden_effect = {
+      set_country_flag = building_gustaf_gun
+    }
+  }
+  option = {
+    name = pkomiclaps.10.b
+    add_prestige = -5
+  }
+}
+
+#The Gustaf Gun 2/2
+country_event = {
+    id = pkomiclaps.11
+    title = pkomiclaps.11.t
+    desc = pkomiclaps.11.d
+    picture = RELIGIOUS_TURMOIL_eventPicture
+    
+    fire_only_once = yes
+    
+    trigger = {
+      tag = KOM
+      had_country_flag = { flag = building_gustaf_gun days = 1500 }
+    }
+    
+    mean_time_to_happen = {
+      days = 3650
+    	modifier = {
+        factor = 0.95
+        mil_tech = 5
+      }
+      modifier = {
+        factor = 0.95 
+        mil_tech = 10
+      }
+      modifier = {
+        factor = 0.95
+        mil_tech = 15
+      }
+      modifier = {
+        factor = 0.95
+        mil_tech = 20
+      }
+      modifier = {
+        factor = 0.95
+        mil_tech = 25
+      }
+      modifier = {
+        factor = 0.95
+        mil_tech = 30
+      }
+      modifier = {
+        factor = 0.85
+        has_idea_group = innovativeness_ideas
+      }
+      modifier = {
+        factor = 0.85
+        has_idea_group = offensive_ideas
+      }
+		}
+	}
+    
+	option = {
+		name = pkomiclaps.11.a    
+        add_country_modifier = {
+        	name = gustaf_gun
+			duration = -1
+		}
+	}
+}
+
+#Anthropomorph - The E-RAT-ticators
+country_event = {
+    id = pkomiclaps.12
+    title = pkomiclaps.12.t
+    desc = pkomiclaps.12.d
+    picture = FARMING_eventPicture # Better picture pls
+    
+    trigger = {
+        has_country_modifier = talking_to_animals
+    	any_country = {
+			government = monarchy
+            is_rival = ROOT
+		}
+    }
+	
+	mean_time_to_happen = {
+		months = 120
+	}
+	
+	option = {
+        name = pkomiclaps.12.a
+    	random_country = {
+			limit = {
+				government = monarchy
+                is_rival = ROOT
+			}
+            kill_ruler = yes
+		}
+	}
+    
+    option = {
+        name = pkomiclaps.12.b
+        add_prestige = 5
+    }
+}
+
+#Pkomiclaps obtains pizza pizza within their borders
+country_event = {
+    id = pkomiclaps.13
+    title = pkomiclaps.13.t
+    desc = pkomiclaps.13.d
+    picture = FARMING_eventPicture
+    
+    trigger = {
+        NOT = { has_country_flag = kom_has_pizza}
+        any_province = {
+            owned_by = ROOT
+            has_province_modifier = pizza_pizza
+        }
+        tag = KOM
+    }
+    
+    mean_time_to_happen = {
+        months = 60
+    }
+    
+    option = {
+        name = pkomiclaps.13.a
+        add_mercantilism = 5
+        add_prestige = 4
+        random_owned_province = {
+            limit = {
+                has_province_modifier = pizza_pizza
+            }
+            add_trade_modifier = {
+                who = ROOT
+                duration = 180
+                power = 5
+                key = kom_has_pizza
+            }
+        }
+        hidden_effect = {
+            set_country_flag = kom_has_pizza
+        }
+    }
+}
+
+
+#Start Absorbtion
+country_event = {
+    id = pkomiclaps.14
+    title = pkomiclaps.14.t
+    desc = pkomiclaps.14.d
+    picture = FARMING_eventPicture # Better picture pls
+    
+    trigger = {
+		all_neighbor_country = {
+				is_pkomiclaps = yes
+		}
+		NOT = {
+			any_owned_province = { 
+        OR = {
+          has_port = yes
+          any_neighbor_province = {
+            is_empty = yes # Wasteland provinces are not colonizable and therefore not "empty"
+          }
+        }
+			}
+		}
+		NOT = { has_country_flag = pkomiclaps_is_absorbing }
+		ai = yes
+    }
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	immediate = {
+	   set_country_flag = pkomiclaps_is_absorbing
+	}
+	
+	option = {
+       name = pkomiclaps.14.a
+	   every_neighbor_country = { country_event = { id = pkomiclaps.15 } }
+	}
+}
+
+#Start Absorbtion message for Pkomiclaps
+country_event = {
+    id = pkomiclaps.15
+    title = pkomiclaps.15.t
+    desc = pkomiclaps.15.d
+    picture = FARMING_eventPicture # Better picture pls
+    
+    is_triggered_only = yes
+	
+	option = {
+       name = pkomiclaps.15.a
+	}
+}
+
+#Stop Absorbtion
+country_event = {
+    id = pkomiclaps.16
+    title = pkomiclaps.16.t
+    desc = pkomiclaps.16.d
+    picture = FARMING_eventPicture # Better picture pls
+    
+    trigger = {
+		NOT = {
+      all_neighbor_country = {
+				is_pkomiclaps = yes
+      }
+      NOT = {
+        any_owned_province = { 
+          OR = {
+            has_port = yes
+            any_neighbor_province = {
+              is_empty = yes
+            }
+          }
+        }
+      }
+      NOT = { has_country_flag = pkomiclaps_is_absorbing }
+      ai = yes
+		}
+		has_country_flag = pkomiclaps_is_absorbing
+    }
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+       name = pkomiclaps.16.a
+	   clr_country_flag = pkomiclaps_is_absorbing
+	   every_neighbor_country = { country_event = { id = pkomiclaps.17 } }
+	}
+}
+
+#Stop Absorbtion message for Pkomiclaps
+country_event = {
+    id = pkomiclaps.17
+    title = pkomiclaps.17.t
+    desc = pkomiclaps.17.d
+    picture = FARMING_eventPicture # Better picture pls
+    
+    is_triggered_only = yes
+	
+	option = {
+       name = pkomiclaps.17.a
+	}
+}
+
+#Absorbtion
+province_event = {
+    id = pkomiclaps.18
+    title = pkomiclaps.18.t
+    desc = pkomiclaps.18.d
+    picture = FARMING_eventPicture
+    
+    trigger = {
+		owner = {
+			has_country_flag = pkomiclaps_is_absorbing
+		}
+		any_neighbor_province = {
+			owner = {
+				is_pkomiclaps = yes
+			}
+		}
+    }
+    
+    mean_time_to_happen = {
+        months = 12
+    }
+    
+    option = {
+        name = pkomiclaps.18.a
+		random_neighbor_province = {
+			limit = {
+				owner = {
+          is_pkomiclaps = yes
+				}
+			}
+			owner = {
+				country_event = { id = pkomiclaps.19 } 
+			}
+		}
+    }
+}
+
+#Absorbtion message for Pkomiclaps
+country_event = {
+    id = pkomiclaps.19
+    title = pkomiclaps.19.t
+    desc = pkomiclaps.19.d
+    picture = FARMING_eventPicture
+    
+    is_triggered_only = yes
+    
+    option = {
+        name = pkomiclaps.19.a
+		FROM = { cede_province = ROOT }
+		add_core = FROM
+    }
+}
+
+#American Tourists
+province_event = {
+  id = pkomiclaps.20
+  title = pkomiclaps.20.t
+  desc = pkomiclaps.20.d
+  picture = FARMING_eventPicture
+  
+  trigger = {
+    has_province_modifier = tourist_attraction
+    has_country_modifier = conquered_racism
+  }
+  
+  mean_time_to_happen = {
+      days = 1
+  }
+  
+  option = {
+      name = pkomiclaps.20.a
+      add_province_modifier = {
+        american_tourists
+      }
+  }
+}

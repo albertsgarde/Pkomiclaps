@@ -1,0 +1,115 @@
+regained_pkomiclaps_homeland_underling = {
+	potential = {
+		OR = {
+			has_country_modifier = great_republic
+		}
+	}
+
+	trigger = {
+		OR = {
+			owns = 1780
+			KOM = { owns = 1780 } # Pkomi         Komi
+		}
+	}
+
+	global_tax_modifier = 0.1
+	land_morale = 0.1
+	naval_morale = 0.1
+	prestige = 0.5
+	republican_tradition = 0.25
+}
+
+non_pkomiclaps_non_pkomiclaps_pkomiclaps_homeland = {
+	potential = {
+		NOT = { has_country_modifier = dank_republic }
+		NOT = { has_country_modifier = great_republic }
+		1780 = {
+			has_province_modifier = pkomiclaps_homeland
+		}
+	}
+	
+	trigger = {
+		owns = 1780 # Pkomi         Komi
+	}
+	
+	prestige = 1
+	global_manpower_modifier = 0.1
+}
+
+pkomiclaps_non_pkomiclaps_pkomiclaps_homeland = {
+	potential = {
+		OR = { 
+			has_country_modifier = dank_republic
+			has_country_modifier = great_republic 
+		}
+		1780 = {
+			has_province_modifier = pkomiclaps_homeland
+		}
+	}
+	
+	trigger = {
+		1780 = { # Pkomi         Komi
+			owner = {
+				NOT = { has_country_modifier = dank_republic }
+				NOT = { has_country_modifier = great_republic }
+			}
+		}
+	}
+	
+	prestige = -1
+	land_morale = -0.1
+	naval_morale = -0.1
+}
+
+pastafarian_mecca = {
+	potential = {
+		has_discovered = 385	# Mecca
+		religion_group = pastafarianism
+	}
+
+	trigger = {
+		385 = {
+			religion_group = pastafarianism
+		}
+	}
+
+	prestige = 0.5			#0.5% more yearly prestige
+	missionaries = 1
+}
+
+pastafarian_rome = {
+	potential = {
+		has_discovered = 118	# Rome
+		religion_group = pastafarianism
+	}
+
+	trigger = {
+		118 = {
+			religion_group = pastafarianism
+		}
+	}
+
+	prestige = 0.5			#0.5% more yearly prestige
+	missionaries = 1
+}
+
+pkomiclaps_crusade = {
+  potential = {
+    is_pkomiclaps = yes
+  }
+  
+  trigger = {
+		any_known_country = {
+			war_with = ROOT
+      has_country_modifier = pkomiclaps_crusade_target
+		}
+    NOT = {
+      tag = KOM
+    }
+  }
+  
+  land_morale = 0.05
+	war_exhaustion = -0.03
+	manpower_recovery_speed = 0.20
+	ae_impact = -0.10
+}

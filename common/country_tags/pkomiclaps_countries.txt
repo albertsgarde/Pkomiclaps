@@ -1,0 +1,2 @@
+
+KOM = "countries/Pkomiclaps.txt"

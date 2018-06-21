@@ -1,0 +1,555 @@
+namespace = pkomiclaps_eu_conquest
+
+# The Conquest of Miklagaard
+country_event = {
+    id = pkomiclaps_eu_conquest.1
+    
+	title = pkomiclaps_eu_conquest.1.t
+	desc = pkomiclaps_eu_conquest.1.d
+	
+	picture = ATHENS_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			has_country_modifier = dank_republic
+			has_country_modifier = great_republic
+		}
+		owns_or_vassal_of = 151 #Miklagaard
+	}
+	
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = pkomiclaps_eu_conquest.1.a
+		add_prestige = 10
+		add_adm_power = 25
+        add_mil_power = 45
+    	151 = { 
+            change_province_name = Miklagaard
+            rename_capital = Miklagaard
+    		change_religion = ROOT
+            add_core = KOM
+    		add_base_tax = 7
+    		add_base_manpower = 6
+			add_base_manpower = 6
+            add_province_modifier = {
+                name = varyags
+                duration = -1
+            }
+        }
+	}
+    
+	option = {
+		name = pkomiclaps_eu_conquest.1.b
+		add_prestige = 10
+		add_adm_power = 25
+        add_mil_power = 45
+    	set_capital = 151
+    	151 = { 
+    		change_culture = ROOT 
+			change_religion = ROOT
+            change_province_name = Miklagaard
+            rename_capital = Miklagaard
+            add_core = KOM
+    		add_base_tax = 7
+    		add_base_manpower = 6
+			add_base_manpower = 6
+            add_province_modifier = {
+                name = varyags
+                duration = -1
+            }
+        }
+	}
+}
+
+# The Conquest of The Soda Coast
+country_event = {
+    id = pkomiclaps_eu_conquest.2
+    
+	title = pkomiclaps_eu_conquest.2.t
+	desc = pkomiclaps_eu_conquest.2.d
+	
+	picture = ATHENS_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+        owns_or_vassal_of = 21   # Faxe Kondi        Hålogaland
+        owns_or_vassal_of = 313  # Mountain Dew      Archangelsk
+        owns_or_vassal_of = 315  # Sprite            Finnmark
+        owns_or_vassal_of = 1776 # Fanta             Karelia
+		owns_or_vassal_of = 1777 # Cola              Kola
+        owns_or_vassal_of = 1955 # Pepsi             Kholmogory
+	}
+	
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = pkomiclaps_eu_conquest.2.a
+        1777 = { 
+            change_province_name = Cola
+            rename_capital = "Cola Central"
+        }
+        1776 = { 
+            change_province_name = Fanta
+            rename_capital = Fanta
+        }
+        1955 = {
+            change_province_name = Pepsi
+            rename_capital = Pepsi
+        }
+        313 = {
+            change_province_name = "Mountain Dew"
+            rename_capital = "Mountain Dew"
+        }
+        315 = {
+            change_province_name = Sprite
+            rename_capital = Sprite
+        }
+        21 = {
+            change_province_name = "Faxe Kondi"
+            rename_capital = "Faxe Kondi"
+        }
+	}
+}
+
+# The Beginning of the End for The Reichtangle
+country_event = {
+    id = pkomiclaps_eu_conquest.3
+    
+    title = pkomiclaps_eu_conquest.3.t
+    desc = pkomiclaps_eu_conquest.3.d
+	
+	picture = ATHENS_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			has_country_modifier = dank_republic
+			has_country_modifier = great_republic
+		}
+        any_owned_province = {
+            region = german_region
+        }
+	}
+	
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = pkomiclaps_eu_conquest.3.a
+        79 = { 
+            add_claim = ROOT
+        }
+        44 = { 
+            add_claim = ROOT
+        }
+        65 = { 
+            add_claim = ROOT
+        }
+        55 = { 
+            add_claim = ROOT
+        }
+        76 = { 
+            add_claim = ROOT
+        }
+        1759 = { 
+            add_claim = ROOT
+        }
+        134 = { 
+            add_claim = ROOT
+        }
+        266 = { 
+            add_claim = ROOT
+        }
+	}
+}
+
+
+# The Conquest of The Central Reichtangle
+country_event = {
+    id = pkomiclaps_eu_conquest.4
+    
+    title = pkomiclaps_eu_conquest.4.t
+	desc = pkomiclaps_eu_conquest.4.d
+	
+	picture = ATHENS_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			has_country_modifier = dank_republic
+			has_country_modifier = great_republic
+		}
+        owns_or_vassal_of = 44  #Hamurger        Hamburg
+        owns_or_vassal_of = 55  #Old Burger      Oldenburg
+        owns_or_vassal_of = 65  #Munchy          München
+        owns_or_vassal_of = 76  #Salsa Burger    Salzburg
+		owns_or_vassal_of = 79  #Wurstburg       Würzburg
+        owns_or_vassal_of = 134 #Wine            Wien
+        owns_or_vassal_of = 266 #Böhmer          Bohemia
+        owns_or_vassal_of = 1759#Potty? Damn!    Potsdam
+	}
+	
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = pkomiclaps_eu_conquest.4.a
+		add_prestige = 25
+        add_adm_power = 125
+        german_region = {
+            add_claim = ROOT
+        }
+        bohemian_region = {
+            add_core = ROOT
+        }
+    	hidden_effect = {
+            set_country_flag = conquered_central_reichtangle
+        }
+        79 = { 
+            change_province_name = Wurstburg
+            rename_capital = "Sausage Town"
+        }
+        44 = { 
+            change_province_name = Hamburger
+            rename_capital = Hamburger
+        }
+        65 = { 
+            change_province_name = Munchy
+            rename_capital = "Munchy Town"
+        }
+        55 = { 
+            change_province_name = "Old Burger"
+            rename_capital = "Old Burger"
+        }
+        76 = { 
+            change_province_name = "Salsa Burger"
+            rename_capital = "Salsa Burger"
+        }
+        1759 = { 
+            change_province_name = "Potty? Damn!"
+            rename_capital = "Potty Party"
+        }
+        134 = { 
+            change_province_name = Wine
+            rename_capital = "More Wine"
+        }
+        266 = { 
+            change_province_name = Böhmer
+            rename_capital = Böhmer
+        }
+	}
+}
+
+# The Conquest of Tryntelag
+country_event = {
+    id = pkomiclaps_eu_conquest.5
+    
+    title = pkomiclaps_eu_conquest.5.t
+	desc = pkomiclaps_eu_conquest.5.d
+	
+	picture = ATHENS_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			has_country_modifier = dank_republic
+			has_country_modifier = great_republic
+		}
+		owns_or_vassal_of = 20 # tryntelag           Trøndelag
+	}
+	
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = pkomiclaps_eu_conquest.5.a
+		add_prestige = 10
+		add_adm_power = 25
+    	20 = { 
+            change_province_name = Tryntelag
+            rename_capital = Trynteheim
+        }
+	}
+}
+
+# The Conquest of Svithjod
+country_event = {
+    id = pkomiclaps_eu_conquest.6
+    
+    title = pkomiclaps_eu_conquest.6.t
+	desc = pkomiclaps_eu_conquest.6.d
+	
+	picture = ATHENS_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			has_country_modifier = dank_republic
+			has_country_modifier = great_republic
+		}
+		owns_or_vassal_of = 1 # Svithjod             Uppland
+	}
+	
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = pkomiclaps_eu_conquest.6.a
+		add_prestige = 10
+		add_adm_power = 25
+    	1 = { 
+            change_province_name = Svithjod
+            rename_capital = Börkholm
+        }
+	}
+}
+
+# The Conquest of Pasta
+country_event = {
+    id = pkomiclaps_eu_conquest.7
+    
+    title = pkomiclaps_eu_conquest.7.t
+    desc = pkomiclaps_eu_conquest.7.d
+	
+	picture = ATHENS_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			has_country_modifier = dank_republic
+			has_country_modifier = great_republic
+		}
+        owns_or_vassal_of = 104 # Risotto            Lombardia
+        owns_or_vassal_of = 105 # Parma Ham          Parma
+        owns_or_vassal_of = 115 # Pizza              Pisa
+    	owns_or_vassal_of = 116 # Da Vinchi Land     Firenze
+		owns_or_vassal_of = 118 # Tities             Roma
+    	owns_or_vassal_of = 121 # Italy but... More  Napoli
+    	owns_or_vassal_of = 125 # Mafia              Palermo
+	}
+	
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = pkomiclaps_eu_conquest.7.a
+		add_prestige = 10
+		add_adm_power = 25
+        104 = { 
+            change_province_name = Risotto
+            rename_capital = Risotto
+        }
+        105 = { 
+            change_province_name = "Parma Ham"
+            rename_capital = Parmesan
+        }
+        115 = { 
+            change_province_name = Pizza
+            rename_capital = "The Leaning Tower of Pizza"
+        }
+        116 = { 
+            change_province_name = "Da Vinchi Land"
+            rename_capital = "Da Vinchi Town"
+        }
+    	118 = { 
+            change_province_name = Tities
+            rename_capital = Tity
+        }
+        121 = { 
+            change_province_name = "Italy but... More"
+            rename_capital = "Even More"
+        }
+        125 = { 
+            change_province_name = Mafia
+            rename_capital = "Mafia Town"
+        }
+	}
+}
+
+# The Conquest of Øl
+country_event = {
+    id = pkomiclaps_eu_conquest.8
+    
+    title = pkomiclaps_eu_conquest.8.t
+	desc = pkomiclaps_eu_conquest.8.d
+	
+	picture = ATHENS_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			has_country_modifier = dank_republic
+			has_country_modifier = great_republic
+		}
+		owns_or_vassal_of = 12 # Øl         Sjælland
+	}
+	
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = pkomiclaps_eu_conquest.8.a
+		add_prestige = 10
+		add_adm_power = 25
+    	12 = { 
+            change_province_name = Øl
+            rename_capital = Øl
+            add_core = ROOT
+        }
+	}
+}
+
+# The Conquest of Baguette
+country_event = {
+    id = pkomiclaps_eu_conquest.9
+    
+    title = pkomiclaps_eu_conquest.9.t
+    desc = pkomiclaps_eu_conquest.9.d
+    
+	picture = ATHENS_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			has_country_modifier = dank_republic
+			has_country_modifier = great_republic
+		}
+        owns_or_vassal_of = 183 # Three tiered cheese trolly    Isle de France
+        owns_or_vassal_of = 186 # Fizzy Wine            Champagne
+        owns_or_vassal_of = 195 # Long Car              Limousin
+	}
+	
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = pkomiclaps_eu_conquest.9.a
+		add_prestige = 10
+		add_adm_power = 25
+        183 = { 
+            change_province_name = "Three tiered cheese trolly"
+            rename_capital = "City of låååve"
+        }
+        186 = {
+            change_province_name = "Fizzy Wine"
+            rename_capital = "Fizzy Wine"
+        }
+        195 = {
+            change_province_name = "Long Car"
+            rename_capital = "Long Car"
+        }
+	}
+}
+
+# The Conquest of Danksterdank
+country_event = {
+    id = pkomiclaps_eu_conquest.10
+    
+    title = pkomiclaps_eu_conquest.10.t
+    desc = pkomiclaps_eu_conquest.10.d
+	
+	picture = ATHENS_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			has_country_modifier = dank_republic
+			has_country_modifier = great_republic
+		}
+		owns_or_vassal_of = 97 # Danksterdank         Amsterdam
+	}
+	
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = pkomiclaps_eu_conquest.10.a
+		add_prestige = 10
+		add_adm_power = 25
+    	97 = { 
+            change_province_name = Danksterdank
+            rename_capital = Danksterdank
+            add_core = ROOT
+        }
+	}
+}
+
+#The Conquest of Pkomi message to underlings
+country_event = {
+    id = pkomiclaps_eu_conquest.12
+    
+    title = pkomiclaps_eu_conquest.12.t
+    desc = pkomiclaps_eu_conquest.12.d
+	
+	picture = ATHENS_eventPicture
+	
+	fire_only_once = yes
+	
+	is_triggered_only =yes
+	
+	option = {
+		name = pkomiclaps_eu_conquest.12.a
+		add_prestige = 10
+		add_adm_power = 50
+	}
+}
+
+# The Conquest of Goatland
+country_event = {
+    id = pkomiclaps_eu_conquest.13
+    
+    title = pkomiclaps_eu_conquest.13.t
+    desc = pkomiclaps_eu_conquest.13.d
+	
+	picture = ATHENS_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			has_country_modifier = dank_republic
+			has_country_modifier = great_republic
+		}
+		owns_or_vassal_of = 25 # Danksterdank         Amsterdam
+	}
+	
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = pkomiclaps_eu_conquest.13.a
+		add_prestige = 10
+		add_adm_power = 25
+    25 = { 
+      change_province_name = Goatland
+      rename_capital = Gedeby
+      add_core = ROOT
+      change_trade_goods = goat_horns
+    }
+	}
+}

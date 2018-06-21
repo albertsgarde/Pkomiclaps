@@ -1,0 +1,309 @@
+##################################################################################################
+# scriptable and usable for event-system below.
+##################################################################################################
+pkomiclaps_debug_mod = {
+  shock_damage = 30000
+}
+
+religious_tranquility = {
+  local_tax_modifier = 0.05
+  #icon = 10
+}
+
+pastafarian_zeal = {
+  global_missionary_strength = 0.15
+  tolerance_heathen = 3
+}
+
+drunken_superiority = {
+  global_heretic_missionary_strength = 1
+}
+
+#This should really be changed to better reflect the effects of suppressing the majorities
+suppressing_the_majorities = {
+  num_accepted_cultures = 1
+}
+
+talking_to_animals = {
+  advisor_pool = 1
+}
+
+recruiting_furry_bears = {
+  local_manpower_modifier = 0.2
+}
+
+recent_furry_bear_outbreak = {
+  local_manpower_modifier = -0.2
+  local_tax_modifier = -0.2
+}
+
+conquered_racism = {
+  num_accepted_cultures = 1
+}
+
+call_center = { #Indien & Northumberland
+  province_trade_power_modifier = 0.5
+}
+
+snake_charming = {
+  local_unrest = -2
+  local_production_efficiency = -0.1
+}
+
+customer_dissatisfied = {
+  local_unrest = 5
+}
+
+snakes_loose = {
+  local_tax_modifier = -0.2
+}
+
+high_borkish = {
+  local_institution_spread = 0.10
+}
+
+bork_critics_killed = {
+  global_manpower_modifier = -0.1
+}
+
+pkomiclaps_never_backs_down = {
+  ae_impact = 0.05
+  land_morale = 0.05
+}
+
+recent_anti_bork_racism_edict = {
+  num_accepted_cultures = 1
+}
+
+borks_allowed = {
+  idea_cost = -0.1
+  technology_cost = -0.1
+}
+
+borks_allowed_on_fee = {
+  idea_cost = -0.05
+  technology_cost = -0.05
+  global_tax_modifier = 0.05
+}
+
+borks_sent_away = {
+  num_accepted_cultures = 1
+  ae_impact = 0.1
+}
+
+cannot_into_space = {
+  tech_cost = -0.05
+}
+
+managing_opposition = {
+  global_unrest = -1
+}
+
+chicken_boom = {
+  global_manpower_modifier = 0.2
+}
+
+goats_everywhere = {
+  hostile_attrition = 2
+}
+
+gustaf_gun = {
+  leader_siege = 2
+}
+
+annexed_target = {
+  core_creation = -0.10
+}
+
+ryukyu_first_war = {
+  land_maintenance_modifier = -0.25
+  land_forcelimit_modifier = 0.5
+}
+
+not_throwing_away_food = {
+  land_attrition = -0.25
+  naval_attrition = -0.25
+}
+
+kebab = {
+  trade_goods_size = 1.0
+}
+
+germans = {
+  trade_goods_size = 1.0
+}
+
+perfect_wurst = {
+  global_manpower_modifier = 0.05
+}
+
+pizza_pizza = {
+  land_forcelimit = 1
+}
+
+curry = {
+  land_forcelimit = 1
+}
+
+lice = {
+  local_manpower_modifier = 0.05
+}
+
+burger = {
+  local_manpower_modifier = 0.05
+}
+
+bacalhau = {
+  province_trade_power_modifier = 5
+}
+
+dorritos = {
+  province_trade_power_modifier = 4
+}
+
+poutine = {
+  #Needs a modifier
+}
+
+croissant = { #we have to eat le breakfast before we strike
+  local_production_efficiency = -0.05
+}
+
+mountain_dew = {
+  local_production_efficiency = 0.1
+}
+
+deep_pizza = {
+  trade_goods_size = 1.5
+  trade_goods_size_modifier = 0.5
+  local_production_efficiency = 0.2
+}
+
+shallow_pizza = {
+  trade_goods_size = -1.5
+  trade_goods_size_modifier = -0.5
+  local_production_efficiency = -0.2
+}
+
+varyags = {
+  local_manpower_modifier = 0.3
+}
+
+michelangelo = {
+  local_tax_modifier = 0.2
+}
+
+leonardo = {
+  local_development_cost = -0.1
+}
+
+donatello = {
+  province_trade_power_value = 20
+}
+
+rafael = {
+  local_institution_spread = 0.2
+}
+
+ninja_turtles = {
+  infantry_power = 0.05
+}
+
+pleasure_centre = {
+  local_unrest = -2
+}
+
+high_as_fuck = {
+  local_unrest = -15
+}
+
+dank_republic = {
+  republican_tradition = 1
+}
+
+great_republic = {
+  republican_tradition = 0.75
+}
+
+denied_drunken_pastafarianism = {
+  local_unrest = 3
+  local_autonomy = 0.05
+}
+
+only_just_drunken = {
+  local_missionary_strength = 3
+}
+
+pkomiclaps_homeland = {
+  local_development_cost = -6.4
+  local_build_cost = -0.8
+  local_hostile_attrition = 3
+  local_spy_defence = 1
+  regiment_recruit_speed = -0.4
+  local_defensiveness = 3
+  allowed_num_of_buildings = 2
+  supply_limit_modifier = 0.4
+  local_institution_spread = 5
+}
+
+pkomiclaps_homeland_regained = {
+  land_morale = 0.1
+  naval_morale = 0.1
+  prestige = 0.5
+  republican_tradition = 0.25
+  max_states = 1
+}
+
+great_lan_party = {
+  production_efficiency = -0.1
+  global_spy_defence = -0.1
+  global_missionary_strength = 0.02
+  discipline = -0.025
+}
+
+banned_great_lan_party = {
+  global_unrest = 1.5
+  republican_tradition = -0.1
+  legitimacy = -0.001
+  land_morale = -0.05
+}
+
+cyka_blyat = {
+  local_regiment_cost = -0.1
+}
+
+tourist_attraction = {
+  province_trade_power_value = 20
+}
+
+american_tourists = {
+  tax_income = 5
+}
+
+cats = {
+  production_efficiency = -0.1
+  local_unrest = -2
+  local_defensiveness = 0.2
+}
+
+pkomiclaps_crusade_target = {
+  land_morale = 0.05
+}
+
+running_faster = {
+  leader_land_manuever = 1
+}
+
+pirates = {
+  global_ship_cost = -0.05
+  ae_impact = -0.05
+}
+
+iced_coffee = {
+  global_unrest = 0.5 
+  idea_cost = -0.075
+}
+
+being_absorbed = {
+  development_cost = -2
+}

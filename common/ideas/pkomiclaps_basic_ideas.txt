@@ -1,0 +1,195 @@
+# Do not change tags in here without changing every other reference to them.
+# Do not change tags in here without changing every other reference to them.
+# If adding new groups or ideas, make sure they are unique.
+
+# ai_will do is only used to determine which idea group is picked if AI_USES_HISTORICAL_IDEA_GROUPS define is 0, OR start is custom/random
+# ai never picks an idea that resolves to ai_will_do = 0, even if AI_USES_HISTORICAL_IDEA_GROUPS = 1
+# ROOT = country picking the idea
+# groups set to colonial=yes will be higher prioritized by the AI when spending power
+
+pastafarianist_ideas = {
+	category = ADM
+
+	bonus = {
+		adm_tech_cost_modifier = -0.1
+	}
+
+	trigger = {
+		OR = {
+			has_country_modifier = dank_republic
+			has_country_modifier = great_republic
+		}
+		religion_group = pastafarianism
+	}
+	 
+	drunken_philosophy = {
+		idea_cost = -0.1
+		global_institution_spread = 0.10
+	}
+	onwards_for_meatballs = {
+		war_exhaustion = -0.05
+		core_creation = -0.15
+	}
+	theyre_ok = {
+		tolerance_heathen = 3
+	}
+	full_stomachs = {
+		global_missionary_strength = 0.025
+		global_heretic_missionary_strength = -0.02
+	}
+	were_ok = {
+		tolerance_own = 3
+	}
+	make_it_rain = {
+		inflation_reduction = 0.1
+		prestige = 0.5
+		yearly_corruption = -0.2
+	}
+	everyones_ok = {
+		global_unrest = -2
+	}
+	
+	ai_will_do = {
+		factor = 2	
+	}
+}
+
+marketing_ideas = { # Should be called something else.
+	category = DIP
+
+	bonus = {
+		dip_tech_cost_modifier = -0.1
+	}
+
+	trigger = {
+		OR = {
+			has_country_modifier = dank_republic
+			has_country_modifier = great_republic
+		}
+	}
+	
+	promised_wurst = {
+		province_warscore_cost = -0.25
+	}
+	jetpacks = {
+		diplomats = 1
+		envoy_travel_time = -0.25
+	}
+	incredibly_awkward = {
+		unjustified_demands = -0.4
+	}
+	ancient_documents = {
+		spy_offence = 1
+	}
+	spaghetti_road = {
+		global_trade_power = 0.1
+		trade_steering = 0.1
+		caravan_power = 0.1
+	}
+	just_relax_man = {
+		trade_efficiency = 0.1
+		ae_impact = -0.2
+	}
+	size_matters = {
+		global_trade_goods_size_modifier = 0.2
+	}
+	
+	ai_will_do = {
+		factor = 2	
+	}
+	
+	#   Event 1: "The Meritocratic Method": "A great philosopher, Meritocrates, has been spreading his meritocratic ideas, and we want to capitalize on them! His plans for meritocracy involve ingenious and very meritocratic solutions like never importing foreign goods, kicking out foreign merchants, and always hiring your own friends for the most well-paying jobs any chance you have. Meritocrates is truly a genius."
+	#       a: "These ideas must be implemented, as fast as possible!" +3 mercantilism, +2 corruption
+	#       b: "A-what-a-noodle? I don't care-a-doodle? I just want-a-noodle!" +5% idea cost (5 år), +10 prestige, +½ year of income
+	
+	#   Event 2: "PR Dept Blunder": ""
+	#       a: ""
+	#       b: ""
+}
+
+superiority_ideas = {
+	category = MIL
+
+	bonus = {
+		mil_tech_cost_modifier = -0.1
+	}
+
+	trigger = {
+		OR = {
+			has_country_modifier = dank_republic
+			has_country_modifier = great_republic
+		}
+	}
+	
+	just_plainly_superior = {
+		discipline = 0.05
+	}
+	insults = { #
+		leader_land_sige = 1
+		siege_ability = 0.15
+	}
+	spikes = {
+		land_attrition = -0.1
+		hostile_attrition = 1
+	}
+	conventional_recruitment = { #Conventional Recruitment: Obviously, we have a lot of advanced new ways of recruiting people in our dank republic. Sometimes, though, the good old ones are the best. That is why our 
+	#Event (mass experiment): We conducted a mass experiment abroad, trying to get as many people as possible to get to one point, so they could all jump at the same time, measuring what would happen to the earth. We then told them to join our army, which they mostly did! We did not expect this, seeing as our only persuasive points were a slight payraise and guns to their temples.
+		land_forcelimit_modifier = 0.2
+		global_manpower_modifier = 0.2
+	}
+	lower_wages = { 
+		land_maintenance_modifier = -0.10
+	}
+	better_weapons = { #Rusty weapons, projectiles, hummus, dietary restraints, 
+		infantry_power = 0.075
+		cavalry_power = 0.075
+	}
+	boombox = {
+       artillery_power = 0.3
+	}
+	
+	ai_will_do = {
+		factor = 2	
+	}
+	
+	#   Event: "I love shoes!": "Shopping, shopping, shopping, shopping, shopping."
+	#       a: "Ooooh these are stilletos!" +15% spy network creation
+	#       b: "I will sell them. Ingenious!" +1 YOI
+	
+	#   Event: "": ""
+	#       a: ""
+	#       b:
+	
+	#   
+}
+
+#Pasta-Marketing        policy: "Free Propaganda": "In a recent poll, it turned out that people actually really liked stuff. There were also moderate evidence that people enjoyed when things were free, too. We think we may have a policy idea utilizing that fact, possibly, maybe."
+#Marketing-Superiority  policy: "Family-Friendly Jokes": "'How many dead babies does it take to light up a basement? More than three, mine's still dark!' ~ Pkomiclaps PR. dept after recent policy changes." -10% AE impact
+#Superiority-Pasta      policy: "Pastastorms":  "My minions! Attack with the power of pastastorms! *Casts pastaball*" +10% artillery combat ability
+
+#Pasta-Exploration      policy: "The Light of the Lord": "For the Noodly Children of the Lord came to satiate and fullfill the lost. And it did. For they ate it. And it was most delicious."
+#Pasta-Quality          policy: "Pasta Cross-Breeding": "For many years, our people have manually used their kitchen utensils to slowly and ineffectively consume pasta. These years, however, are over, for the most advanced pasta scientists have managed to create the ultimate cross-breed: The Pasta Snake. Now, no-one will ever have to expend precious energy eating pasta. The pasta now sees to getting that done itself, completely without outside intervention."
+#Pasta-Influence        policy: "The Pasta Influence": "Ok, so for a long time now, we've had to do all kinds of weird things to get under the influence. That wasn't good enough though, and now we've solved that issue: GMO pasta trees, that grow pasta with all kinds of weird euphoric substances, like no-phony-god's-blessingium."
+#Pasta-Trade            policy: "OG Piracy": "Long have we originial pirates been slandered, our names dragged through the dirt. No more will this happen, as we will pkomiclapsically engage in OG Piracy. Ninjas will be fought! Jolly good times will be had! Children will have candy like never before!"
+#Pasta-Espionage        policy: "Esoteric Policy": "Secret rites of blood, thunder raining from the heavens. Weird fragments of forgotten languages. And possibly some effect too, if you dig deep enough."
+#Pasta-Defensive        policy: "Colander": "His Noodliness has shown us the most effective headgear. It is perfect for anything you could possibly need headgear for. Like making pasta. It may be slightly ineffective at actually protecting your head though, but don't tell anyone."
+
+#Marketing-Offensive    policy: "Smear Campaigns": "Other people do dumb stuff! Sad! We have the best country!"
+#Marketing-Innovative   policy: "German Talkshows": "Pasta? Ja. Das ist gut."
+#Marketing-Diplomatic   policy: "Fake news": "YOU are fake news!"
+#Marketing-Quantity     policy: "Flyers": "Flyers are quite useful for getting a message across. Most people can't read, of course, but as long as we just drown everyone working against our agenda in flyers, they'll work quite fine anyway."
+#Marketing-Administrativeolicy: "The Marketing Administrativeolicy": "Some policies are genius. Some are not. This one at least exists, because it seemed like administrative ideas needed a policy with marketing. So it is probably one of the latter. +5% nothing." 
+#Marketing-Expansion    policy: "Competitive Optimism": "People keep focusing on the negatives of expansion, so to fix this, a massive yearly hunger-games-style competition could be set up. The winner is the one most optimistically encouraging optimism TO THE DEATH."
+#Marketing-Economic     policy: "Sausage of Prosperity": "Stumbling upon the Sausage of Prosperity isn't something you do every day. Or ever, actually, but as long as we keep up a masquerade to make everyone BELIEVE that we stumbled upon the Sausage of Prosperity, at least some of that believed prosperity would probably take effect."
+
+#Superiority-Humanism   policy: "Clowns": "What started as innocent people dressing up to brighten the day of children has progressed to the most dangerous war machine of all: The Clown. No man kan stand his ground against this abomination of 'laughter' and makeup." 
+#Superiority-Quantity   policy: "Perfumed Shoes": "We've recently found out that not everyone enjoys the smells of old, rotting shoes. Instead of fixing this, we merely named the smell 'Perfume', and now people like it! Some people seem to think it may cause allergies, though."
+#Superiority-Influence  policy: "Influenced warfare": "We're encouraging our soldiers to fight under the influence. Of what you might ask? Doesn't matter a bit! Whatever they can possibly find works just great."
+#Superiority-Offensive  policy: "Elite Antioxidants": "Linda will destroy ISIS."
+#Superiority-Espionage  policy: "Finger Guns" : "When the Spies of Pasta come a-knockin', people sometimes turn and run. No one will dare do that anymore, for we have found the solution: A finger gun will scare anyone out of their crapping pants."
+#Superiority-Plutocraticpolicy: "'Freedom'" : "Plutocrats love their freedom. So we're gonna give em a good round of 'freedom', through a freedomowitzer-3500 at a rate of about 2100 'freedoms' per second."
+
+#Pasta-Aristocratic        policy: "Pastaristocracy": "The aristocrats tire of having no leading role in our clapsian government. We have thought long and hard about that problem, and concluded, that a new pastaristocracy is in order. They can take care of pressing issues in our society, and their main role will be very simple: Kill every and any of those pesky aristocrats."
+#Marketing-Aristocratic     policy: "" : ""
+#Superiority-Aristocratic   policy: "Blue Blood": "Some people are just born different, with true blue blood in their veins. Not even kidding. It's pretty weird. Those people can work in the mines, while the rest of us feast and toast without them. Weirdos."
+
