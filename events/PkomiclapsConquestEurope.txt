@@ -12,10 +12,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		OR = {
-			has_country_modifier = dank_republic
-			has_country_modifier = great_republic
-		}
+        is_pkomiclaps = yes
 		owns_or_vassal_of = 151 #Miklagaard
 	}
 	
@@ -131,10 +128,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		OR = {
-			has_country_modifier = dank_republic
-			has_country_modifier = great_republic
-		}
+        is_pkomiclaps = yes
         any_owned_province = {
             region = german_region
         }
@@ -186,10 +180,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		OR = {
-			has_country_modifier = dank_republic
-			has_country_modifier = great_republic
-		}
+        is_pkomiclaps = yes
         owns_or_vassal_of = 44  #Hamurger        Hamburg
         owns_or_vassal_of = 55  #Old Burger      Oldenburg
         owns_or_vassal_of = 65  #Munchy          München
@@ -264,10 +255,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		OR = {
-			has_country_modifier = dank_republic
-			has_country_modifier = great_republic
-		}
+        is_pkomiclaps = yes
 		owns_or_vassal_of = 20 # tryntelag           Trøndelag
 	}
 	
@@ -298,10 +286,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		OR = {
-			has_country_modifier = dank_republic
-			has_country_modifier = great_republic
-		}
+        is_pkomiclaps = yes
 		owns_or_vassal_of = 1 # Svithjod             Uppland
 	}
 	
@@ -332,10 +317,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		OR = {
-			has_country_modifier = dank_republic
-			has_country_modifier = great_republic
-		}
+        is_pkomiclaps = yes
         owns_or_vassal_of = 104 # Risotto            Lombardia
         owns_or_vassal_of = 105 # Parma Ham          Parma
         owns_or_vassal_of = 115 # Pizza              Pisa
@@ -396,10 +378,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		OR = {
-			has_country_modifier = dank_republic
-			has_country_modifier = great_republic
-		}
+        is_pkomiclaps = yes
 		owns_or_vassal_of = 12 # Øl         Sjælland
 	}
 	
@@ -431,10 +410,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		OR = {
-			has_country_modifier = dank_republic
-			has_country_modifier = great_republic
-		}
+        is_pkomiclaps = yes
         owns_or_vassal_of = 183 # Three tiered cheese trolly    Isle de France
         owns_or_vassal_of = 186 # Fizzy Wine            Champagne
         owns_or_vassal_of = 195 # Long Car              Limousin
@@ -475,10 +451,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		OR = {
-			has_country_modifier = dank_republic
-			has_country_modifier = great_republic
-		}
+        is_pkomiclaps = yes
 		owns_or_vassal_of = 97 # Danksterdank         Amsterdam
 	}
 	
@@ -509,7 +482,7 @@ country_event = {
 	
 	fire_only_once = yes
 	
-	is_triggered_only =yes
+	is_triggered_only = yes
 	
 	option = {
 		name = pkomiclaps_eu_conquest.12.a
@@ -530,11 +503,8 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		OR = {
-			has_country_modifier = dank_republic
-			has_country_modifier = great_republic
-		}
-		owns_or_vassal_of = 25 # Danksterdank         Amsterdam
+        is_pkomiclaps = yes
+		owns_or_vassal_of = 25 # Goatland         Gotland
 	}
 	
 	mean_time_to_happen = {
@@ -545,11 +515,57 @@ country_event = {
 		name = pkomiclaps_eu_conquest.13.a
 		add_prestige = 10
 		add_adm_power = 25
-    25 = { 
-      change_province_name = Goatland
-      rename_capital = Gedeby
-      add_core = ROOT
-      change_trade_goods = goat_horns
-    }
+        25 = { 
+          change_province_name = Goatland
+          rename_capital = Gedeby
+          add_core = ROOT
+          change_trade_goods = goat_horns
+        }
+	}
+}
+
+#The Conquest of Mad Cow Disease
+country_event = {
+    id = pkomiclaps_eu_conquest.14
+    
+    title = pkomiclaps_eu_conquest.14.t
+    desc = pkomiclaps_eu_conquest.14.d
+	
+	picture = ATHENS_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+        is_pkomiclaps = yes
+		owns_or_vassal_of = 245 # Mad           York
+		owns_or_vassal_of = 240 # Cow           Shrewsbury
+        owns_or_vassal_of = 4370 #Disease       Cambridge
+	}
+	
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = pkomiclaps_eu_conquest.14.a
+		add_prestige = 10
+		add_adm_power = 25
+        add_core = 4370
+        245 = { 
+          change_province_name = "Mad"
+          rename_capital = "Mad"
+        }
+        240 = { 
+          change_province_name = "Cow"
+          rename_capital = "Cow"
+        }
+        4370 = { 
+            change_province_name = "Disease"
+            rename_capital = "Disease"
+            add_province_modifier = {
+                name = "mad_cow_disease"
+                duration = -1
+            }
+        }
 	}
 }

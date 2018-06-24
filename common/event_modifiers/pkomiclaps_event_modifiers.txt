@@ -307,3 +307,8 @@ iced_coffee = {
 being_absorbed = {
   development_cost = -2
 }
+
+mad_cow_disease = {
+    local_development_cost = 0.2
+    local_unrest = 1
+}
