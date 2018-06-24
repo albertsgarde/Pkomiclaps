@@ -2,21 +2,12 @@ country_decisions = {
 
     enable_pkomiclaps_decisions = {
         potential = {
-            OR = {
-				OR = {
-					has_country_modifier = dank_republic
-					has_country_modifier = great_republic
-				}
-                KOM = {
-                    exists = no
-                }
-            }
             has_country_flag = hide_pkomiclaps_decisions 
         }
         allow = {
         }
         effect = {
-            set_country_flag = view_pkomiclaps_decisions
+            clr_country_flag = hide_pkomiclaps_decisions
         }
         ai_will_do = {
             factor = 1
@@ -30,7 +21,7 @@ country_decisions = {
         allow = {
         }
         effect = {
-            clr_country_flag = view_pkomiclaps_decisions
+            set_country_flag = hide_pkomiclaps_decisions
         }
         ai_will_do = {
             factor = 0
