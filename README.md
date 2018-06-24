@@ -24,6 +24,8 @@ First a word of warning: this is my first ever git hub repo, so be prepared for 
 * New idea groups: Pastafarianist, Marketing, and Superiority Ideas!
     * Only Clapsers can get them.
     * Include ideas like: Lower Wages, Incredibly Awkward, and Better Weapons!
+* New trade good: Goat horns!
+    * Goat horns!
 * New events: All sorts!
     * Conquest events as rewards for Pkomiclaps when they conquer specific areas.
     * Other events.
