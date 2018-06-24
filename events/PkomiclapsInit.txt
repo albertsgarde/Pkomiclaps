@@ -365,6 +365,7 @@ country_event = {
     trigger = {
         is_year = 1580
         ai = no
+        NOT = { has_global_flag = american_food_initialized }
     }
     
 	mean_time_to_happen = {
@@ -375,6 +376,7 @@ country_event = {
         name = pkomiclaps_init.2.a
         
         hidden_effect = {
+            set_global_flag = american_food_initialized
         #Canada
             #Sprinkle some Poutine on the baguettey places
             994 = {

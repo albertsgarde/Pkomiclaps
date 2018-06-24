@@ -4,46 +4,84 @@ namespace = pkomiclaps_am_conquest
 country_event = {
     id = pkomiclaps_am_conquest.1
     
-	title = pkomiclaps_am_conquest.1.t
-	desc = pkomiclaps_am_conquest.1.d
-	
-	picture = ATHENS_eventPicture
-	
-	fire_only_once = yes
-	
-	trigger = {
-		OR = {
-            has_country_modifier = "dank_republic"
-            has_country_modifier = "great_republic"
+    title = pkomiclaps_am_conquest.1.t
+    desc = pkomiclaps_am_conquest.1.d
+    
+    picture = ATHENS_eventPicture
+    
+    fire_only_once = yes
+    
+    trigger = {
+        is_pkomiclaps = yes
+        owns_or_vassal_of = 924  #Racism Central                Alabama
+        owns_or_vassal_of = 887  #White Men with Guns           Tonkawa
+        owns_or_vassal_of = 2665 #Whiter Men with Bigger Guns   Eyeish
+    }
+    
+    mean_time_to_happen = {
+        days = 7
+    }
+    
+    option = {
+        name = pkomiclaps_am_conquest.1.a
+        add_prestige = 10
+        add_adm_power = 25
+        add_country_modifier = {
+            name = conquered_racism
+            duration = -1
         }
-		owns_or_vassal_of = 924  #Racism Central                 Alabama
-        owns_or_vassal_of = 887  #White Men with Guns            Tonkawa
-        owns_or_vassal_of = 2665 #Whiter Men with Bigger Guns    Eyeish
-	}
-	
-	mean_time_to_happen = {
-		days = 7
-	}
-	
-	option = {
-		name = pkomiclaps_am_conquest.1.a
-		add_prestige = 10
-		add_adm_power = 25
-    add_country_modifier = {
-      name = conquered_racism
-			duration = -1
-		}
-    924 = { 
-        change_province_name = "Racism Central"
-        rename_capital = "Racism Central"
+        924 = { 
+            change_province_name = "Racism Central"
+            rename_capital = "Racism Central"
+        }
+        887 = { 
+            change_province_name = "White Men with Guns"
+            rename_capital = "White Men with Guns"
+        }
+        2665 = { 
+            change_province_name = "Whiter Men with Bigger Guns"
+            rename_capital = "Whiter Men with Bigger Guns"
+        }
     }
-    887 = { 
-        change_province_name = "White Men with Guns"
-        rename_capital = "White Men with Guns"
+}
+
+# The Conquest of Eh, eh?
+country_event = {
+    id = pkomiclaps_am_conquest.2
+    
+    title = pkomiclaps_am_conquest.2.t
+    desc = pkomiclaps_am_conquest.2.d
+    
+    picture = ATHENS_eventPicture
+    
+    fire_only_once = yes
+    
+    trigger = {
+        is_pkomiclaps = yes
+        owns_or_vassal_of = 994  #Quebec                Stadacona
+        owns_or_vassal_of = 986  #Free Healthcare       Kespek
+        owns_or_vassal_of = 2580 #Oh Boy!               Atikamekw
     }
-    2665 = { 
-        change_province_name = "Whiter Men with Bigger Guns"
-        rename_capital = "Whiter Men with Bigger Guns"
+    
+    mean_time_to_happen = {
+        days = 7
     }
-	}
+    
+    option = {
+        name = pkomiclaps_am_conquest.2.a
+        add_prestige = 10
+        add_adm_power = 25
+        994 = {
+            change_province_name = "Quebec"
+            rename_capital = "Poutine"
+        }
+        986 = {
+            change_province_name = "Free Healthcare"
+            rename_capital = "An 'O'pital"
+        }
+        2580 = {
+            change_province_name = "Oh Boy!"
+            rename_capital = "I fell off my igloo"
+        }
+    }
 }
