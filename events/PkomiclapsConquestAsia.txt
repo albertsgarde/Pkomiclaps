@@ -608,3 +608,47 @@ country_event = {
         }
 	}
 }
+
+
+# The Conquest of The Succession Crisis
+country_event = {
+    id = pkomiclaps_as_conquest.12
+    
+	title = pkomiclaps_as_conquest.12.t
+	desc = pkomiclaps_as_conquest.12.d
+	
+	picture = UNIVERSITY_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		is_pkomiclaps = yes
+        
+        owns_or_vassal_of = 547 #Bastard        Bastar
+        owns_or_vassal_of = 538 #King           Kongu
+        owns_or_vassal_of = 1092 #Queen         Bundjalung
+	}
+	
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = pkomiclaps_as_conquest.12.a
+        
+        add_prestige = 15
+        add_adm_power = 10
+        547 = { 
+            change_province_name = "Bastard"
+            rename_capital = "Bastard"
+        }
+        538 = { 
+            change_province_name = "King"
+            rename_capital = "King"
+        }
+        1092 = { 
+            change_province_name = "Queen"
+            rename_capital = "Queen"
+        }
+	}
+}
