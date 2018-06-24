@@ -44,6 +44,14 @@ estate_church =
 		}	
 		value = 5
 	}
+	wanted_territory_modifier = {
+		desc = EST_VAL_THEOCRACY
+		trigger = {
+			government = theocracy
+			NOT = { tag = PAP }
+		}	
+		value = 5
+	}
 
 	# If true, country will get estate
 	trigger = {

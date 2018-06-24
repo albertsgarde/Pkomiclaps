@@ -23,14 +23,7 @@ estate_nobles =
 			government = noble_republic
 		}	
 		value = 30	
-	}
-  wanted_territory_modifier = {
-    desc = EST_VAL_PKOMICLAPS_REPUBLIC
-    trigger = {
-      government = pkomiclaps_republic
-    }
-		value = -5
-  }
+	}	
 	
 	# If true, country will get estate
 	trigger = {	

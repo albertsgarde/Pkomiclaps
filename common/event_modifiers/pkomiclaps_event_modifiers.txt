@@ -162,7 +162,7 @@ dorritos = {
 }
 
 poutine = {
-  #Needs a modifier
+  local_culture_conversion_cost = 1
 }
 
 croissant = { #we have to eat le breakfast before we strike

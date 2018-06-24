@@ -12,7 +12,6 @@ estate_burghers =
 		desc = EST_VAL_REPUBLIC
 		trigger = {
 			government = republic
-      is_pkomiclaps = no
 			NOT = { has_disaster = estate_nobility_disaster }
 		}
 		value = 20
