@@ -578,8 +578,8 @@ country_event = {
 	trigger = {
 		is_pkomiclaps = yes
         
-        owns_or_vassal_of = 1118 #Ebola Central             Sierra Leone
-        owns_or_vassal_of = 2241 #Seco                       Lanzhou
+        owns_or_vassal_of = 709 #Alexa                      Alxa
+        owns_or_vassal_of = 699 #Siri                       Lanzhou
         owns_or_vassal_of = 720 #Cortana                    Dornogovi
 	}
 	

@@ -413,7 +413,6 @@ country_event = {
         mil_tech = 30
       }
     }
-  }
     
   option = {
     name = pkomiclaps.10.a
@@ -444,40 +443,39 @@ country_event = {
     }
     
     mean_time_to_happen = {
-      days = 3650
-    	modifier = {
-        factor = 0.95
-        mil_tech = 5
-      }
-      modifier = {
-        factor = 0.95 
-        mil_tech = 10
-      }
-      modifier = {
-        factor = 0.95
-        mil_tech = 15
-      }
-      modifier = {
-        factor = 0.95
-        mil_tech = 20
-      }
-      modifier = {
-        factor = 0.95
-        mil_tech = 25
-      }
-      modifier = {
-        factor = 0.95
-        mil_tech = 30
-      }
-      modifier = {
-        factor = 0.85
-        has_idea_group = innovativeness_ideas
-      }
-      modifier = {
-        factor = 0.85
-        has_idea_group = offensive_ideas
-      }
-		}
+        days = 3650
+            modifier = {
+            factor = 0.95
+            mil_tech = 5
+        }
+        modifier = {
+            factor = 0.95 
+            mil_tech = 10
+        }
+        modifier = {
+            factor = 0.95
+            mil_tech = 15
+        }
+        modifier = {
+            factor = 0.95
+            mil_tech = 20
+        }
+        modifier = {
+            factor = 0.95
+            mil_tech = 25
+        }
+        modifier = {
+            factor = 0.95
+            mil_tech = 30
+        }
+        modifier = {
+            factor = 0.85
+            has_idea_group = innovativeness_ideas
+        }
+        modifier = {
+            factor = 0.85
+            has_idea_group = offensive_ideas
+        }
 	}
     
 	option = {
@@ -580,12 +578,12 @@ country_event = {
 		}
 		NOT = {
 			any_owned_province = { 
-        OR = {
-          has_port = yes
-          any_neighbor_province = {
-            is_empty = yes # Wasteland provinces are not colonizable and therefore not "empty"
-          }
-        }
+                OR = {
+                      has_port = yes
+                      any_neighbor_province = {
+                        is_empty = yes # Wasteland provinces are not colonizable and therefore not "empty"
+                    }
+                }
 			}
 		}
 		NOT = { has_country_flag = pkomiclaps_is_absorbing }
@@ -629,21 +627,21 @@ country_event = {
     
     trigger = {
 		NOT = {
-      all_neighbor_country = {
-				is_pkomiclaps = yes
-      }
-      NOT = {
-        any_owned_province = { 
-          OR = {
-            has_port = yes
-            any_neighbor_province = {
-              is_empty = yes
+            all_neighbor_country = {
+                 is_pkomiclaps = yes
             }
-          }
-        }
-      }
-      NOT = { has_country_flag = pkomiclaps_is_absorbing }
-      ai = yes
+            NOT = {
+                any_owned_province = { 
+                    OR = {
+                        has_port = yes
+                        any_neighbor_province = {
+                            is_empty = yes
+                        }
+                    }
+                }
+            }
+            NOT = { has_country_flag = pkomiclaps_is_absorbing }
+            ai = yes
 		}
 		has_country_flag = pkomiclaps_is_absorbing
     }
@@ -726,26 +724,5 @@ country_event = {
     }
 }
 
-#American Tourists
-province_event = {
-  id = pkomiclaps.20
-  title = pkomiclaps.20.t
-  desc = pkomiclaps.20.d
-  picture = FARMING_eventPicture
-  
-  trigger = {
-    has_province_modifier = tourist_attraction
-    has_country_modifier = conquered_racism
-  }
-  
-  mean_time_to_happen = {
-      days = 1
-  }
-  
-  option = {
-      name = pkomiclaps.20.a
-      add_province_modifier = {
-        american_tourists
-      }
-  }
-}
+
+

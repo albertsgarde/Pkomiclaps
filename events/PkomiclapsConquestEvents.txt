@@ -1,0 +1,66 @@
+namespace = pkomiclaps_conquest
+
+#American Tourists
+province_event = {
+    id = pkomiclaps_conquest.1
+    
+    title = pkomiclaps_conquest.1.t
+    desc = pkomiclaps_conquest.1.d
+    picture = FARMING_eventPicture
+    
+    fire_only_once = yes
+    
+    trigger = {
+        has_province_modifier = tourist_attraction
+        owner = { has_country_modifier = conquered_racism }
+    }
+    
+    mean_time_to_happen = {
+        days = 1
+    }
+    
+    option = {
+        name = pkomiclaps_conquest.1.a
+        add_province_modifier = {
+            name = american_tourists
+            duration = -1
+        }
+    }
+}
+
+#Diseases come together
+country_event = {
+    id = pkomiclaps_conquest.2
+    
+    title = pkomiclaps_conquest.2.t
+    desc = pkomiclaps_conquest.2.d
+    picture = FARMING_eventPicture
+    
+    trigger = {
+        any_owned_province = { #Mad Cow Disease
+            has_province_modifier = mad_cow_disease
+        }
+        OR = { #Ebola
+            owns_or_vassal_of = 1118 #Ebola Central 
+            owns_or_vassal_of = 2241 #North Ebola 
+        }
+        any_owned_province = { #High Borkish
+            has_province_modifier = high_borkish
+        }
+    }
+    
+    mean_time_to_happen = {
+        years = 60
+    }
+    
+    option = {
+        name = pkomiclaps_conquest.2.a
+        random_owned_province = {
+            add_province_modifier = {
+                name = way_too_sick
+                duration = 3650
+            }
+        }
+        add_prestige = 5
+    }
+}

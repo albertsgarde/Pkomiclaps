@@ -312,3 +312,8 @@ mad_cow_disease = {
     local_development_cost = 0.2
     local_unrest = 1
 }
+
+way_too_sick = {
+    local_development_cost = -0.8
+    local_tax_modifier = 0.4
+}
