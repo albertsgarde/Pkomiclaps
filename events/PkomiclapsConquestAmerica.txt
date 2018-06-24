@@ -12,10 +12,7 @@ country_event = {
     fire_only_once = yes
     
     trigger = {
-        OR = {
-            has_country_modifier = "dank_republic"
-            has_country_modifier = "great_republic"
-        }
+        is_pkomiclaps = yes
         owns_or_vassal_of = 924  #Racism Central                Alabama
         owns_or_vassal_of = 887  #White Men with Guns           Tonkawa
         owns_or_vassal_of = 2665 #Whiter Men with Bigger Guns   Eyeish
@@ -60,10 +57,7 @@ country_event = {
     fire_only_once = yes
     
     trigger = {
-        OR = {
-            has_country_modifier = "dank_republic"
-            has_country_modifier = "great_republic"
-        }
+        is_pkomiclaps = yes
         owns_or_vassal_of = 994  #Quebec                Stadacona
         owns_or_vassal_of = 986  #Free Healthcare       Kespek
         owns_or_vassal_of = 2580 #Oh Boy!               Atikamekw
