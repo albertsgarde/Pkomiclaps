@@ -10,5 +10,11 @@
 -Event pictures. They wouldn't fit in with the current ones, but could be fun.
 -Fix absorption so colonizable land doesn't count as wasteland. 
 -Pirates estate
+ -Interactions
+  -Grant Memelordship
+  -Distribute Sweet Goods
+  -Fight Ninjas
+ -Pirates disaster
+  -Diabetes
 -Missions
 -Debates
