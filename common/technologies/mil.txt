@@ -596,7 +596,6 @@ technology = {
 	#Pkomiclaps units
 	enable = pkomiclaps_arme_blanche
 	enable = pkomiclaps_dragoon
-	enable = pkomiclaps_hussar
 	enable = pkomiclaps_grenzer
 	enable = pkomiclaps_caroline
 	enable = pkomiclaps_line

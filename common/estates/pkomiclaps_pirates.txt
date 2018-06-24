@@ -50,7 +50,7 @@ estate_pirates =
 	# These do not scale, but only applied in provinces owned by the estate
 	province_modifier_happy = {
 		local_missionary_strength = 0.04
-		local_trade_power = 0.1
+		province_trade_power_modifier = 0.1
 		local_unrest = -2
 	}
 	province_modifier_neutral = {

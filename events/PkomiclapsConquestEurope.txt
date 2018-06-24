@@ -130,7 +130,10 @@ country_event = {
 	trigger = {
         is_pkomiclaps = yes
         any_owned_province = {
-            region = german_region
+            OR = {
+                region = north_german_region
+                region = south_german_region
+            }
         }
 	}
 	
@@ -199,10 +202,13 @@ country_event = {
 		name = pkomiclaps_eu_conquest.4.a
 		add_prestige = 25
         add_adm_power = 125
-        german_region = {
+        north_german_region = {
             add_claim = ROOT
         }
-        bohemian_region = {
+        south_german_region = {
+            add_claim = ROOT
+        }
+        bohemia_area = {
             add_core = ROOT
         }
     	hidden_effect = {

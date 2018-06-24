@@ -125,7 +125,7 @@ superiority_ideas = {
 		discipline = 0.05
 	}
 	insults = { #
-		leader_land_sige = 1
+		leader_siege = 1
 		siege_ability = 0.15
 	}
 	spikes = {

@@ -1,106 +1,106 @@
 pkomiclaps_conquest_missions = {
-  slot = 1
-  generic = no
-  potential = {
-    is_pkomiclaps = yes
-  }
-  
-  home_of_pkomi = {
-    icon = mission_unite_home_region
-    required_missions = {  }
-    trigger = {
-      owns = 1780 # Pkomi         Komi
+    slot = 1
+    generic = no
+    potential = {
+        is_pkomiclaps = yes
     }
-    effect = {
-      add_country_modifier = {
-        name = "pkomiclaps_homeland_regained"
-        duration = -1
-      }
-      1780 = { 
-        change_province_name = Pkomi
-        rename_capital = Claps
-        add_core = ROOT
-        add_permanent_province_modifier = {
-          name = pkomiclaps_homeland
-          duration = -1
+    
+    home_of_pkomi = {
+        icon = mission_unite_home_region
+        required_missions = {  }
+        trigger = {
+            owns = 1780 # Pkomi         Komi
         }
-        add_nationalism = -30
-        add_local_autonomy = -100
-        add_base_tax = 22
-        add_base_production = 22
-        add_base_manpower = 18
-        remove_province_modifier = arctic
-        change_trade_goods = goat_horns
-      }
-      every_country = {
-        limit = {
-          has_country_modifier = great_republic
+        effect = {
+            add_country_modifier = {
+                name = "regained_pkomiclaps_homeland"
+                duration = -1
+            }
+            1780 = { 
+                change_province_name = Pkomi
+                rename_capital = Claps
+                add_core = ROOT
+                add_permanent_province_modifier = {
+                    name = pkomiclaps_homeland
+                    duration = -1
+                }
+                add_nationalism = -30
+                add_local_autonomy = -100
+                add_base_tax = 22
+                add_base_production = 22
+                add_base_manpower = 18
+                remove_province_modifier = arctic
+                change_trade_goods = goat_horns
+            }
+            every_country = {
+                limit = {
+                    has_country_modifier = great_republic
+                }
+                country_event = { id = pkomiclaps_eu_conquest.12 }
+            }
         }
-        country_event = { id = pkomiclaps_eu_conquest.12 }
-      }
     }
-  }
-  
-  soda_coast = {
-    icon = mission_conquer_50_development
-    required_missions = { home_of_pkomi }
-    trigger = {
-      owns = 21   # Faxe Kondi        Hålogaland
-      owns = 313  # Mountain Dew      Archangelsk
-      owns = 315  # Sprite            Finnmark
-      owns = 1776 # Fanta             Karelia
-      owns = 1777 # Cola              Kola
-      owns = 1955 # Pepsi             Kholmogory
+    
+    soda_coast = {
+        icon = mission_conquer_50_development
+        required_missions = { home_of_pkomi }
+        trigger = {
+            owns = 21   # Faxe Kondi        Hålogaland
+            owns = 313  # Mountain Dew      Archangelsk
+            owns = 315  # Sprite            Finnmark
+            owns = 1776 # Fanta             Karelia
+            owns = 1777 # Cola              Kola
+            owns = 1955 # Pepsi             Kholmogory
+        }
+        effect = {
+            add_prestige = 20
+            add_adm_power = 75
+        }
     }
-    effect = {
-      add_prestige = 20
-      add_adm_power = 75
-    }
-  }
-}
-
+}   
+    
 pkomiclaps_absorption = {
-  slot = 1
-  generic = no
-  potential = {
-    is_pkomiclaps = yes
-  }
-  
-  start_absorbing = {
-    icon = mission_empire
-    required_missions = {  }
-    position = 3
-    trigger = {
-      any_country = {
-        has_country_flag = pkomiclaps_is_absorbing
-      }
+    slot = 1
+    generic = no
+    potential = {
+        is_pkomiclaps = yes
     }
-    effect = {
-      random_country = {
-        limit = {
-          has_country_flag = pkomiclaps_is_absorbing
+    
+    start_absorbing = {
+        icon = mission_empire
+        required_missions = {  }
+        position = 3
+        trigger = {
+            any_country = {
+                has_country_flag = pkomiclaps_is_absorbing
+            }
         }
-        add_country_modifier = {
-          name = "being_absorbed"
-          duration = 10000
+        effect = {
+            random_country = {
+                limit = {
+                has_country_flag = pkomiclaps_is_absorbing
+                }
+                add_country_modifier = {
+                name = "being_absorbed"
+                duration = 10000
+                }
+            }
         }
-      }
     }
-  }
-  
-  finish_absorbing = {
-    icon = mission_war_chest
-    required_missions = { start_absorbing }
-    position = 4
-    trigger = {
-      not = {
-        any_country = {
-          has_country_flag = pkomiclaps_is_absorbing
+    
+    finish_absorbing = {
+        icon = mission_war_chest
+        required_missions = { start_absorbing }
+        position = 4
+        trigger = {
+            not = {
+                any_country = {
+                has_country_flag = pkomiclaps_is_absorbing
+                }
+            }
         }
-      }
+        effect = {
+            add_prestige = 20
+        }
     }
-    effect = {
-      add_prestige = 20
-    }
-  }
-}
+}   

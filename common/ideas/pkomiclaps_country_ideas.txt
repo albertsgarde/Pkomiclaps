@@ -24,7 +24,7 @@ KOM_ideas = {
 	
 		global_tax_modifier = 0.25 # Monocle
 		trade_efficiency = 0.15
-		global_production_modifier = 0.2
+		production_efficiency = 0.2
 	}
 	
 	trigger = {
@@ -38,7 +38,7 @@ KOM_ideas = {
 	}
 	pkomiclaps_opposition_management = {
 		hostile_attrition = 2
-		fabricate_claims_time = -0.3
+		spy_offence = 0.3
 	}
 	pkomiclaps_sociolinguistics = {
 		# Sociolinguistics
@@ -47,7 +47,7 @@ KOM_ideas = {
 	}
 	pkomiclaps_communication = {
 		diplomatic_reputation = 3
-		relations_decay_of_me = 0.55
+		improve_relation_modifier = 0.55
 	}
 	pkomiclaps_claps = {
 		discipline = 0.125

@@ -1009,7 +1009,7 @@ country_event = {
     }
 }
 
-#Minecraft
+#A Rare Event
 country_event = {
     id = non_pkomiclaps_general.19
     title = non_pkomiclaps_general.19.t
@@ -1018,32 +1018,15 @@ country_event = {
     picture = ATHENS_eventPicture
 	
 	trigger = {
-        has_country_modifier = "great_lan_party"
-        any_owned_province = {
-            has_province_modifier = high_borkish
-        }
-        NOT = { has_country_flag = "minecraft" }
+        always = yes
 	}
 	
 	mean_time_to_happen = {
-		months = 48
+		years = 1000
 	}
 	
 	option = {
 		name = non_pkomiclaps_general.19.a
-        
-        add_years_of_income = 0.8
-        
-		random_owned_province = {
-			limit = { has_province_modifier = high_borkish }
-			add_province_modifier = {
-			    name = playing_minecraft
-			    duration = -1
-			}
-		}
-        
-        hidden_effect = {
-            set_country_flag = "minecraft"
-        }
+        add_adm_power = 1
     }
 }

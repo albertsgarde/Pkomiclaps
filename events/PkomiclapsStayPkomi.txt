@@ -31,12 +31,11 @@ country_event = {
     option = {
         name = pkomiclaps_stay.1.b
         remove_country_modifier = dank_republic
-      remove_country_modifier = regained_pkomiclaps_homeland
-      every_country = {
+        remove_country_modifier = regained_pkomiclaps_homeland
+        every_country = {
         limit = {
-          has_country_modifier = great_republic
+            has_country_modifier = great_republic
         }
-        remove_country_modifier = regained_pkomiclaps_homeland_underling
       }
     }
 }

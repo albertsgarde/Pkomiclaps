@@ -7,12 +7,9 @@ country_event = {
     desc = debug.1.d
     picture = FARMING_eventPicture # Better picture pls
     
-    triggered_only = yes
-    
-    fire_only_once = yes
-    
     trigger = {
         is_year = 9999
+        always = no
     }
     
 	option = {
@@ -36,12 +33,9 @@ country_event = {
     desc = debug.2.d
     picture = FARMING_eventPicture # Better picture pls
     
-    triggered_only = yes
-    
-    fire_only_once = yes
-    
     trigger = {
         is_year = 9999
+        always = no
     }
     
 	option = {
@@ -56,51 +50,16 @@ country_event = {
     desc = debug.3.d
     picture = FARMING_eventPicture # Better picture pls
     
-    triggered_only = yes
-    
-    fire_only_once = yes
+    trigger = {
+        always = no
+        is_year = 9999
+    }
     
 	option = {
-    name = debug.3.a
-    add_country_modifier = {
-      name = "pkomiclaps_debug_mod"
-      duration = -1
-    }
+        name = debug.3.a
+        add_country_modifier = {
+          name = "pkomiclaps_debug_mod"
+          duration = -1
+        }
 	}
-}
-
-province_event = {
-    id = debug.4
-    title = debug.4.t
-    desc = debug.4.d
-    picture = FARMING_eventPicture # Better picture pls
-    
-    trigger = {
-      is_year = 9999
-      any_neighbor_province = {
-        is_empty = yes
-      }
-    }
-    
-    option = {
-      name = debug.4.a
-      
-    }
-}
-
-province_event = {
-    id = debug.5
-    title = debug.5.t
-    desc = debug.5.d
-    picture = FARMING_eventPicture # Better picture pls
-    
-    trigger = {
-        is_year = 9999
-        is_empty = yes
-    }
-    
-    option = {
-      name = debug.5.a
-      
-    }
 }
