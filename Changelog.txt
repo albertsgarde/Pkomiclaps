@@ -72,9 +72,13 @@
  -Removed pkomiclaps rebels. They weren't used but still popped up.
  -Updated the Pkomiclaps ideas to better fit the new updates. They should also be slightly less over-powered.
  -Updated to patch 1.22
-2.1.0 (21 Jun @ 8:54pm):
+2.1.0 (21 Jun 2018 @ 8:54pm):
 -Updated to patch 1.25
 -Removed custom pkomiclaps missions. Pkomiclaps now inherits missions from whichever country it is formed from.
 -Other stuff I can't remember.
-2.1.1 (22 Jun @ 11:04am):
+2.1.1 (22 Jun 2018 @ 11:04am):
 -Removed the unfinished estates that didn't work anyway.
+2.2.0 (24 Jun 2018 @ 8:32pm):
+-Added a load of conquest events.
+-Added a unique Pkomiclaps estate.
+-Fixed a lot of bugs (we discovered that EUIV has a nice log file with load errors).
