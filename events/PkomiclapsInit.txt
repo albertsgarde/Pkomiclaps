@@ -377,6 +377,24 @@ country_event = {
         hidden_effect = {
         #Canada
             #Sprinkle some Poutine on the baguettey places
+            994 = {
+                add_permanent_province_modifier = {
+                    name = poutine
+                    duration -1
+                }
+            }
+            993 = {
+                add_permanent_province_modifier = {
+                    name = poutine
+                    duration -1
+                }
+            }
+            2589 = {
+                add_permanent_province_modifier = {
+                    name = poutine
+                    duration -1
+                }
+            }
         #USA
             #Burgers in Racism
             888 = {
