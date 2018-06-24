@@ -1,0 +1,11 @@
+﻿l_english:
+ estate_pirates:0 "Pirates"
+ estate_nobles_desc:0 "This estate represents the party-having, sweet-goods-distributing fun guys in your country. They party. And fight ninjas. And oppose global warming."
+ THROW_PARTY:0 "Throw Party"
+ EST_VAL_THREW_PARTY:0 "Threw Party: §Y$VAL$%§!"
+ GRANT_MEMELORDSHIP:0 "Grant Memelordship"
+ EST_VAL_GRANTED_MEMELORDSHIP:0 "Granted Memelordship: §Y$VAL$%§!"
+ DISTRIBUTE_SWEET_GOODS:0 "Distribute Sweet Goods"
+ EST_VAL_DISTRIBUTED_SWEET_GOODS:0 "Distributed Sweet Goods: §Y$VAL$%§!"
+ FIGHT_NINJAS:0 "Fight Ninjas"
+ EST_VAL_FOUGHT_NINJAS:0 "Fought Ninjas: §Y$VAL$%§!"

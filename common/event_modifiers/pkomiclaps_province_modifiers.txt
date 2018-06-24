@@ -1,0 +1,4 @@
+recieved_sweet_goods = {
+    local_unrest = -2
+    local_development_cost = -0.5
+}
