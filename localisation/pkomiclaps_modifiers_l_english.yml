@@ -30,7 +30,7 @@
  borks_allowed:0 "Børks Allowed"
  desc_borks_allowed:0 "Børks have free access to your universities."
  borks_allowed_on_fee:0 "Børks Allowed On Fee"
- desc_borks_allowed:0 "All Børks must pay a fee to gain access to your universities."
+ desc_borks_allowed_on_fee:0 "All Børks must pay a fee to gain access to your universities."
  borks_sent_away:0 "Børks Sent Home"
  desc_borks_sent_away:0 "You sent all the Børks home and took all their stuff, you bad bad man!"
  cannot_into_space:0 "Cannot Into Space"
