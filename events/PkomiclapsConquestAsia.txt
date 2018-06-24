@@ -12,10 +12,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		OR = {
-			has_country_modifier = dank_republic
-			has_country_modifier = great_republic
-		}
+		is_pkomiclaps = yes
 		owns_or_vassal_of = 2743 # Chingching                Kyongsong
         owns_or_vassal_of = 2742 # Licerand                  Yukjin
         owns_or_vassal_of = 2744 # Chinkachongdong           Nyongbyon
@@ -73,10 +70,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		OR = {
-			has_country_modifier = dank_republic
-			has_country_modifier = great_republic
-		}
+		is_pkomiclaps = yes
 		owns_or_vassal_of = 735  # Seour                 Seoul
         owns_or_vassal_of = 737  # Jeorra                Jeolla
         owns_or_vassal_of = 2741
@@ -118,10 +112,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		OR = {
-			has_country_modifier = dank_republic
-			has_country_modifier = great_republic
-		}
+		is_pkomiclaps = yes
         owns_or_vassal_of = 578  # Roh Yo Bot            Roh
         owns_or_vassal_of = 522  # Rabies                Delhi
         owns_or_vassal_of = 524  # Chicken Tikka         Central Doab
@@ -177,10 +168,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		OR = {
-			has_country_modifier = dank_republic
-			has_country_modifier = great_republic
-		}
+		is_pkomiclaps = yes
         owns_or_vassal_of = 529  # Call Center           North konkan
         owns_or_vassal_of = 517  # Slummy Slums          Surat
         owns_or_vassal_of = 2036 # Slumdog City          Baglana
@@ -249,10 +237,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		OR = {
-			has_country_modifier = dank_republic
-			has_country_modifier = great_republic
-		}
+		is_pkomiclaps = yes
         owns_or_vassal_of = 541  # Snakecharmistan           Vijayanagar
         owns_or_vassal_of = 538  # Snakacademy               Kongu
         owns_or_vassal_of = 1949 # Rape a Zebra              Rayalaseema
@@ -304,10 +289,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		OR = {
-			has_country_modifier = dank_republic
-			has_country_modifier = great_republic
-		}
+		is_pkomiclaps = yes
         owns_or_vassal_of = 664     # Ringyun           Lingyun
         owns_or_vassal_of = 1840    # Guirin            Guilin
         owns_or_vassal_of = 2163    # Riuzhou           Liuzhou
@@ -422,10 +404,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		OR = {
-			has_country_modifier = dank_republic
-			has_country_modifier = great_republic
-		}
+		is_pkomiclaps = yes
         owns_or_vassal_of = 2190 # Ghengisland           Qaraqorum
 	}
 	
@@ -459,10 +438,7 @@ country_event = {
     fire_only_once = yes
 	
 	trigger = {
-		OR = {
-			has_country_modifier = dank_republic
-			has_country_modifier = great_republic
-		}
+		is_pkomiclaps = yes
         owns_or_vassal_of = 723 # Some Desert           Xilin Gol
         owns_or_vassal_of = 1066 # Hilly Place           Altai Uriankhai
         owns_or_vassal_of = 721 # Noone wants to live here           Setsen
@@ -527,10 +503,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		OR = {
-			has_country_modifier = dank_republic
-			has_country_modifier = great_republic
-		}
+		is_pkomiclaps = yes
 		owns_or_vassal_of = 2380  # Phnom Penh    Phnom Penh
 	}
 	
@@ -542,25 +515,25 @@ country_event = {
 		name = pkomiclaps_as_conquest.9.a
 		add_prestige = -5
 		add_adm_power = 20
-    add_core = 2380
-    2380 = {
-      add_province_modifier = {
-        name = tourist_attraction
-        duration = -1
-      }
-    }
+        add_core = 2380
+        2380 = {
+            add_province_modifier = {
+              name = tourist_attraction
+              duration = -1
+            }
+        }
 	}
 	
 	option = {
 		name = pkomiclaps_as_conquest.9.b
 		add_prestige = 5
-    add_core = 2380
+        add_core = 2380
 	}
 }
 
 # The Conquest of Miao
 province_event = {
-  id = pkomiclaps_as_conquest.10
+    id = pkomiclaps_as_conquest.10
     
 	title = pkomiclaps_as_conquest.10.t
 	desc = pkomiclaps_as_conquest.10.d
@@ -570,13 +543,10 @@ province_event = {
 	fire_only_once = yes
 	
 	trigger = {
-    culture = miao
-		owner = { 
-      OR = {
-        has_country_modifier = dank_republic
-        has_country_modifier = great_republic
-      }
-		}
+        culture = miao
+		owner = {
+            is_pkomiclaps = yes
+        }
 	}
 	
 	mean_time_to_happen = {
@@ -585,10 +555,56 @@ province_event = {
 	
 	option = {
 		name = pkomiclaps_as_conquest.10.a
+        
 		add_adm_power = 20
-    add_province_modifier = {
-      name = cats
-      duration = -1
-    }
+        add_province_modifier = {
+          name = cats
+          duration = -1
+        }
+	}
+}
+
+# The Conquest of Digital Assistants
+country_event = {
+    id = pkomiclaps_as_conquest.11
+    
+	title = pkomiclaps_as_conquest.11.t
+	desc = pkomiclaps_as_conquest.11.d
+	
+	picture = UNIVERSITY_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		is_pkomiclaps = yes
+        
+        owns_or_vassal_of = 709 #Alexa                      Alxa
+        owns_or_vassal_of = 699 #Siri                       Lanzhou
+        owns_or_vassal_of = 720 #Cortana                    Dornogovi
+	}
+	
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = pkomiclaps_as_conquest.11.a
+        
+        add_core = 709
+        add_prestige = 5
+		add_adm_power = 25
+        
+        709 = { 
+            change_province_name = "Alexa"
+            rename_capital = "Alexa"
+        }
+        699 = { 
+            change_province_name = "Siri"
+            rename_capital = "Siri"
+        }
+        720 = { 
+            change_province_name = "Cortana"
+            rename_capital = "Cortana"
+        }
 	}
 }

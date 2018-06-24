@@ -2,138 +2,180 @@ namespace = pkomiclaps_af_conquest
 
 # The Conquest of Running Quickly
 country_event = {
-  id = pkomiclaps_af_conquest.1
+    id = pkomiclaps_af_conquest.1
     
-	title = pkomiclaps_af_conquest.1.t
-	desc = pkomiclaps_af_conquest.1.d
-	
-	picture = ATHENS_eventPicture
-	
-	fire_only_once = yes
-	
-	trigger = {
-		is_pkomiclaps = yes
+    title = pkomiclaps_af_conquest.1.t
+    desc = pkomiclaps_af_conquest.1.d
     
-		owns_or_vassal_of = 4092 #Run                            Rund
-    owns_or_vassal_of = 4085 #Bungalunga                     Yaka
-    owns_or_vassal_of = 4097 #Lube                           Luba
-	}
-	
-	mean_time_to_happen = {
-		days = 7
-	}
-	
-	option = {
-		name = pkomiclaps_af_conquest.1.a
-		add_prestige = 10
-		add_adm_power = 25
-    add_country_modifier = {
-      name = running_faster
-			duration = -1
-		}
-    4092 = { 
-        change_province_name = "Run"
-        rename_capital = "Insain Bolt"
+    picture = ATHENS_eventPicture
+    
+    fire_only_once = yes
+    
+    trigger = {
+        is_pkomiclaps = yes
+    
+        owns_or_vassal_of = 4092 #Run                            Rund
+        owns_or_vassal_of = 4085 #Bungalunga                     Yaka
+        owns_or_vassal_of = 4097 #Lube                           Luba
     }
-    4085 = { 
-        change_province_name = "Bungalunga"
-        rename_capital = "M'bko'b'''s"
+    
+    mean_time_to_happen = {
+        days = 7
     }
-    4097 = { 
-        change_province_name = "Lube"
-        rename_capital = "Lube"
+    
+    option = {
+        name = pkomiclaps_af_conquest.1.a
+        add_prestige = 10
+        add_adm_power = 25
+        add_country_modifier = {
+          name = running_faster
+                duration = -1
+            }
+        4092 = { 
+            change_province_name = "Run"
+            rename_capital = "Insain Bolt"
+        }
+        4085 = { 
+            change_province_name = "Bungalunga"
+            rename_capital = "M'bko'b'''s"
+        }
+        4097 = { 
+            change_province_name = "Lube"
+            rename_capital = "Lube"
+        }
     }
-	}
 }
 
 # The Conquest of Pirates
 country_event = {
-  id = pkomiclaps_af_conquest.2
+    id = pkomiclaps_af_conquest.2
     
-	title = pkomiclaps_af_conquest.2.t
-	desc = pkomiclaps_af_conquest.2.d
-	
-	picture = ATHENS_eventPicture
-	
-	fire_only_once = yes
-	
-	trigger = {
-		is_pkomiclaps = yes
+    title = pkomiclaps_af_conquest.2.t
+    desc = pkomiclaps_af_conquest.2.d
     
-		owns_or_vassal_of = 2788 #Drink the Rum                      Hafun
-    owns_or_vassal_of = 2790 #Raise your Steins                  Sanaag
-    owns_or_vassal_of = 2024 #Pirate music Piracy                Garoowe
-	}
-	
-	mean_time_to_happen = {
-		days = 7
-	}
-	
-	option = {
-		name = pkomiclaps_af_conquest.2.a
-		add_prestige = 10
-		add_adm_power = 25
-    add_country_modifier = {
-      name = pirates
-			duration = -1
-		}
-    2788 = { 
-        change_province_name = "Drink the Rum"
-        rename_capital = "Yohoho and a Yahaha"
+    picture = ATHENS_eventPicture
+    
+    fire_only_once = yes
+    
+    trigger = {
+        is_pkomiclaps = yes
+    
+        owns_or_vassal_of = 2788 #Drink the Rum                      Hafun
+        owns_or_vassal_of = 2790 #Raise your Steins                  Sanaag
+        owns_or_vassal_of = 2024 #Pirate music Piracy                Garoowe
     }
-    2790 = { 
-        change_province_name = "Raise your Steins"
-        rename_capital = "Grab the beer"
+    
+    mean_time_to_happen = {
+        days = 7
     }
-    2024 = { 
-        change_province_name = "Pirate music Piracy"
-        rename_capital = "We don't have time for MP3's"
+    
+    option = {
+        name = pkomiclaps_af_conquest.2.a
+        add_prestige = 10
+        add_adm_power = 25
+        add_country_modifier = {
+          name = pirates
+                duration = -1
+            }
+        2788 = { 
+            change_province_name = "Drink the Rum"
+            rename_capital = "Yohoho and a Yahaha"
+        }
+        2790 = { 
+            change_province_name = "Raise your Steins"
+            rename_capital = "Grab the beer"
+        }
+        2024 = { 
+            change_province_name = "Pirate music Piracy"
+            rename_capital = "We don't have time for MP3's"
+        }
     }
-	}
 }
 
 # The Conquest of Coffee
 country_event = {
-  id = pkomiclaps_af_conquest.3
+    id = pkomiclaps_af_conquest.3
     
-	title = pkomiclaps_af_conquest.3.t
-	desc = pkomiclaps_af_conquest.3.d
-	
-	picture = ATHENS_eventPicture
-	
-	fire_only_once = yes
-	
-	trigger = {
-		is_pkomiclaps = yes
+    title = pkomiclaps_af_conquest.3.t
+    desc = pkomiclaps_af_conquest.3.d
     
-		owns_or_vassal_of = 2757 #Coffee                            Kaffa
-    owns_or_vassal_of = 2756 #Caffè Latte                       Welayta
-    owns_or_vassal_of = 387  #Iced Mocca with Vanilla Syrup     Mukha
-	}
-	
-	mean_time_to_happen = {
-		days = 7
-	}
-	
-	option = {
-		name = pkomiclaps_af_conquest.3.a
-		add_prestige = 10
-		add_adm_power = 25
-    add_country_modifier = {
-      name = iced_coffee
-			duration = -1
-		}
-    2757 = { 
-        change_province_name = "Coffee"
-        rename_capital = "Kaffe"
+    picture = ATHENS_eventPicture
+    
+    fire_only_once = yes
+    
+    trigger = {
+        is_pkomiclaps = yes
+    
+        owns_or_vassal_of = 2757 #Coffee                            Kaffa
+        owns_or_vassal_of = 2756 #Caffè Latte                       Welayta
+        owns_or_vassal_of = 387  #Iced Mocca with Vanilla Syrup     Mukha
     }
-    2756 = { 
-        change_province_name = "Caffè Latte"
-        rename_capital = "Milk coffee"
+    
+    mean_time_to_happen = {
+        days = 7
     }
-    387 = { 
-        change_province_name = "Iced Mocca with Vanilla Syrup"
-        rename_capital = "And chocolate sprinkles"
+    
+    option = {
+        name = pkomiclaps_af_conquest.3.a
+        add_prestige = 10
+        add_adm_power = 25
+        add_country_modifier = {
+          name = iced_coffee
+                duration = -1
+            }
+        2757 = { 
+            change_province_name = "Coffee"
+            rename_capital = "Kaffe"
+        }
+        2756 = { 
+            change_province_name = "Caffè Latte"
+            rename_capital = "Milk coffee"
+        }
+        387 = { 
+            change_province_name = "Iced Mocca with Vanilla Syrup"
+            rename_capital = "And chocolate sprinkles"
+        }
     }
-	}
+}
+
+# The Conquest of Crime
+country_event = {
+    id = pkomiclaps_af_conquest.4
+    
+    title = pkomiclaps_af_conquest.4.t
+    desc = pkomiclaps_af_conquest.4.d
+    
+    picture = ATHENS_eventPicture
+    
+    fire_only_once = yes
+    
+    trigger = {
+        is_pkomiclaps = yes
+    
+        owns_or_vassal_of = 2880 #Crimeland                         Griqualand
+        owns_or_vassal_of = 1177 #Apartheidtown                     Cape
+        owns_or_vassal_of = 1176 #Nelson Jaildela                   Roggeveld
+    }
+    
+    mean_time_to_happen = {
+        days = 7
+    }
+    
+    option = {
+        name = pkomiclaps_af_conquest.4.a
+        add_prestige = -5
+        add_mil_power = 20
+        2880 = { 
+            change_province_name = "Crimeland"
+            rename_capital = "Crime"
+        }
+        1177 = { 
+            change_province_name = "Apartheidtown"
+            rename_capital = "Milk coffee"
+        }
+        1176 = { 
+            change_province_name = "Nelson Jaildela"
+            rename_capital = "A Jail"
+        }
+    }
 }
