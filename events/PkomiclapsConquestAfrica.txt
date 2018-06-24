@@ -179,3 +179,44 @@ country_event = {
         }
     }
 }
+
+# The Conquest of Ebola
+country_event = {
+    id = pkomiclaps_af_conquest.5
+    
+	title = pkomiclaps_af_conquest.5.t
+	desc = pkomiclaps_af_conquest.5.d
+	
+	picture = UNIVERSITY_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		is_pkomiclaps = yes
+        
+        owns_or_vassal_of = 1118 #Ebola Central             Sierra Leone
+        owns_or_vassal_of = 2241 #North Ebola               Beafada
+	}
+	
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = pkomiclaps_af_conquest.5.a
+        
+        add_prestige = 5
+		add_adm_power = 10
+        
+        set_country_flag = has_ebola
+        
+        1118 = { 
+            change_province_name = "Ebola Central"
+            rename_capital = "Ebola"
+        }
+        2241 = { 
+            change_province_name = "North Ebola"
+            rename_capital = "More Ebola"
+        }
+	}
+}
