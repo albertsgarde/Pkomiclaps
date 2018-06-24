@@ -220,3 +220,41 @@ country_event = {
         }
 	}
 }
+
+
+# Pkomiclaps Arbitrary Award
+country_event = {
+    id = pkomiclaps_af_conquest.6
+    
+	title = pkomiclaps_af_conquest.6.t
+	desc = pkomiclaps_af_conquest.6.d
+	
+	picture = UNIVERSITY_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		is_pkomiclaps = yes
+        
+        owns_or_vassal_of = 2932 #Arbitrary Province      Waddai
+	}
+	
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = pkomiclaps_af_conquest.6.a
+        
+        add_prestige = 15
+        add_adm_power = 25
+        add_dip_power = 25
+        add_mil_power = 25
+        add_years_of_income = 1
+        
+        2932 = { 
+            change_province_name = "Arbitrary Province"
+            rename_capital = "Arbitrary capital"
+        }
+	}
+}

@@ -765,3 +765,36 @@ country_event = {
         }
 	}
 }
+
+
+# The Conquest of Dictatorship    
+country_event = {
+    id = pkomiclaps_as_conquest.16
+    
+	title = pkomiclaps_as_conquest.16.t
+	desc = pkomiclaps_as_conquest.16.d
+	
+	picture = UNIVERSITY_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		is_pkomiclaps = yes
+        
+        owns_or_vassal_of = 2686 #Singapore               Bintan
+	}
+	
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = pkomiclaps_as_conquest.16.a
+        
+        add_core = 2686
+        2686 = { 
+            change_province_name = "Singapore"
+            rename_capital = "Pingo"
+        }
+	}
+}
