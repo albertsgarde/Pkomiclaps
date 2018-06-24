@@ -317,3 +317,8 @@ way_too_sick = {
     local_development_cost = -0.8
     local_tax_modifier = 0.4
 }
+
+good_tv = {
+    culture_conversion_cost = -0.1
+    production_efficiency = -0.02
+}

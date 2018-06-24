@@ -465,8 +465,8 @@ country_event = {
             rename_capital = "Hilly Place"
         }
         721 = {
-            change_province_name = "Noone Wants to Live Here... stan"
-            rename_capital = "Noone Wants to Live Here... stan"
+            change_province_name = "Noone Wants to Live Here... -stan"
+            rename_capital = "Noone Wants to Live Here... -stan"
         }
         1058 = {
             change_province_name = "This Place is Emptystan"
@@ -485,8 +485,8 @@ country_event = {
             rename_capital = "Nothing Happens Hereton"
         }
         724 = {
-            change_province_name = Desertedstan
-            rename_capital = Desertedstan
+            change_province_name = "Desertedstan"
+            rename_capital = "Desertedstan"
         }
 	}
 }
@@ -649,6 +649,119 @@ country_event = {
         1092 = { 
             change_province_name = "Queen"
             rename_capital = "Queen"
+        }
+	}
+}
+
+# The Conquest of Southern Communism    
+country_event = {
+    id = pkomiclaps_as_conquest.13
+    
+	title = pkomiclaps_as_conquest.13.t
+	desc = pkomiclaps_as_conquest.13.d
+	
+	picture = UNIVERSITY_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		is_pkomiclaps = yes
+        
+        owns_or_vassal_of = 615 #        Luang Prabang
+        owns_or_vassal_of = 611 #           Sikkhotabong
+        owns_or_vassal_of = 2385 #         Nongbua Lamphu
+        owns_or_vassal_of = 2381 #         Luang Namtha
+        owns_or_vassal_of = 1844 #         Xiankhouang
+	}
+	
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = pkomiclaps_as_conquest.13.a
+        
+        add_prestige = 15
+        add_adm_power = 10
+        615 = { 
+            change_province_name = "Luaaang Prabaaang"
+        }
+        611 = { 
+            change_province_name = "Sikkhotaboooong"
+            rename_capital = "Sikkhotaboooong"
+        }
+        2385 = { 
+            change_province_name = "Nongbuuaaaa Laaamphuuuu"
+            rename_capital = "Nongbuuaaaa Laaamphuuuu"
+        }
+	}
+}
+
+# The Conquest of White Elephants    
+country_event = {
+    id = pkomiclaps_as_conquest.14
+    
+	title = pkomiclaps_as_conquest.14.t
+	desc = pkomiclaps_as_conquest.14.d
+	
+	picture = UNIVERSITY_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		is_pkomiclaps = yes
+        
+        owns_or_vassal_of = 600 #Whiteelephantuthaya    Ayutthaya
+        owns_or_vassal_of = 2387 #                      Phetchaburi
+        owns_or_vassal_of = 612 #                       Khorat
+	}
+	
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = pkomiclaps_as_conquest.14.a
+        
+        add_republican_tradition = 5
+        600 = { 
+            change_province_name = "Whiteelephantuthaya"
+        }
+	}
+}
+
+# The Conquest of Pingu    
+country_event = {
+    id = pkomiclaps_as_conquest.15
+    
+	title = pkomiclaps_as_conquest.15.t
+	desc = pkomiclaps_as_conquest.15.d
+	
+	picture = UNIVERSITY_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		is_pkomiclaps = yes
+        
+        owns_or_vassal_of = 586 #Pingu               Pegu
+	}
+	
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = pkomiclaps_as_conquest.15.a
+        
+        add_core = 586
+        add_country_modifier = {
+            name = good_tv
+            duration = 3650
+        }
+        586 = { 
+            change_province_name = "Pingu"
+            rename_capital = "Pingo"
         }
 	}
 }
