@@ -78,10 +78,3 @@
 -Other stuff I can't remember.
 2.1.1 (22 Jun @ 11:04am):
 -Removed the unfinished estates that didn't work anyway.
-
-Planned:
- -More conquest events
-  -Europe
-   -Stealing Italians
- -Event pictures. They wouldn't fit in with the current ones, but could be fun.
- -Fix absorption so colonizable land doesn't count as wasteland. 
