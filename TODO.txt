@@ -12,6 +12,7 @@
 -Pirates estate
  -Pirates disaster
   -Diabetes
+ -Make the interactions more interesting. More like the vanilla estates.
 -Missions
 -Debates
 -Primitives need to be able to unprimitive
