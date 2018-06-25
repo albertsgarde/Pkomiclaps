@@ -15,3 +15,8 @@
 -Missions
 -Debates
 -Primitives need to be able to unprimitive
+-Reference stuff multiple places
+ -Bring up Perfect Posture other places than the parliament issue
+ -Use as foreshadowing for rarer events
+ -Spread it across multiple game mechanics. Anywhere with text (maybe even other places (pictures?)).
+  -Events, modifiers, ideas, policies, estates, parliament stuff.
