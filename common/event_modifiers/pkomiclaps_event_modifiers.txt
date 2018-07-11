@@ -103,6 +103,16 @@ chicken_boom = {
   global_manpower_modifier = 0.2
 }
 
+opposing_management = {
+  advisor_cost = -0.2
+  global_autonomy = 0.05
+}
+
+managing_management = {
+  advisor_cost = 0.1
+  global_autonomy = -0.1
+}
+
 goats_everywhere = {
   hostile_attrition = 2
 }
@@ -325,3 +335,4 @@ good_tv = {
     culture_conversion_cost = -0.1
     production_efficiency = -0.02
 }
+

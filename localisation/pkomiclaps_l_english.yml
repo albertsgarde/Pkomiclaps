@@ -19,15 +19,15 @@
  anthropomorphisation:0 "Anthropomorphisation Minister"
  pannationalism:0 "Pannationalist"
  imperialism:0 "Imperialist"
- monocle_desc:0 "I'm to tired..."
- laterality_desc:0 "I'm to tired..."
- opposition_management_desc:0 "I'm to tired..."
- sociolinguistics_desc:0 "I'm to tired..."
- communication_desc:0 "I'm to tired..."
- plutocracy_desc:0 "I'm to tired..."
- anthropomorphisation_desc:0 "I'm to tired..."
- pannationalism_desc:0 "I'm to tired..."
- imperialism_desc:0 "I'm to tired..."
+ monocle_desc:0 "I'm too tired..."
+ laterality_desc:0 "I'm too tired..."
+ opposition_management_desc:0 "I'm too tired..."
+ sociolinguistics_desc:0 "I'm too tired..."
+ communication_desc:0 "I'm too tired..."
+ plutocracy_desc:0 "I'm too tired..."
+ anthropomorphisation_desc:0 "I'm too tired..."
+ pannationalism_desc:0 "I'm too tired..."
+ imperialism_desc:0 "I'm too tired..."
  
  # Ideas
  KOM_ideas:0 "Pkomiclaps Ideas"
@@ -56,6 +56,10 @@
  # Parliament issues
  chicken_perfect_posture:0 "Perfect Posture"
  chicken_perfect_posture_tooltip:0 "Will Give the Chickens Perfect Posture."
+ oppose_management:0 "Oppose Management"
+ oppose_management_tooltip:0 "Everyone knows management is nothing but useless bureaucracy, so lets oppose them!"
+ manage_management:0 "Manage Management"
+ manage_management_tooltip:0 "If management manages opposition who manages management. Surely not the watchers?"
  
  # Parliament bribes
  remove_core_in_foreign_nation:0 "Remove Core in Foreign Nation"

@@ -1,0 +1,29 @@
+oppose_management = {
+	category = 5 		# same category = 90% less likely
+
+	allow = {
+        has_idea = pkomiclaps_opposition_management
+	}
+	
+	effect = {
+		add_country_modifier = {
+            name = "managing_management"
+            duration = -1
+        }
+	}
+	
+	modifier = {
+	}
+	
+	chance = {
+		factor = 2 # To make sure you actually get it
+	}
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			average_home_autonomy = 25
+		}
+	}
+}
